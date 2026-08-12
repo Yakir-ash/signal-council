@@ -127,7 +127,10 @@ class Edgar(FundamentalsProvider, FilingsProvider, InsiderProvider):
                 continue
             acc = recent["accessionNumber"][i]
             acc_nodash = acc.replace("-", "")
-            doc = recent["primaryDocument"][i]
+            # Form 4 (and some others) prefix primaryDocument with an XSL renderer
+            # path like "xslF345X06/form4.xml" — the RAW document lives at the
+            # accession root, so strip any directory prefix.
+            doc = recent["primaryDocument"][i].split("/")[-1]
             out.append(Filing(
                 ticker=ticker, cik=cik, accession=acc, form=form,
                 filed_at=recent["filingDate"][i],
@@ -153,21 +156,28 @@ class Edgar(FundamentalsProvider, FilingsProvider, InsiderProvider):
 
     # ---------------------------------------------------------------- insiders
     def insider_transactions(self, ticker: str, since: date) -> list[InsiderTx]:
-        """Parse Form 4 XML for non-derivative open-market transactions."""
+        """Parse Form 4 XML for non-derivative open-market transactions.
+
+        The primary document (prefix-stripped in recent_filings) IS the ownership
+        XML — fetch it directly, cached for 60d (filings are immutable), so daily
+        runs only ever download new Form 4s. Falls back to the accession index
+        if the primary document isn't XML.
+        """
         out: list[InsiderTx] = []
         for f in self.recent_filings(ticker, forms=["4"], limit=60):
             if f.filed_at < since.isoformat():
                 continue
+            acc_dir = f"https://www.sec.gov/Archives/edgar/data/{int(f.cik)}/{f.accession.replace('-', '')}"
             try:
-                idx_url = f.url.rsplit("/", 1)[0]
-                # find the ownership XML in the filing directory
-                r = self.http.get(idx_url + "/index.json", cache_ttl=30 * 24 * 3600)
-                items = json.loads(r.content)["directory"]["item"]
-                xml_name = next((i["name"] for i in items if i["name"].endswith(".xml")
-                                 and "primary" not in i["name"].lower()), None)
-                if not xml_name:
-                    continue
-                rx = self.http.get(idx_url + "/" + xml_name, cache_ttl=None)
+                doc_name = f.url.rsplit("/", 1)[-1]
+                if not doc_name.endswith(".xml"):
+                    r = self.http.get(acc_dir + "/index.json", cache_ttl=60 * 24 * 3600)
+                    items = json.loads(r.content)["directory"]["item"]
+                    doc_name = next((i["name"] for i in items
+                                     if i["name"].endswith(".xml")), None)
+                    if not doc_name:
+                        continue
+                rx = self.http.get(f"{acc_dir}/{doc_name}", cache_ttl=60 * 24 * 3600)
                 out.extend(_parse_form4(rx.content, ticker, f.filed_at))
             except Exception as e:  # noqa: BLE001
                 log.warning("form4 %s %s failed: %s", ticker, f.accession, e)

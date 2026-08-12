@@ -57,14 +57,24 @@ class Http:
                 r = self.sess.get(url, params=params, timeout=self.timeout)
                 if r.status_code in (429, 500, 502, 503, 504):
                     raise requests.HTTPError(f"status {r.status_code}", response=r)
+                if 400 <= r.status_code < 500:
+                    # permanent client error: retrying a 404 wastes seconds per call
+                    # and never helps — fail fast, caller degrades gracefully
+                    raise _PermanentHTTPError(f"GET {url} -> {r.status_code}")
                 r.raise_for_status()
                 if cache_path:
                     cache_path.parent.mkdir(parents=True, exist_ok=True)
                     cache_path.write_bytes(r.content)
                 return r
+            except _PermanentHTTPError:
+                raise
             except Exception as e:  # noqa: BLE001 — provider layer converts to warnings upstream
                 last_exc = e
                 sleep = 2.0**attempt
                 log.warning("GET %s failed (%s), retry in %.1fs", url, type(e).__name__, sleep)
                 time.sleep(sleep)
         raise RuntimeError(f"GET {url} failed after {self.retries} attempts") from last_exc
+
+
+class _PermanentHTTPError(RuntimeError):
+    pass
