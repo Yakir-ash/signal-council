@@ -7,6 +7,12 @@ on:
       skip_fetch:
         description: "reuse cached panels (debug)"
         default: "false"
+  push:
+    branches: [main]
+    paths:                       # shakedown: code/config pushes trigger a full run;
+      - "src/**"                 # bot data commits don't match these paths, so no loops
+      - "config/**"
+      - ".github/workflows/daily.yml"
 
 permissions:
   contents: write
@@ -39,26 +45,46 @@ jobs:
         run: pip install -e .
 
       - name: Run daily pipeline
+        id: pipeline
+        continue-on-error: true    # failures still get committed below, then re-raised
         run: |
+          set -o pipefail
           if [ "${{ github.event.inputs.skip_fetch }}" = "true" ]; then
-            sigc daily --skip-fetch
+            sigc daily --skip-fetch 2>&1 | tee run_output.log
           else
-            sigc daily
+            sigc daily 2>&1 | tee run_output.log
           fi
 
       - name: Render dashboard
+        if: steps.pipeline.outcome == 'success'
         run: sigc render
+
+      - name: Preserve run log in repo (also on failure)
+        if: always()
+        run: |
+          mkdir -p data/reports/ci_logs
+          {
+            echo "run: ${{ github.run_id }} outcome: ${{ steps.pipeline.outcome }} $(date -u +%FT%TZ)"
+            tail -n 300 run_output.log 2>/dev/null || echo "no output captured"
+            cat data/build/runlog-*.jsonl 2>/dev/null | tail -n 100 || true
+          } > "data/reports/ci_logs/$(date -u +%F)-run${{ github.run_id }}.log"
+          ls data/reports/ci_logs | head -50
 
       - name: Ledger immutability guard
         run: python scripts/check_ledger_immutable.py origin/main HEAD || true
         # informational pre-commit; the enforcing run is in ci.yml on the diff we push
 
       - name: Commit results
+        if: always()
         run: |
           git config user.name "signal-council-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/ledger data/reports data/calibration data/filings_cache \
-                  data/watchlist.json data/watchlist_history.jsonl || true
-          git diff --cached --quiet || git commit -m "daily run $(date -u +%F)"
+                  data/watchlist.json data/watchlist_history.jsonl 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "daily run $(date -u +%F) [${{ steps.pipeline.outcome }}]"
           git pull --rebase origin main
           git push
+
+      - name: Re-raise pipeline failure
+        if: steps.pipeline.outcome == 'failure'
+        run: exit 1
