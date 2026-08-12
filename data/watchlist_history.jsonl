@@ -1,0 +1,14 @@
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "ABNB", "from": "NONE", "to": "WATCH", "reason": "opp 68"}
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "EXPE", "from": "NONE", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "DXCM", "from": "NONE", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "HUM", "from": "NONE", "to": "WAIT_FOR_CONFIRMATION", "reason": "thesis ok, technicals not confirming (32)"}
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "FTNT", "from": "NONE", "to": "WATCH", "reason": "opp 62"}
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "APA", "from": "NONE", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "BKNG", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "UAL", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "LLY", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "ADSK", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "MPC", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "DAL", "from": "NONE", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "IBM", "from": "NONE", "to": "WATCH", "reason": "opp 60"}
+{"ts": "2026-08-12T11:26:51+00:00", "date": "2026-08-12", "ticker": "NRG", "from": "NONE", "to": "AVOID", "reason": "opp 30 with risk 70"}
