@@ -1,0 +1,37 @@
+# All decision thresholds in one reviewable place.
+version: t1.0.0
+
+high_conviction:
+  min_opportunity: 72
+  min_confidence: 0.55        # calibrated confidence floor
+  max_risk: 80                # hard cap: riskier names can never be Top Opportunities
+  min_data_confidence: 60
+  max_shown: 5                # at most; zero is a first-class outcome
+
+avoid_list:
+  max_opportunity: 30
+  min_risk: 65
+  max_shown: 5
+
+watchlist:
+  enter_watch: 60             # opportunity score to start tracking
+  drop_below: 45
+
+# Cold-start calibration guardrails (DESIGN.md §5): until empirical probability
+# tables exist (Phase 2+) and live calibration confirms them, displayed
+# probabilities are clamped to this band. The system may not claim certainty
+# it has not earned.
+probability_clamp:
+  cold_start: [0.35, 0.68]
+  calibrated: [0.05, 0.95]
+
+horizons:                     # trading days
+  - {name: 1w,  days: 5}
+  - {name: 1m,  days: 21}
+  - {name: 3m,  days: 63}
+  - {name: 6-12m, days: 189}
+
+quality_gate:
+  max_price_cross_source_diff: 0.01   # 1% median |yf - stooq| / stooq
+  max_stale_days_prices: 3
+  outlier_move_no_news: 0.25          # >25% move without filing/news -> quarantine

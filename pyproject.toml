@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sigcouncil"
+version = "0.1.0"
+description = "Signal Council: evidence-first stock research, ranking and prediction system"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.1",
+    "numpy>=1.26",
+    "pyarrow>=14",
+    "requests>=2.31",
+    "yfinance>=0.2.40",
+    "PyYAML>=6.0",
+    "scikit-learn>=1.3",
+    "lxml>=4.9",
+]
+
+[project.optional-dependencies]
+ml = ["lightgbm>=4.0"]
+dev = ["pytest>=7.4", "ruff>=0.4"]
+
+[project.scripts]
+sigc = "sigcouncil.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+sigcouncil = ["report/template.html"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"

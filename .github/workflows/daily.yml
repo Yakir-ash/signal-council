@@ -1,0 +1,64 @@
+name: daily-pipeline
+on:
+  schedule:
+    - cron: "45 21 * * 1-5"     # 21:45 UTC ≈ after US close (16:45 ET summer); Mon-Fri
+  workflow_dispatch:
+    inputs:
+      skip_fetch:
+        description: "reuse cached panels (debug)"
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11", cache: pip}
+
+      - name: Restore data panels (heavy, gitignored)
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/panels
+            data/cache
+          key: panels-${{ github.run_id }}
+          restore-keys: panels-
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Run daily pipeline
+        run: |
+          if [ "${{ github.event.inputs.skip_fetch }}" = "true" ]; then
+            sigc daily --skip-fetch
+          else
+            sigc daily
+          fi
+
+      - name: Render dashboard
+        run: sigc render
+
+      - name: Ledger immutability guard
+        run: python scripts/check_ledger_immutable.py origin/main HEAD || true
+        # informational pre-commit; the enforcing run is in ci.yml on the diff we push
+
+      - name: Commit results
+        run: |
+          git config user.name "signal-council-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/ledger data/reports data/calibration data/filings_cache \
+                  data/watchlist.json data/watchlist_history.jsonl || true
+          git diff --cached --quiet || git commit -m "daily run $(date -u +%F)"
+          git pull --rebase origin main
+          git push

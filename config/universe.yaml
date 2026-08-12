@@ -1,0 +1,62 @@
+# Universe configuration. The intelligence engine only ever sees the resolved
+# universe produced by sigcouncil.store.universe — adding markets later means
+# adding a block here, not touching engine code.
+name: us_core_v1
+benchmark: SPY
+
+groups:
+  sp500:
+    kind: constituents_csv
+    path: data/universe/sp500_constituents.csv
+    symbol_col: Symbol
+    historical_path: data/universe/sp500_historical_constituents.csv  # for backtests (PIT membership)
+  core_etfs:
+    kind: static
+    symbols:
+      # broad market / style
+      - SPY
+      - QQQ
+      - IWM
+      - DIA
+      # sectors (also used as sector benchmarks for relative strength)
+      - XLK
+      - XLF
+      - XLV
+      - XLE
+      - XLI
+      - XLY
+      - XLP
+      - XLU
+      - XLB
+      - XLRE
+      - XLC
+      # macro/risk gauges used by the regime engine
+      - TLT
+      - HYG
+      - LQD
+      - GLD
+
+# names used only as market/regime inputs, never scored as opportunities
+regime_only: [SPY, QQQ, IWM, DIA, TLT, HYG, LQD, GLD,
+              XLK, XLF, XLV, XLE, XLI, XLY, XLP, XLU, XLB, XLRE, XLC]
+
+# hard liquidity/eligibility gates (see DESIGN.md §7)
+eligibility:
+  min_price: 5.0
+  min_median_dollar_volume: 10000000     # $10M over trailing 60d
+  min_history_days: 252
+  max_missing_recent_days: 3
+
+# GICS sector -> sector ETF for relative-strength features
+sector_etf:
+  "Information Technology": XLK
+  "Financials": XLF
+  "Health Care": XLV
+  "Energy": XLE
+  "Industrials": XLI
+  "Consumer Discretionary": XLY
+  "Consumer Staples": XLP
+  "Utilities": XLU
+  "Materials": XLB
+  "Real Estate": XLRE
+  "Communication Services": XLC

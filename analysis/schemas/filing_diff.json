@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "filing_diff output",
+  "type": "object",
+  "required": ["ticker", "current_filing", "previous_filing", "findings"],
+  "properties": {
+    "ticker": {"type": "string"},
+    "current_filing": {"type": "string"},
+    "previous_filing": {"type": "string"},
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind", "assessment", "materiality", "quote_current"],
+        "properties": {
+          "kind": {"enum": ["new_risk", "removed_risk", "accounting_change",
+                            "tone_shift", "liquidity", "customer_concentration",
+                            "margin_commentary", "demand_commentary", "capex",
+                            "inventory", "restructuring", "acquisition", "other"]},
+          "assessment": {"type": "string", "maxLength": 300},
+          "materiality": {"enum": ["low", "medium", "high"]},
+          "direction": {"enum": ["positive", "negative", "neutral"]},
+          "quote_current": {"type": "string", "maxLength": 500},
+          "quote_previous": {"type": "string", "maxLength": 500}
+        }
+      }
+    }
+  }
+}

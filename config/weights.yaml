@@ -1,0 +1,17 @@
+# Opportunity Score component weights.
+# version is recorded in every ledger entry; changing weights REQUIRES bumping
+# the version and committing — the ledger must always know which weights made a call.
+#
+# These v1 weights are PRIORS grounded in published factor research
+# (see DESIGN.md §7), validated — not discovered — by walk-forward backtest.
+version: w1.0.0
+components:
+  fundamental_momentum: 20   # PEAD + fundamental acceleration
+  price_momentum: 18         # 12-1 momentum, trend position (sector-relative)
+  quality: 14                # profitability, accruals, dilution
+  divergence: 14             # mispricing patterns (dedicated score, reused here)
+  valuation: 10              # sector-relative + own-history context
+  catalyst: 8                # LLM-extracted, confidence-scaled; neutral=50 when absent
+  insider: 6                 # Form 4 cluster buying
+  technical: 6               # timing overlay: vol contraction, breakout, RS confirm
+  regime_fit: 4              # regime mostly gates/scales; small point weight

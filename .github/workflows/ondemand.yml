@@ -1,0 +1,47 @@
+name: on-demand-analysis
+on:
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: "comma-separated tickers, e.g. NVDA or NVDA,AMD"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11", cache: pip}
+      - uses: actions/cache@v4
+        with:
+          path: |
+            data/panels
+            data/cache
+          key: panels-${{ github.run_id }}
+          restore-keys: panels-
+      - name: Install
+        run: pip install -e .
+      - name: Analyze
+        run: |
+          IFS=',' read -ra TK <<< "${{ github.event.inputs.tickers }}"
+          for t in "${TK[@]}"; do sigc analyze "$t"; done
+      - name: Render dashboard
+        run: sigc render
+      - name: Commit results
+        run: |
+          git config user.name "signal-council-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/reports data/filings_cache || true
+          git diff --cached --quiet || git commit -m "on-demand: ${{ github.event.inputs.tickers }}"
+          git pull --rebase origin main
+          git push

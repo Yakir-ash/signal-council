@@ -1,0 +1,10 @@
+# heavy, regenerable data — never committed (rebuilt or restored from Actions cache)
+data/panels/
+data/cache/
+data/build/
+*.sqlite
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/

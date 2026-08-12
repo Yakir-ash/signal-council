@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signal Council</title>
+<style>
+/* palette: validated reference instance (dataviz skill, dark-mode steps) */
+:root{
+  --page:#0d0d0d; --surface:#1a1a19; --surface2:#222221;
+  --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781;
+  --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,0.10);
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500;
+  --div-pos:#3987e5; --div-neg:#e66767; --div-mid:#383835;
+  --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --crit:#d03b3b;
+  --up:#0ca30c; --dn:#e66767;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--page);color:var(--ink);
+  font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;padding-bottom:80px}
+header{padding:18px 26px;border-bottom:1px solid var(--border);
+  display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+header h1{font-size:17px;font-weight:650;letter-spacing:.4px}
+header .date{color:var(--ink2)}
+header .note{color:var(--muted);font-size:12px;margin-left:auto}
+nav{display:flex;gap:4px;padding:10px 22px;border-bottom:1px solid var(--border);
+  position:sticky;top:0;background:var(--page);z-index:5;flex-wrap:wrap}
+nav button{background:none;border:1px solid transparent;color:var(--ink2);padding:7px 14px;
+  border-radius:8px;cursor:pointer;font:inherit;font-size:13px}
+nav button:hover{background:var(--surface)}
+nav button.on{background:var(--surface);color:var(--ink);border-color:var(--border)}
+main{padding:22px 26px;max-width:1280px;margin:0 auto}
+section.tab{display:none} section.tab.on{display:block}
+h2{font-size:13px;font-weight:650;color:var(--ink2);text-transform:uppercase;
+  letter-spacing:1.2px;margin:26px 0 12px}
+h2:first-child{margin-top:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+.tile .k{color:var(--muted);font-size:11.5px;text-transform:uppercase;letter-spacing:.8px}
+.tile .v{font-size:26px;font-weight:640;margin-top:2px}
+.tile .sub{color:var(--ink2);font-size:12.5px;margin-top:2px}
+.stock{background:var(--surface);border:1px solid var(--border);border-radius:14px;
+  padding:18px;margin-bottom:16px}
+.stock .head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.stock .tkr{font-size:20px;font-weight:700}
+.stock .px{color:var(--ink2)}
+.badges{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap}
+.badge{padding:3px 10px;border-radius:999px;font-size:12px;border:1px solid var(--border);
+  color:var(--ink2);background:var(--surface2)}
+.badge b{color:var(--ink)}
+.tag{font-size:9.5px;letter-spacing:.6px;padding:1px 6px;border-radius:4px;
+  border:1px solid var(--border);color:var(--muted);vertical-align:middle}
+.tag.fact{color:#7fb8f2;border-color:#254a75}
+.tag.est{color:#e3b26b;border-color:#6d5324}
+.tag.ai{color:#b9a7f5;border-color:#4c3f85}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:900px){.grid2{grid-template-columns:1fr}}
+ul.plain{list-style:none}
+ul.plain li{padding:5px 0 5px 18px;position:relative;color:var(--ink2)}
+ul.plain li:before{content:"";position:absolute;left:2px;top:12px;width:7px;height:7px;
+  border-radius:2px;background:var(--s1)}
+ul.plain.breakers li:before{background:var(--crit)}
+ul.plain.risks li:before{background:var(--serious)}
+.comp{display:grid;grid-template-columns:170px 1fr 42px;gap:8px;align-items:center;
+  font-size:12.5px;color:var(--ink2);margin:3px 0}
+.comp .bar{height:8px;background:var(--surface2);border-radius:4px;overflow:hidden}
+.comp .bar i{display:block;height:100%;border-radius:4px;background:var(--s1)}
+.comp .n{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th{color:var(--muted);text-align:left;font-weight:500;padding:8px 10px;
+  border-bottom:1px solid var(--axis);font-size:11.5px;text-transform:uppercase;letter-spacing:.6px}
+td{padding:8px 10px;border-bottom:1px solid var(--grid);color:var(--ink2);
+  font-variant-numeric:tabular-nums}
+td.t{color:var(--ink);font-weight:600}
+tr:hover td{background:var(--surface)}
+.pos{color:var(--up)} .neg{color:var(--dn)}
+.empty{background:var(--surface);border:1px dashed var(--axis);border-radius:14px;
+  padding:34px;text-align:center;color:var(--ink2)}
+.empty b{display:block;font-size:16px;color:var(--ink);letter-spacing:.5px;margin-bottom:6px}
+.chart{background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  padding:16px}
+.chart h3{font-size:13px;font-weight:600;margin-bottom:2px}
+.chart .sub{color:var(--muted);font-size:12px;margin-bottom:10px}
+svg text{font:11px system-ui;fill:var(--muted)}
+.tip{position:fixed;pointer-events:none;background:var(--surface2);border:1px solid var(--border);
+  border-radius:8px;padding:7px 10px;font-size:12px;color:var(--ink);z-index:50;display:none;
+  box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.state{padding:3px 9px;border-radius:6px;font-size:11.5px;font-weight:600;letter-spacing:.3px}
+.state.BUY_CANDIDATE{background:#0c3d1c;color:#6ee08a}
+.state.WATCH{background:#153least;color:var(--ink2)}
+.state.WATCH,.state.WAIT_FOR_PULLBACK,.state.WAIT_FOR_CONFIRMATION{background:#23303f;color:#8ec0f0}
+.state.OVERVALUED{background:#3e3018;color:#e3b26b}
+.state.THESIS_DETERIORATING{background:#40232a;color:#e88989}
+.state.AVOID{background:#471c1c;color:#f09a9a}
+.small{font-size:12px;color:var(--muted)}
+.warnbox{border:1px solid #6d5324;background:#2a2214;color:#e3b26b;border-radius:10px;
+  padding:10px 14px;font-size:13px;margin-bottom:14px}
+.failbox{border:1px solid #6d2424;background:#2a1414;color:#f09a9a;border-radius:10px;
+  padding:10px 14px;font-size:13px;margin-bottom:14px}
+details{margin-top:10px}
+summary{cursor:pointer;color:var(--muted);font-size:12.5px}
+.hgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:12px}
+.hz{background:var(--surface2);border-radius:10px;padding:10px 12px;font-size:12.5px}
+.hz .h{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.6px}
+.hz .r{color:var(--ink);font-weight:600;margin-top:2px}
+.hz .d{color:var(--dn)}
+input#tkfilter{background:var(--surface);border:1px solid var(--border);color:var(--ink);
+  border-radius:8px;padding:8px 12px;font:inherit;width:220px;margin-bottom:14px}
+</style>
+</head>
+<body>
+<header>
+  <h1>SIGNAL COUNCIL</h1>
+  <span class="date" id="hdr-date"></span>
+  <span class="badge" id="hdr-regime"></span>
+  <span class="note">research system — not investment advice · every value tagged
+    <span class="tag fact">FACT</span> <span class="tag est">MODEL ESTIMATE</span>
+    <span class="tag ai">AI INTERPRETATION</span></span>
+</header>
+<nav id="nav"></nav>
+<main id="main"></main>
+<div class="tip" id="tip"></div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const DATA = JSON.parse(document.getElementById('data').textContent);
+const TABS = ["Today","Analyzer","Watchlist","Ledger","Performance","Backtest","Market"];
+const $ = (h)=>{const t=document.createElement('template');t.innerHTML=h.trim();return t.content.firstElementChild;};
+const fmt = {
+  pct:(x,d=1)=> x==null||isNaN(x) ? "—" : (x*100).toFixed(d)+"%",
+  spct:(x,d=1)=> x==null||isNaN(x) ? "—" : (x>=0?"+":"")+(x*100).toFixed(d)+"%",
+  n:(x,d=1)=> x==null||isNaN(x) ? "—" : (+x).toFixed(d),
+  usd:(x)=> x==null||isNaN(x) ? "—" : "$"+(+x).toFixed(2),
+  cls:(x)=> x>=0?"pos":"neg",
+};
+const tip = document.getElementById('tip');
+function showTip(e,html){tip.innerHTML=html;tip.style.display='block';
+  tip.style.left=Math.min(e.clientX+14,window.innerWidth-240)+'px';tip.style.top=(e.clientY+12)+'px';}
+function hideTip(){tip.style.display='none';}
+
+/* ---- tiny chart helpers (mark specs: thin bars, 4px rounded data-end, hover) */
+function hbar(rows,{fmtv=fmt.spct,diverging=true,height=null}={}){
+  const W=560,rh=26,H=height||rows.length*rh+10;
+  const vmax=Math.max(...rows.map(r=>Math.abs(r.v)))||1;
+  const mid=W*0.55, span=W*0.40;
+  let s=`<svg viewBox="0 0 ${W+70} ${H}" style="width:100%">`;
+  s+=`<line x1="${mid}" y1="0" x2="${mid}" y2="${H}" stroke="var(--axis)" stroke-width="1"/>`;
+  rows.forEach((r,i)=>{
+    const y=i*rh+6, w=Math.abs(r.v)/vmax*span;
+    const x=r.v>=0?mid:mid-w;
+    const c=diverging?(r.v>=0?'var(--div-pos)':'var(--div-neg)'):'var(--s1)';
+    s+=`<text x="${mid-span-8}" y="${y+11}" text-anchor="start">${r.k}</text>`;
+    s+=`<rect class="hb" data-i="${i}" x="${x}" y="${y}" width="${Math.max(w,1)}" height="12" rx="4" fill="${c}"/>`;
+    s+=`<text x="${r.v>=0?x+w+6:x-6}" y="${y+11}" text-anchor="${r.v>=0?'start':'end'}"
+        style="fill:var(--ink2)">${fmtv(r.v)}</text>`;
+  });
+  s+='</svg>';
+  const el=$(`<div>${s}</div>`);
+  el.querySelectorAll('.hb').forEach(b=>{
+    const r=rows[+b.dataset.i];
+    b.addEventListener('mousemove',e=>showTip(e,`<b>${r.k}</b><br>${fmtv(r.v)}${r.extra||''}`));
+    b.addEventListener('mouseleave',hideTip);
+  });
+  return el;
+}
+function reliability(bins){
+  const W=560,H=240,P=40;
+  let s=`<svg viewBox="0 0 ${W} ${H}" style="width:100%">`;
+  s+=`<line x1="${P}" y1="${H-P}" x2="${W-10}" y2="${H-P}" stroke="var(--axis)"/>`;
+  s+=`<line x1="${P}" y1="10" x2="${P}" y2="${H-P}" stroke="var(--axis)"/>`;
+  const X=p=>P+p*(W-P-20), Y=p=>H-P-p*(H-P-20);
+  s+=`<line x1="${X(0)}" y1="${Y(0)}" x2="${X(1)}" y2="${Y(1)}" stroke="var(--grid)" stroke-dasharray="4 4"/>`;
+  [0,0.25,0.5,0.75,1].forEach(v=>{
+    s+=`<text x="${X(v)}" y="${H-P+16}" text-anchor="middle">${v}</text>`;
+    s+=`<text x="${P-8}" y="${Y(v)+4}" text-anchor="end">${v}</text>`;});
+  bins.forEach((b,i)=>{
+    s+=`<circle class="rp" data-i="${i}" cx="${X(b.predicted)}" cy="${Y(b.realized)}" r="8"
+       fill="var(--s1)" stroke="var(--surface)" stroke-width="2"/>`;});
+  s+=`<text x="${(W+P)/2}" y="${H-6}" text-anchor="middle">predicted probability</text>`;
+  s+='</svg>';
+  const el=$(`<div>${s}</div>`);
+  el.querySelectorAll('.rp').forEach(c=>{
+    const b=bins[+c.dataset.i];
+    c.addEventListener('mousemove',e=>showTip(e,
+      `bin ${b.bin}<br>predicted ${fmt.pct(b.predicted)} · realized ${fmt.pct(b.realized)}<br>n=${b.n}`));
+    c.addEventListener('mouseleave',hideTip);
+  });
+  return el;
+}
+
+/* ---------------- components */
+function compBars(components){
+  const order=["fundamental_momentum","price_momentum","quality","divergence","valuation",
+               "catalyst","insider","technical","regime_fit"];
+  const wrap=$('<div></div>');
+  order.forEach(k=>{ if(components[k]==null) return;
+    const v=components[k];
+    wrap.appendChild($(`<div class="comp"><span>${k.replace(/_/g,' ')}</span>
+      <span class="bar"><i style="width:${v}%;background:${v>=60?'var(--s1)':v<=40?'var(--div-neg)':'var(--axis)'}"></i></span>
+      <span class="n">${Math.round(v)}</span></div>`));
+  });
+  return wrap;
+}
+function horizonGrid(preds){
+  const wrap=$('<div class="hgrid"></div>');
+  (preds||[]).forEach(p=>{
+    const est = p.basis==='cold_start_clamped'
+      ? '<span class="tag est" title="uncalibrated cold-start: probabilities clamped to [35%,68%]">EST · COLD START</span>'
+      : `<span class="tag est">EST · ${p.basis}</span>`;
+    wrap.appendChild($(`<div class="hz"><div class="h">${p.horizon}</div>
+      <div class="r">${fmt.spct(p.exp_return_low,0)} … ${fmt.spct(p.exp_return_high,0)}</div>
+      <div>P(beat mkt) ${fmt.pct(p.p_beat_benchmark,0)}</div>
+      <div class="d">downside ${fmt.spct(p.downside_p5,0)}</div>
+      <div style="margin-top:4px">${est}</div></div>`));
+  });
+  return wrap;
+}
+function stockCard(t,{avoid=false}={}){
+  const el=$(`<div class="stock"></div>`);
+  el.appendChild($(`<div class="head"><span class="tkr">${t.ticker}</span>
+    <span class="px">${fmt.usd(t.px_last)} <span class="tag fact">FACT · ${t.px_last_date||''}</span></span>
+    <div class="badges">
+      <span class="badge">Opportunity <b>${Math.round(t.opportunity)}</b>/100</span>
+      <span class="badge">Risk <b>${Math.round(t.risk)}</b>/100</span>
+      <span class="badge">Confidence <b>${Math.round(t.confidence*100)}%</b></span>
+      <span class="badge">Divergence <b>${Math.round(t.divergence)}</b></span>
+      <span class="badge">Data <b>${Math.round(t.data_confidence)}</b></span>
+    </div></div>`));
+  const g=$('<div class="grid2" style="margin-top:14px"></div>');
+  const L=$('<div></div>'), R=$('<div></div>');
+  L.appendChild($(`<h2>${avoid?'Why it ranks poorly':'Why it ranks highly'} <span class="tag est">MODEL ESTIMATE</span></h2>`));
+  const ul=$('<ul class="plain"></ul>');
+  (t.reasons&&t.reasons.length?t.reasons:["No dominant driver — composite of many weak signals."])
+    .forEach(r=>ul.appendChild($(`<li>${r}</li>`)));
+  L.appendChild(ul);
+  if((t.divergence_patterns||[]).length){
+    L.appendChild($('<h2>Mispricing hypotheses <span class="tag est">MODEL ESTIMATE</span></h2>'));
+    const u2=$('<ul class="plain"></ul>');
+    t.divergence_patterns.forEach(p=>u2.appendChild($(`<li>${p.pattern.replace(/_/g,' ')}</li>`)));
+    L.appendChild(u2);
+  }
+  L.appendChild($('<h2>Thesis breakers</h2>'));
+  const ub=$('<ul class="plain breakers"></ul>');
+  (t.thesis_breakers||[]).forEach(b=>ub.appendChild($(`<li>${b}</li>`)));
+  L.appendChild(ub);
+  R.appendChild($('<h2>Score decomposition</h2>'));
+  R.appendChild(compBars(t.components||{}));
+  R.appendChild($('<h2 style="margin-top:18px">Multi-horizon outlook</h2>'));
+  R.appendChild(horizonGrid(t.predictions));
+  g.appendChild(L); g.appendChild(R); el.appendChild(g);
+  const rc=t.risk_components||{};
+  el.appendChild($(`<details><summary>risk decomposition & evidence</summary>
+    <div class="small" style="margin-top:8px">${Object.entries(rc).map(([k,v])=>`${k}: ${Math.round(v)}`).join(' · ')||'n/a'}</div>
+  </details>`));
+  return el;
+}
+
+/* ---------------- tabs */
+const R={};
+R.Today=(el)=>{
+  const p=DATA.pack;
+  if(!p){el.appendChild($('<div class="empty"><b>No daily pack yet</b>Run the pipeline.</div>'));return;}
+  if(p.aborted){el.appendChild($(`<div class="failbox">RUN ABORTED — ${(p.quality.reasons||[]).join('; ')}</div>`));return;}
+  (p.quality.reasons||[]).forEach(r=>el.appendChild($(`<div class="warnbox">data warning: ${r}</div>`)));
+  ((p.runlog&&p.runlog.warnings)||[]).slice(0,3).forEach(w=>el.appendChild($(`<div class="warnbox">${w.step}: ${w.detail}</div>`)));
+  el.appendChild($('<h2>Market today</h2>'));
+  const reg=p.regime||{};
+  const c=$('<div class="cards"></div>');
+  c.appendChild($(`<div class="tile"><div class="k">Regime <span class="tag est">MODEL ESTIMATE</span></div>
+    <div class="v">${(reg.label||'?').replace(/_/g,' ')}</div>
+    <div class="sub">composite ${fmt.n(reg.score,2)} · as of ${reg.as_of||''}</div></div>`));
+  Object.entries(reg.subscores||{}).forEach(([k,v])=>{
+    c.appendChild($(`<div class="tile"><div class="k">${k}</div>
+      <div class="v" style="color:${v>=0.15?'var(--up)':v<=-0.15?'var(--dn)':'var(--ink)'}">${fmt.n(v,2)}</div>
+      <div class="sub">-1 … +1</div></div>`));});
+  el.appendChild(c);
+  const inp=reg.inputs||{};
+  if(Object.keys(inp).length){
+    el.appendChild($(`<div class="small" style="margin-top:8px">${Object.entries(inp)
+      .map(([k,o])=>`${k}=${typeof o.value==='number'?(+o.value).toPrecision(4).replace(/\.?0+$/,''):o.value} <span class="tag fact">FACT · ${o.source}</span>`).join(' &nbsp; ')}</div>`));
+  }
+  el.appendChild($('<h2>Top opportunities today</h2>'));
+  if(p.no_high_conviction){
+    el.appendChild($(`<div class="empty"><b>NO HIGH-CONVICTION OPPORTUNITIES TODAY</b>
+      Nothing passed the quality, confidence and risk gates (opportunity ≥ 72, calibrated confidence ≥ 55%, risk ≤ 80).
+      Cash / patience is a valid position. This is the system working, not failing.</div>`));
+  } else {
+    p.top_opportunities.forEach(t=>el.appendChild(stockCard(t)));
+  }
+  el.appendChild($('<h2>High-risk / avoid</h2>'));
+  if(!(p.avoid_list||[]).length){
+    el.appendChild($('<div class="empty">No names currently meet the avoid criteria.</div>'));
+  } else { p.avoid_list.forEach(t=>el.appendChild(stockCard(t,{avoid:true}))); }
+  el.appendChild($('<h2>Scan context — top of ranked universe</h2>'));
+  const tb=$(`<table><thead><tr><th>ticker</th><th>opp</th><th>risk</th><th>divergence</th>
+    <th>conf</th><th>data</th><th>price</th><th>gate</th></tr></thead><tbody></tbody></table>`);
+  (p.scan_summary||[]).forEach(t=>{
+    tb.querySelector('tbody').appendChild($(`<tr><td class="t">${t.ticker}</td>
+      <td>${Math.round(t.opportunity)}</td><td>${Math.round(t.risk)}</td>
+      <td>${Math.round(t.divergence)}</td><td>${fmt.pct(t.confidence,0)}</td>
+      <td>${Math.round(t.data_confidence)}</td><td>${fmt.usd(t.px_last)}</td>
+      <td class="small">${t.gate_fail||''}</td></tr>`));});
+  el.appendChild(tb);
+};
+R.Analyzer=(el)=>{
+  const packs=DATA.analyzer||[];
+  el.appendChild($(`<div class="small" style="margin-bottom:12px">On-demand deep dives. Ask in chat:
+    <b>“Analyze NVDA”</b> or <b>“Compare NVDA vs AMD”</b> — new packs appear here after the next run.</div>`));
+  if(!packs.length){el.appendChild($('<div class="empty"><b>No analyzer packs yet</b></div>'));return;}
+  packs.forEach(p=>{
+    el.appendChild($(`<h2>${p.ticker} — ${p.as_of} · rank ${p.rank_in_universe} · ${p.sector||''}</h2>`));
+    el.appendChild(stockCard({...p.scores,...p,px_last:p.price&&p.price.last,
+      px_last_date:p.price&&p.price.date,opportunity:p.scores.opportunity,risk:p.scores.risk,
+      divergence:p.scores.divergence,data_confidence:p.scores.data_confidence,
+      confidence:p.scores.confidence}));
+  });
+};
+R.Watchlist=(el)=>{
+  const wl=DATA.watchlist||{};
+  const entries=Object.entries(wl);
+  if(!entries.length){el.appendChild($('<div class="empty"><b>Watchlist empty</b>States populate as the daily runs accumulate.</div>'));}
+  else{
+    const tb=$(`<table><thead><tr><th>ticker</th><th>state</th><th>since</th><th>opp</th><th>risk</th><th>updated</th></tr></thead><tbody></tbody></table>`);
+    entries.sort((a,b)=>b[1].opportunity-a[1].opportunity).forEach(([t,s])=>{
+      tb.querySelector('tbody').appendChild($(`<tr><td class="t">${t}</td>
+        <td><span class="state ${s.state}">${s.state.replace(/_/g,' ')}</span></td>
+        <td>${s.since}</td><td>${Math.round(s.opportunity)}</td>
+        <td>${Math.round(s.risk)}</td><td>${s.updated}</td></tr>`));});
+    el.appendChild(tb);
+  }
+  const hist=DATA.watchlist_history||[];
+  if(hist.length){
+    el.appendChild($('<h2>Recent state changes</h2>'));
+    const tb2=$(`<table><thead><tr><th>date</th><th>ticker</th><th>from → to</th><th>reason</th></tr></thead><tbody></tbody></table>`);
+    hist.slice(-40).reverse().forEach(h=>{
+      tb2.querySelector('tbody').appendChild($(`<tr><td>${h.date}</td><td class="t">${h.ticker}</td>
+        <td>${h.from} → <b>${h.to}</b></td><td class="small">${h.reason}</td></tr>`));});
+    el.appendChild(tb2);
+  }
+};
+R.Ledger=(el)=>{
+  const preds=DATA.ledger_preds||[], outs=Object.fromEntries((DATA.ledger_outcomes||[]).map(o=>[o.prediction_id,o]));
+  el.appendChild($(`<div class="small" style="margin-bottom:10px">Append-only. ${DATA.ledger_total||preds.length}
+    predictions ever recorded; showing latest ${preds.length}. CI fails the build if any historical line changes.</div>`));
+  el.appendChild($('<input id="tkfilter" placeholder="filter ticker…">'));
+  const tb=$(`<table><thead><tr><th>ts</th><th>ticker</th><th>kind</th><th>h</th><th>opp</th>
+    <th>P(beat)</th><th>range</th><th>price</th><th>outcome</th><th>excess</th></tr></thead><tbody></tbody></table>`);
+  const render=(f)=>{const tbody=tb.querySelector('tbody');tbody.innerHTML='';
+    preds.filter(p=>!f||p.ticker.includes(f.toUpperCase())).slice(0,400).forEach(p=>{
+      const o=outs[p.id];
+      const oc=o? (o.outcome_beat===true?'<span class="pos">beat</span>':o.outcome_beat===false?'<span class="neg">lagged</span>':'—')
+                : '<span class="small">open</span>';
+      const ex=o&&o.benchmark_return!=null? fmt.spct(o.realized_return-o.benchmark_return):'—';
+      tbody.appendChild($(`<tr><td>${(p.ts||'').slice(0,10)}</td><td class="t">${p.ticker}</td>
+        <td class="small">${p.kind}</td><td>${p.horizon}</td><td>${Math.round(p.opportunity)}</td>
+        <td>${fmt.pct(p.p_beat_benchmark,0)}</td>
+        <td>${fmt.spct(p.exp_return_low,0)}…${fmt.spct(p.exp_return_high,0)}</td>
+        <td>${fmt.usd(p.price)}</td><td>${oc}</td>
+        <td class="${o?fmt.cls(o.realized_return-(o.benchmark_return||0)):''}">${ex}</td></tr>`));});};
+  render('');
+  el.appendChild(tb);
+  el.querySelector('#tkfilter').addEventListener('input',e=>render(e.target.value));
+};
+R.Performance=(el)=>{
+  const c=DATA.pack&&DATA.pack.calibration||{};
+  if(!c.n){el.appendChild($(`<div class="empty"><b>No matured predictions yet</b>
+    Accuracy statistics appear once predictions reach their horizons. The system refuses to
+    grade itself on backtests alone — the live ledger is the report card.</div>`));return;}
+  el.appendChild($('<h2>Accuracy by window</h2>'));
+  const cards=$('<div class="cards"></div>');
+  [["30d","Last 30 days"],["90d","Last 90 days"],["365d","Last 12 months"],["all","All time"]].forEach(([k,label])=>{
+    const w=c["window_"+k]||{};
+    const warn=(w.n||0)<30?' <span class="tag est" title="sample too small to celebrate">n&lt;30</span>':'';
+    cards.appendChild($(`<div class="tile"><div class="k">${label}${warn}</div>
+      <div class="v">${w.hit_rate_beat!=null?fmt.pct(w.hit_rate_beat,0):'—'}</div>
+      <div class="sub">beat-market hit rate · n=${w.n||0} · avg excess ${w.avg_excess!=null?fmt.spct(w.avg_excess):'—'}</div></div>`));});
+  el.appendChild(cards);
+  if(c.brier_p_beat_benchmark!=null){
+    el.appendChild($(`<div class="small" style="margin:10px 0">Brier (beat-market): <b>${c.brier_p_beat_benchmark}</b>
+      (0.25 = uninformative; lower is better) · Brier (positive): <b>${c.brier_p_positive??'—'}</b></div>`));
+  }
+  const rel=c.reliability_p_beat_benchmark||[];
+  if(rel.length){
+    const ch=$('<div class="chart" style="max-width:640px"><h3>Calibration — P(beat market)</h3><div class="sub">dots on the diagonal = honest probabilities</div></div>');
+    ch.appendChild(reliability(rel)); el.appendChild(ch);
+  }
+};
+R.Backtest=(el)=>{
+  const bt=DATA.backtest;
+  if(!bt){el.appendChild($(`<div class="empty"><b>No backtest results committed yet</b>
+    Run <code>sigc backtest</code> (Phase 2). Results land here with full config, cost assumptions
+    and survivorship accounting.</div>`));return;}
+  el.appendChild($(`<div class="warnbox">Backtests are INDICATIVE. Free-data limits (survivorship bounds,
+    fundamentals coverage) are reported below — treat live-ledger performance as the real record.</div>`));
+  el.appendChild($('<h2>Strategy vs benchmarks</h2>'));
+  const cards=$('<div class="cards"></div>');
+  const rows=[["Strategy",bt.portfolio],["S&P 500 (SPY)",bt.benchmark],["Equal-weight universe",bt.equal_weight]];
+  rows.forEach(([k,m])=>{ if(!m||!m.n_periods) return;
+    cards.appendChild($(`<div class="tile"><div class="k">${k}</div>
+      <div class="v">${fmt.pct(m.cagr,1)}</div>
+      <div class="sub">CAGR · Sharpe ${fmt.n(m.sharpe,2)} · maxDD ${fmt.pct(m.max_drawdown,0)} ·
+      win ${fmt.pct(m.win_rate,0)}</div></div>`));});
+  el.appendChild(cards);
+  el.appendChild($(`<div class="small" style="margin:10px 0">beat ${fmt.pct(bt.random_beat_frac,0)}
+    of ${ (bt.config&&bt.config.random_draws)||'' } random same-universe portfolios ·
+    costs ${(bt.config&&bt.config.cost_bps_per_side)||''}bps/side</div>`));
+  if((bt.bucket_table||[]).length){
+    el.appendChild($('<h2>Forward return by score bucket (monotonicity check)</h2>'));
+    const ch=$('<div class="chart" style="max-width:640px"></div>');
+    ch.appendChild(hbar(bt.bucket_table.map(b=>({k:'bucket '+b.bucket, v:b.mean_fwd,
+      extra:`<br>n=${b.n} · hit ${fmt.pct(b.hit,0)}`})),{diverging:true}));
+    el.appendChild(ch);
+  }
+  if(Object.keys(bt.by_regime||{}).length){
+    el.appendChild($('<h2>Excess vs equal-weight, by regime</h2>'));
+    const ch=$('<div class="chart" style="max-width:640px"></div>');
+    ch.appendChild(hbar(Object.entries(bt.by_regime).map(([k,v])=>({k:`${k} (n=${v.n})`,v:v.mean_excess_vs_ew})),{diverging:true}));
+    el.appendChild(ch);
+  }
+};
+R.Market=(el)=>{
+  const p=DATA.pack;
+  if(!p||!p.regime){el.appendChild($('<div class="empty"><b>No market data yet</b></div>'));return;}
+  R.Today._market_only=true;
+  el.appendChild($('<h2>Regime</h2>'));
+  const reg=p.regime, c=$('<div class="cards"></div>');
+  c.appendChild($(`<div class="tile"><div class="k">Label</div><div class="v">${reg.label.replace(/_/g,' ')}</div>
+    <div class="sub">score ${fmt.n(reg.score,2)}</div></div>`));
+  Object.entries(reg.subscores||{}).forEach(([k,v])=>c.appendChild($(`<div class="tile">
+    <div class="k">${k}</div><div class="v">${fmt.n(v,2)}</div></div>`)));
+  el.appendChild(c);
+  if(DATA.sector_returns&&Object.keys(DATA.sector_returns).length){
+    el.appendChild($('<h2>Sector strength — 63-day return <span class="tag fact">FACT · sector ETFs</span></h2>'));
+    const ch=$('<div class="chart" style="max-width:640px"></div>');
+    ch.appendChild(hbar(Object.entries(DATA.sector_returns).sort((a,b)=>b[1]-a[1])
+      .map(([k,v])=>({k,v})),{diverging:true}));
+    el.appendChild(ch);
+  }
+  el.appendChild($('<h2>Pipeline health</h2>'));
+  const tb=$(`<table><thead><tr><th>step</th><th>status</th><th>detail</th></tr></thead><tbody></tbody></table>`);
+  ((p.runlog&&p.runlog.steps)||[]).forEach(s=>{
+    tb.querySelector('tbody').appendChild($(`<tr><td>${s.step}</td>
+      <td class="${s.status==='ok'?'pos':'neg'}">${s.status}</td><td class="small">${s.detail}</td></tr>`));});
+  el.appendChild(tb);
+};
+
+/* boot */
+const nav=document.getElementById('nav'), mainEl=document.getElementById('main');
+TABS.forEach((t,i)=>{
+  const b=$(`<button ${i===0?'class="on"':''}>${t}</button>`);
+  b.addEventListener('click',()=>{
+    nav.querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+    document.querySelectorAll('section.tab').forEach(x=>x.classList.remove('on'));
+    document.getElementById('tab-'+t).classList.add('on');});
+  nav.appendChild(b);
+  const sec=$(`<section class="tab ${i===0?'on':''}" id="tab-${t}"></section>`);
+  mainEl.appendChild(sec);
+  try{R[t](sec);}catch(e){sec.appendChild($(`<div class="failbox">render error: ${e.message}</div>`));}
+});
+document.getElementById('hdr-date').textContent=(DATA.pack&&DATA.pack.date)||'';
+const reg=DATA.pack&&DATA.pack.regime;
+document.getElementById('hdr-regime').textContent=reg?('regime: '+reg.label.replace(/_/g,' ')):'no data';
+</script>
+</body>
+</html>

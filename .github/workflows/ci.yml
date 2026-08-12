@@ -1,0 +1,25 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11", cache: pip}
+      - name: Install
+        run: pip install -e ".[dev]"
+      - name: Integrity tests (PIT traps, ledger, scoring clamps)
+        run: pytest tests/ -q
+      - name: Ledger immutability guard (PR)
+        if: github.event_name == 'pull_request'
+        run: python scripts/check_ledger_immutable.py origin/${{ github.base_ref }} HEAD
+      - name: Ledger immutability guard (push)
+        if: github.event_name == 'push'
+        run: python scripts/check_ledger_immutable.py HEAD~1 HEAD

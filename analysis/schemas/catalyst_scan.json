@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "catalyst_scan output",
+  "type": "object",
+  "required": ["ticker", "as_of", "catalysts"],
+  "properties": {
+    "ticker": {"type": "string"},
+    "as_of": {"type": "string", "format": "date"},
+    "catalysts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["summary", "direction", "magnitude", "confidence",
+                     "duration", "priced_in", "source", "quote"],
+        "properties": {
+          "summary": {"type": "string", "maxLength": 200},
+          "direction": {"enum": ["positive", "negative", "mixed"]},
+          "magnitude": {"enum": ["S", "M", "L"]},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "duration": {"enum": ["days", "weeks", "months", "structural"]},
+          "priced_in": {"enum": ["likely_priced_in", "partially", "likely_not", "unclear"]},
+          "cash_flow_relevant": {"type": "boolean",
+            "description": "does this plausibly change future cash flows / expectations, vs merely sounding important"},
+          "source": {"type": "string", "description": "committed file path or filing accession"},
+          "quote": {"type": "string", "maxLength": 400,
+            "description": "verbatim supporting quote from the source; REQUIRED — uncited claims are dropped"}
+        }
+      }
+    }
+  }
+}
