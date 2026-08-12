@@ -2,99 +2,106 @@
  "ABNB": {
   "state": "WATCH",
   "since": "2026-08-12",
-  "opportunity": 67.6,
-  "risk": 42.2,
+  "opportunity": 66.8,
+  "risk": 42.9,
   "updated": "2026-08-12"
  },
  "EXPE": {
-  "state": "WAIT_FOR_PULLBACK",
+  "state": "WATCH",
   "since": "2026-08-12",
-  "opportunity": 65.7,
-  "risk": 40.9,
+  "opportunity": 65.9,
+  "risk": 41.0,
   "updated": "2026-08-12"
  },
  "DXCM": {
   "state": "WAIT_FOR_PULLBACK",
   "since": "2026-08-12",
   "opportunity": 64.1,
-  "risk": 45.2,
+  "risk": 45.0,
   "updated": "2026-08-12"
  },
  "HUM": {
-  "state": "WAIT_FOR_CONFIRMATION",
-  "since": "2026-08-12",
-  "opportunity": 63.3,
-  "risk": 46.8,
-  "updated": "2026-08-12"
- },
- "FTNT": {
   "state": "WATCH",
   "since": "2026-08-12",
-  "opportunity": 62.0,
-  "risk": 45.4,
-  "updated": "2026-08-12"
- },
- "APA": {
-  "state": "WAIT_FOR_PULLBACK",
-  "since": "2026-08-12",
-  "opportunity": 61.5,
-  "risk": 48.5,
+  "opportunity": 63.9,
+  "risk": 45.0,
   "updated": "2026-08-12"
  },
  "BKNG": {
   "state": "WATCH",
   "since": "2026-08-12",
-  "opportunity": 61.4,
-  "risk": 36.4,
+  "opportunity": 63.1,
+  "risk": 36.6,
   "updated": "2026-08-12"
  },
- "UAL": {
+ "FTNT": {
   "state": "WATCH",
   "since": "2026-08-12",
-  "opportunity": 61.2,
-  "risk": 54.4,
-  "updated": "2026-08-12"
- },
- "LLY": {
-  "state": "WATCH",
-  "since": "2026-08-12",
-  "opportunity": 61.1,
-  "risk": 26.8,
-  "updated": "2026-08-12"
- },
- "ADSK": {
-  "state": "WATCH",
-  "since": "2026-08-12",
-  "opportunity": 60.9,
-  "risk": 43.0,
+  "opportunity": 61.7,
+  "risk": 45.4,
   "updated": "2026-08-12"
  },
  "MPC": {
   "state": "WATCH",
   "since": "2026-08-12",
+  "opportunity": 61.3,
+  "risk": 36.9,
+  "updated": "2026-08-12"
+ },
+ "LLY": {
+  "state": "WATCH",
+  "since": "2026-08-12",
   "opportunity": 60.9,
-  "risk": 36.4,
+  "risk": 26.8,
+  "updated": "2026-08-12"
+ },
+ "DELL": {
+  "state": "WAIT_FOR_PULLBACK",
+  "since": "2026-08-12",
+  "opportunity": 60.8,
+  "risk": 47.1,
+  "updated": "2026-08-12"
+ },
+ "VLO": {
+  "state": "WATCH",
+  "since": "2026-08-12",
+  "opportunity": 60.7,
+  "risk": 38.4,
+  "updated": "2026-08-12"
+ },
+ "APA": {
+  "state": "WATCH",
+  "since": "2026-08-12",
+  "opportunity": 60.7,
+  "risk": 48.9,
+  "updated": "2026-08-12"
+ },
+ "UAL": {
+  "state": "WATCH",
+  "since": "2026-08-12",
+  "opportunity": 60.5,
+  "risk": 54.5,
   "updated": "2026-08-12"
  },
  "DAL": {
   "state": "WAIT_FOR_PULLBACK",
   "since": "2026-08-12",
-  "opportunity": 60.5,
-  "risk": 46.3,
+  "opportunity": 59.9,
+  "risk": 46.5,
+  "updated": "2026-08-12"
+ },
+ "ADSK": {
+  "state": "WATCH",
+  "since": "2026-08-12",
+  "opportunity": 59.9,
+  "risk": 43.0,
   "updated": "2026-08-12"
  },
  "IBM": {
   "state": "WATCH",
   "since": "2026-08-12",
-  "opportunity": 60.0,
+  "opportunity": 57.8,
   "risk": 46.6,
-  "updated": "2026-08-12"
- },
- "NRG": {
-  "state": "AVOID",
-  "since": "2026-08-12",
-  "opportunity": 29.9,
-  "risk": 69.6,
   "updated": "2026-08-12"
  }
 }
