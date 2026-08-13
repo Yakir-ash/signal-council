@@ -1,20 +1,20 @@
 {
  "date": "2026-08-13",
- "generated_at": "2026-08-13T20:23:05+00:00",
+ "generated_at": "2026-08-13T22:26:32+00:00",
  "aborted": false,
  "regime": {
   "label": "bullish_expansion",
-  "score": 0.711,
+  "score": 0.71,
   "subscores": {
    "trend": 0.742,
    "vol": 0.58,
-   "breadth": 0.622,
+   "breadth": 0.617,
    "credit": 1.0,
    "curve": 0.48
   },
   "inputs": {
    "spy_vs_200dma": {
-    "value": 0.1076,
+    "value": 0.1077,
     "source": "prices:SPY"
    },
    "ma50_slope_1m": {
@@ -26,7 +26,7 @@
     "source": "FRED:VIXCLS"
    },
    "pct_above_200dma": {
-    "value": 0.749,
+    "value": 0.747,
     "source": "prices:universe(498)"
    },
    "hy_oas": {
@@ -63,8 +63,8 @@
     "valuation": 50.0,
     "catalyst": 50.0,
     "insider": 25.0,
-    "technical": 68.71971849606949,
-    "regime_fit": 56.810781563126255
+    "technical": 68.69967841590918,
+    "regime_fit": 56.801202404809615
    },
    "risk_components": {
     "volatility": 80.0,
@@ -79,42 +79,42 @@
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5916,
-     "p_beat_benchmark": 0.556,
-     "exp_return_low": -0.0426,
-     "exp_return_high": 0.0461,
-     "downside_p5": -0.1065,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
      "expected_vol": 0.0658,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.6064,
-     "p_beat_benchmark": 0.556,
-     "exp_return_low": -0.0837,
-     "exp_return_high": 0.0981,
-     "downside_p5": -0.2147,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
      "expected_vol": 0.1349,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6276,
-     "p_beat_benchmark": 0.556,
-     "exp_return_low": -0.1359,
-     "exp_return_high": 0.179,
-     "downside_p5": -0.3627,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
      "expected_vol": 0.2336,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6642,
+     "p_positive": 0.6641,
      "p_beat_benchmark": 0.556,
-     "exp_return_low": -0.2079,
+     "exp_return_low": -0.208,
      "exp_return_high": 0.3374,
      "downside_p5": -0.6008,
      "expected_vol": 0.4046,
@@ -158,14 +158,14 @@
    "confidence": 0.499,
    "components": {
     "fundamental_momentum": 79.89748234287916,
-    "price_momentum": 89.25236014197068,
+    "price_momentum": 89.35268126614676,
     "quality": 89.12697284307916,
     "divergence": 30.0,
     "valuation": 50.0,
     "catalyst": 50.0,
     "insider": 25.538737158450502,
-    "technical": 67.90732267302536,
-    "regime_fit": 56.63979959919839
+    "technical": 67.88728259286488,
+    "regime_fit": 56.630460921843685
    },
    "risk_components": {
     "volatility": 71.3,
@@ -180,44 +180,44 @@
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5871,
-     "p_beat_benchmark": 0.5499,
-     "exp_return_low": -0.0372,
-     "exp_return_high": 0.0405,
-     "downside_p5": -0.0931,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
      "expected_vol": 0.0576,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.6019,
-     "p_beat_benchmark": 0.5499,
-     "exp_return_low": -0.0727,
-     "exp_return_high": 0.0864,
-     "downside_p5": -0.1873,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
      "expected_vol": 0.118,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.623,
-     "p_beat_benchmark": 0.5499,
-     "exp_return_low": -0.1171,
-     "exp_return_high": 0.1584,
-     "downside_p5": -0.3156,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
      "expected_vol": 0.2044,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6596,
+     "p_positive": 0.6595,
      "p_beat_benchmark": 0.5499,
-     "exp_return_low": -0.1767,
+     "exp_return_low": -0.1768,
      "exp_return_high": 0.3005,
-     "downside_p5": -0.5205,
+     "downside_p5": -0.5206,
      "expected_vol": 0.3541,
      "basis": "cold_start_clamped"
     }
@@ -247,15 +247,15 @@
    "data_confidence": 90.0,
    "confidence": 0.538,
    "components": {
-    "fundamental_momentum": 81.55874963156835,
-    "price_momentum": 74.61416809522659,
+    "fundamental_momentum": 81.60029512388243,
+    "price_momentum": 74.67440905908202,
     "quality": 75.5754187732218,
     "divergence": 54.5,
     "valuation": 41.19923514697147,
     "catalyst": 50.0,
     "insider": 25.0,
-    "technical": 72.95725705405519,
-    "regime_fit": 51.68132264529058
+    "technical": 72.97729713421552,
+    "regime_fit": 51.67895791583166
    },
    "risk_components": {
     "volatility": 82.2,
@@ -270,40 +270,40 @@
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5832,
-     "p_beat_benchmark": 0.5448,
-     "exp_return_low": -0.0446,
-     "exp_return_high": 0.0477,
-     "downside_p5": -0.1111,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
      "expected_vol": 0.0685,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.598,
-     "p_beat_benchmark": 0.5448,
-     "exp_return_low": -0.088,
-     "exp_return_high": 0.1012,
-     "downside_p5": -0.2243,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
      "expected_vol": 0.1404,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6191,
-     "p_beat_benchmark": 0.5448,
-     "exp_return_low": -0.1441,
-     "exp_return_high": 0.1837,
-     "downside_p5": -0.3802,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
      "expected_vol": 0.2432,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6558,
+     "p_positive": 0.6557,
      "p_beat_benchmark": 0.5448,
      "exp_return_low": -0.2244,
      "exp_return_high": 0.3434,
@@ -365,8 +365,8 @@
     "valuation": 34.50969105667054,
     "catalyst": 50.0,
     "insider": 25.0,
-    "technical": 58.517076361443685,
-    "regime_fit": 56.012865731462924
+    "technical": 58.42689600072224,
+    "regime_fit": 56.00440881763527
    },
    "risk_components": {
     "volatility": 69.9,
@@ -381,44 +381,44 @@
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5828,
-     "p_beat_benchmark": 0.5442,
-     "exp_return_low": -0.0366,
-     "exp_return_high": 0.0398,
-     "downside_p5": -0.0917,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
      "expected_vol": 0.0567,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5975,
-     "p_beat_benchmark": 0.5442,
-     "exp_return_low": -0.0717,
-     "exp_return_high": 0.0849,
-     "downside_p5": -0.1845,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
      "expected_vol": 0.1162,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6187,
-     "p_beat_benchmark": 0.5442,
-     "exp_return_low": -0.1159,
-     "exp_return_high": 0.1554,
-     "downside_p5": -0.3113,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
      "expected_vol": 0.2012,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6553,
+     "p_positive": 0.6552,
      "p_beat_benchmark": 0.5442,
      "exp_return_low": -0.1757,
      "exp_return_high": 0.2941,
-     "downside_p5": -0.5141,
+     "downside_p5": -0.5142,
      "expected_vol": 0.3485,
      "basis": "cold_start_clamped"
     }
@@ -453,79 +453,79 @@
   },
   {
    "ticker": "HUM",
-   "opportunity": 63.0,
+   "opportunity": 63.1,
    "risk": 45.0,
    "divergence": 30.0,
    "data_confidence": 90.0,
    "confidence": 0.459,
    "components": {
     "fundamental_momentum": 75.28912474952168,
-    "price_momentum": 85.86244778714055,
+    "price_momentum": 85.91254798754136,
     "quality": 57.92683534072968,
     "divergence": 30.0,
     "valuation": 85.17383151571077,
     "catalyst": 50.0,
     "insider": 50.0,
-    "technical": 45.44596569164429,
-    "regime_fit": 49.2875751503006
+    "technical": 45.9226532198419,
+    "regime_fit": 49.28857715430862
    },
    "risk_components": {
     "volatility": 67.3,
-    "illiquidity": 49.7,
+    "illiquidity": 49.3,
     "leverage": 0.0,
     "event_proximity": 80.0,
     "valuation_extreme": 35.0,
-    "tail_behavior": 42.2,
+    "tail_behavior": 41.9,
     "market_sensitivity": 46.5
    },
    "predictions": [
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5808,
-     "p_beat_benchmark": 0.5416,
-     "exp_return_low": -0.0358,
-     "exp_return_high": 0.0388,
-     "downside_p5": -0.0895,
-     "expected_vol": 0.0554,
-     "basis": "cold_start_clamped"
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
+     "expected_vol": 0.0553,
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5956,
-     "p_beat_benchmark": 0.5416,
-     "exp_return_low": -0.07,
-     "exp_return_high": 0.0829,
-     "downside_p5": -0.1802,
-     "expected_vol": 0.1135,
-     "basis": "cold_start_clamped"
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
+     "expected_vol": 0.1134,
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6168,
-     "p_beat_benchmark": 0.5416,
-     "exp_return_low": -0.1131,
-     "exp_return_high": 0.1518,
-     "downside_p5": -0.3039,
-     "expected_vol": 0.1965,
-     "basis": "cold_start_clamped"
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
+     "expected_vol": 0.1964,
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6534,
-     "p_beat_benchmark": 0.5416,
-     "exp_return_low": -0.1714,
-     "exp_return_high": 0.2874,
-     "downside_p5": -0.5019,
-     "expected_vol": 0.3404,
+     "p_positive": 0.6535,
+     "p_beat_benchmark": 0.5419,
+     "exp_return_low": -0.1712,
+     "exp_return_high": 0.2875,
+     "downside_p5": -0.5016,
+     "expected_vol": 0.3403,
      "basis": "cold_start_clamped"
     }
    ],
    "reasons": [
-    "Market confirmation: 12-1 momentum +50%, RS vs S&P +21.4% (63d) [FACT: prices]",
+    "Market confirmation: 12-1 momentum +50%, RS vs S&P +21.5% (63d) [FACT: prices]",
     "Valuation context: sits at the 56% pctile of its own 3y range despite improving economics [MODEL ESTIMATE]",
     "Business momentum: revenue +19% YoY, growth accelerating (+24.3% q/q) [FACT: SEC XBRL]"
    ],
@@ -536,27 +536,27 @@
     "Relative strength vs sector turns negative over a rolling 20-session window",
     "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
    ],
-   "px_last": 384.6700134277344,
+   "px_last": 384.9700012207031,
    "px_last_date": "2026-08-13",
    "gate_fail": ""
   },
   {
    "ticker": "ADSK",
-   "opportunity": 61.9,
+   "opportunity": 61.8,
    "risk": 46.5,
    "divergence": 58.0,
    "data_confidence": 90.0,
    "confidence": 0.499,
    "components": {
-    "fundamental_momentum": 61.140674123845194,
-    "price_momentum": 38.41297051935196,
+    "fundamental_momentum": 61.099128631531116,
+    "price_momentum": 38.202428954294135,
     "quality": 86.77945289506958,
     "divergence": 58.0,
     "valuation": 69.82763803997396,
     "catalyst": 50.0,
     "insider": 99.0,
-    "technical": 60.52053404313545,
-    "regime_fit": 47.80573146292585
+    "technical": 60.48045388281481,
+    "regime_fit": 47.80881763527054
    },
    "risk_components": {
     "volatility": 75.8,
@@ -571,44 +571,44 @@
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5782,
-     "p_beat_benchmark": 0.5381,
-     "exp_return_low": -0.0405,
-     "exp_return_high": 0.0435,
-     "downside_p5": -0.1009,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
      "expected_vol": 0.0623,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.593,
-     "p_beat_benchmark": 0.5381,
-     "exp_return_low": -0.0798,
-     "exp_return_high": 0.0923,
-     "downside_p5": -0.2037,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
      "expected_vol": 0.1276,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6141,
-     "p_beat_benchmark": 0.5381,
-     "exp_return_low": -0.1302,
-     "exp_return_high": 0.1678,
-     "downside_p5": -0.3448,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
      "expected_vol": 0.221,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6507,
-     "p_beat_benchmark": 0.5381,
-     "exp_return_low": -0.2017,
-     "exp_return_high": 0.3144,
-     "downside_p5": -0.5734,
+     "p_positive": 0.6504,
+     "p_beat_benchmark": 0.5378,
+     "exp_return_low": -0.2019,
+     "exp_return_high": 0.3142,
+     "downside_p5": -0.5736,
      "expected_vol": 0.3828,
      "basis": "cold_start_clamped"
     }
@@ -657,18 +657,18 @@
    "data_confidence": 90.0,
    "confidence": 0.538,
    "components": {
-    "fundamental_momentum": 76.74626137043474,
+    "fundamental_momentum": 76.66317038580658,
     "price_momentum": 95.66856604775816,
     "quality": 43.12663795664852,
     "divergence": 40.5,
     "valuation": 61.29730143611415,
     "catalyst": 50.0,
     "insider": 25.0,
-    "technical": 66.46241050746976,
-    "regime_fit": 38.17374749498998
+    "technical": 66.46500127919255,
+    "regime_fit": 38.190380761523045
    },
    "risk_components": {
-    "volatility": 65.9,
+    "volatility": 66.1,
     "illiquidity": 30.5,
     "leverage": 0.0,
     "event_proximity": 25.0,
@@ -680,35 +680,35 @@
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.577,
-     "p_beat_benchmark": 0.5365,
-     "exp_return_low": -0.0346,
-     "exp_return_high": 0.0376,
-     "downside_p5": -0.0867,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
      "expected_vol": 0.0536,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5918,
-     "p_beat_benchmark": 0.5365,
-     "exp_return_low": -0.0678,
-     "exp_return_high": 0.0802,
-     "downside_p5": -0.1745,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
      "expected_vol": 0.1098,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6129,
-     "p_beat_benchmark": 0.5365,
-     "exp_return_low": -0.1097,
-     "exp_return_high": 0.1467,
-     "downside_p5": -0.2943,
-     "expected_vol": 0.1902,
-     "basis": "cold_start_clamped"
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
+     "expected_vol": 0.1901,
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
@@ -716,14 +716,14 @@
      "p_positive": 0.6495,
      "p_beat_benchmark": 0.5365,
      "exp_return_low": -0.1664,
-     "exp_return_high": 0.2776,
-     "downside_p5": -0.4863,
-     "expected_vol": 0.3294,
+     "exp_return_high": 0.2775,
+     "downside_p5": -0.4861,
+     "expected_vol": 0.3293,
      "basis": "cold_start_clamped"
     }
    ],
    "reasons": [
-    "Market confirmation: 12-1 momentum +123%, RS vs S&P +36.7% (63d) [FACT: prices]",
+    "Market confirmation: 12-1 momentum +123%, RS vs S&P +36.6% (63d) [FACT: prices]",
     "Business momentum: revenue +7% YoY, growth accelerating (+48.5% q/q) [FACT: SEC XBRL]",
     "Divergence: post earnings drift window (report_reaction=+4.24%, days_since_report=14.0) [MODEL ESTIMATE]",
     "Valuation context: sits at the 100% pctile of its own 3y range despite improving economics [MODEL ESTIMATE]"
@@ -746,7 +746,7 @@
     "Price gives back the full post-earnings move (drift thesis invalidated)",
     "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
    ],
-   "px_last": 343.0498962402344,
+   "px_last": 342.9200134277344,
    "px_last_date": "2026-08-13",
    "gate_fail": ""
   },
@@ -765,8 +765,8 @@
     "valuation": 56.25860153624674,
     "catalyst": 50.0,
     "insider": 25.0,
-    "technical": 66.97208260540032,
-    "regime_fit": 39.94056112224449
+    "technical": 66.95640163524882,
+    "regime_fit": 39.95470941883767
    },
    "risk_components": {
     "volatility": 63.9,
@@ -781,35 +781,35 @@
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.577,
-     "p_beat_benchmark": 0.5365,
-     "exp_return_low": -0.0341,
-     "exp_return_high": 0.037,
-     "downside_p5": -0.0852,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
      "expected_vol": 0.0527,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5918,
-     "p_beat_benchmark": 0.5365,
-     "exp_return_low": -0.0666,
-     "exp_return_high": 0.079,
-     "downside_p5": -0.1715,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
      "expected_vol": 0.108,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6129,
-     "p_beat_benchmark": 0.5365,
-     "exp_return_low": -0.1076,
-     "exp_return_high": 0.1446,
-     "downside_p5": -0.2892,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
      "expected_vol": 0.1871,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
@@ -819,7 +819,7 @@
      "exp_return_low": -0.1628,
      "exp_return_high": 0.274,
      "downside_p5": -0.4775,
-     "expected_vol": 0.3241,
+     "expected_vol": 0.324,
      "basis": "cold_start_clamped"
     }
    ],
@@ -835,14 +835,14 @@
     "Relative strength vs sector turns negative over a rolling 20-session window",
     "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
    ],
-   "px_last": 356.3999938964844,
+   "px_last": 356.3699951171875,
    "px_last_date": "2026-08-13",
    "gate_fail": ""
   },
   {
    "ticker": "BKNG",
    "opportunity": 61.2,
-   "risk": 36.1,
+   "risk": 36.2,
    "divergence": 40.5,
    "data_confidence": 90.0,
    "confidence": 0.538,
@@ -854,51 +854,51 @@
     "valuation": 52.536587226050735,
     "catalyst": 50.0,
     "insider": 25.0,
-    "technical": 65.39581939662376,
-    "regime_fit": 54.18905811623247
+    "technical": 65.30563903590247,
+    "regime_fit": 54.18316633266533
    },
    "risk_components": {
-    "volatility": 66.3,
+    "volatility": 66.5,
     "illiquidity": 14.8,
     "leverage": 0.0,
     "event_proximity": 25.0,
     "valuation_extreme": 35.0,
-    "tail_behavior": 52.6,
+    "tail_behavior": 52.7,
     "market_sensitivity": 64.5
    },
    "predictions": [
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5765,
-     "p_beat_benchmark": 0.5358,
-     "exp_return_low": -0.035,
-     "exp_return_high": 0.0379,
-     "downside_p5": -0.0875,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
      "expected_vol": 0.0541,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5913,
-     "p_beat_benchmark": 0.5358,
-     "exp_return_low": -0.0686,
-     "exp_return_high": 0.0809,
-     "downside_p5": -0.1762,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
      "expected_vol": 0.1109,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6124,
-     "p_beat_benchmark": 0.5358,
-     "exp_return_low": -0.111,
-     "exp_return_high": 0.1479,
-     "downside_p5": -0.2974,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
      "expected_vol": 0.192,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
@@ -906,7 +906,7 @@
      "p_positive": 0.649,
      "p_beat_benchmark": 0.5358,
      "exp_return_low": -0.1689,
-     "exp_return_high": 0.2795,
+     "exp_return_high": 0.2794,
      "downside_p5": -0.4918,
      "expected_vol": 0.3326,
      "basis": "cold_start_clamped"
@@ -941,9 +941,99 @@
    "gate_fail": ""
   },
   {
+   "ticker": "DELL",
+   "opportunity": 60.9,
+   "risk": 47.1,
+   "divergence": 30.0,
+   "data_confidence": 90.0,
+   "confidence": 0.459,
+   "components": {
+    "fundamental_momentum": 68.34682254198614,
+    "price_momentum": 99.27710843373494,
+    "quality": 55.69284002279845,
+    "divergence": 30.0,
+    "valuation": 50.0,
+    "catalyst": 50.0,
+    "insider": 25.0,
+    "technical": 72.94688967216801,
+    "regime_fit": 62.49258517034068
+   },
+   "risk_components": {
+    "volatility": 99.0,
+    "illiquidity": 14.6,
+    "leverage": 3.0,
+    "event_proximity": 25.0,
+    "valuation_extreme": 35.0,
+    "tail_behavior": 51.2,
+    "market_sensitivity": 94.0
+   },
+   "predictions": [
+    {
+     "horizon": "1w",
+     "horizon_days": 5,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
+     "expected_vol": 0.145,
+     "basis": "empirical:bt20260813(n=699)"
+    },
+    {
+     "horizon": "1m",
+     "horizon_days": 21,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
+     "expected_vol": 0.2972,
+     "basis": "empirical:bt20260813(n=687)"
+    },
+    {
+     "horizon": "3m",
+     "horizon_days": 63,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
+     "expected_vol": 0.5147,
+     "basis": "empirical:bt20260813(n=649)"
+    },
+    {
+     "horizon": "6-12m",
+     "horizon_days": 189,
+     "p_positive": 0.6483,
+     "p_beat_benchmark": 0.5349,
+     "exp_return_low": -0.5461,
+     "exp_return_high": 0.6557,
+     "downside_p5": -1.4118,
+     "expected_vol": 0.8915,
+     "basis": "cold_start_clamped"
+    }
+   ],
+   "reasons": [
+    "Market confirmation: 12-1 momentum +195%, RS vs S&P +98.0% (63d) [FACT: prices]",
+    "Business momentum: revenue +30% YoY, growth accelerating (+72.4% q/q) [FACT: SEC XBRL]"
+   ],
+   "divergence_patterns": [],
+   "thesis_breakers": [
+    "Next 10-Q shows revenue growth decelerating (YoY accel +72.4% turning negative)",
+    "TTM gross margin drops below 16% (currently 19%)",
+    "Closes below its 200-day average and stays there for 15+ sessions",
+    "Relative strength vs sector turns negative over a rolling 20-session window",
+    "Interest coverage falls below 3x or net debt/operating income rises above 3.2x",
+    "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
+   ],
+   "px_last": 494.510009765625,
+   "px_last_date": "2026-08-13",
+   "gate_fail": ""
+  },
+  {
    "ticker": "WDAY",
    "opportunity": 60.9,
-   "risk": 53.5,
+   "risk": 53.4,
    "divergence": 44.0,
    "data_confidence": 90.0,
    "confidence": 0.538,
@@ -956,11 +1046,11 @@
     "catalyst": 50.0,
     "insider": 25.0,
     "technical": 54.65945194432557,
-    "regime_fit": 45.525971943887775
+    "regime_fit": 45.53226452905812
    },
    "risk_components": {
     "volatility": 95.0,
-    "illiquidity": 58.7,
+    "illiquidity": 58.5,
     "leverage": 9.0,
     "event_proximity": 55.0,
     "valuation_extreme": 35.0,
@@ -971,35 +1061,35 @@
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5758,
-     "p_beat_benchmark": 0.5349,
-     "exp_return_low": -0.0684,
-     "exp_return_high": 0.0713,
-     "downside_p5": -0.169,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
      "expected_vol": 0.1036,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5906,
-     "p_beat_benchmark": 0.5349,
-     "exp_return_low": -0.137,
-     "exp_return_high": 0.1492,
-     "downside_p5": -0.3432,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
      "expected_vol": 0.2124,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6117,
-     "p_beat_benchmark": 0.5349,
-     "exp_return_low": -0.2296,
-     "exp_return_high": 0.2662,
-     "downside_p5": -0.5868,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
      "expected_vol": 0.3678,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
@@ -1007,7 +1097,7 @@
      "p_positive": 0.6483,
      "p_beat_benchmark": 0.5349,
      "exp_return_low": -0.3746,
-     "exp_return_high": 0.4843,
+     "exp_return_high": 0.4842,
      "downside_p5": -0.9932,
      "expected_vol": 0.6371,
      "basis": "cold_start_clamped"
@@ -1017,7 +1107,7 @@
     "Divergence: margin expansion compressed valuation (om_delta=+3.96%, gm_delta=nan, ev_sales_pctile_3y=+18.65%) [MODEL ESTIMATE]",
     "Business momentum: revenue +18% YoY, growth accelerating (+1.0% q/q) [FACT: SEC XBRL]",
     "Quality: FCF margin 20%, accruals -0.08 [FACT: SEC XBRL]",
-    "Market confirmation: 12-1 momentum -34%, RS vs S&P +72.2% (63d) [FACT: prices]",
+    "Market confirmation: 12-1 momentum -34%, RS vs S&P +72.1% (63d) [FACT: prices]",
     "Valuation context: sits at the 19% pctile of its own 3y range despite improving economics [MODEL ESTIMATE]"
    ],
    "divergence_patterns": [
@@ -1043,165 +1133,75 @@
    "gate_fail": ""
   },
   {
-   "ticker": "DELL",
-   "opportunity": 60.9,
-   "risk": 47.1,
-   "divergence": 30.0,
-   "data_confidence": 90.0,
-   "confidence": 0.459,
-   "components": {
-    "fundamental_momentum": 68.34682254198614,
-    "price_momentum": 99.27710843373494,
-    "quality": 55.69284002279845,
-    "divergence": 30.0,
-    "valuation": 50.0,
-    "catalyst": 50.0,
-    "insider": 25.0,
-    "technical": 72.76210539787857,
-    "regime_fit": 62.45318637274549
-   },
-   "risk_components": {
-    "volatility": 99.0,
-    "illiquidity": 14.6,
-    "leverage": 3.0,
-    "event_proximity": 25.0,
-    "valuation_extreme": 35.0,
-    "tail_behavior": 51.3,
-    "market_sensitivity": 93.8
-   },
-   "predictions": [
-    {
-     "horizon": "1w",
-     "horizon_days": 5,
-     "p_positive": 0.5758,
-     "p_beat_benchmark": 0.5349,
-     "exp_return_low": -0.0963,
-     "exp_return_high": 0.0992,
-     "downside_p5": -0.2371,
-     "expected_vol": 0.145,
-     "basis": "cold_start_clamped"
-    },
-    {
-     "horizon": "1m",
-     "horizon_days": 21,
-     "p_positive": 0.5906,
-     "p_beat_benchmark": 0.5349,
-     "exp_return_low": -0.1942,
-     "exp_return_high": 0.2064,
-     "downside_p5": -0.4828,
-     "expected_vol": 0.2972,
-     "basis": "cold_start_clamped"
-    },
-    {
-     "horizon": "3m",
-     "horizon_days": 63,
-     "p_positive": 0.6117,
-     "p_beat_benchmark": 0.5349,
-     "exp_return_low": -0.3286,
-     "exp_return_high": 0.3652,
-     "downside_p5": -0.8284,
-     "expected_vol": 0.5147,
-     "basis": "cold_start_clamped"
-    },
-    {
-     "horizon": "6-12m",
-     "horizon_days": 189,
-     "p_positive": 0.6483,
-     "p_beat_benchmark": 0.5349,
-     "exp_return_low": -0.546,
-     "exp_return_high": 0.6557,
-     "downside_p5": -1.4117,
-     "expected_vol": 0.8915,
-     "basis": "cold_start_clamped"
-    }
-   ],
-   "reasons": [
-    "Market confirmation: 12-1 momentum +195%, RS vs S&P +97.9% (63d) [FACT: prices]",
-    "Business momentum: revenue +30% YoY, growth accelerating (+72.4% q/q) [FACT: SEC XBRL]"
-   ],
-   "divergence_patterns": [],
-   "thesis_breakers": [
-    "Next 10-Q shows revenue growth decelerating (YoY accel +72.4% turning negative)",
-    "TTM gross margin drops below 16% (currently 19%)",
-    "Closes below its 200-day average and stays there for 15+ sessions",
-    "Relative strength vs sector turns negative over a rolling 20-session window",
-    "Interest coverage falls below 3x or net debt/operating income rises above 3.2x",
-    "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
-   ],
-   "px_last": 494.2099914550781,
-   "px_last_date": "2026-08-13",
-   "gate_fail": ""
-  },
-  {
    "ticker": "CRM",
    "opportunity": 60.8,
-   "risk": 46.4,
+   "risk": 46.5,
    "divergence": 44.0,
    "data_confidence": 90.0,
    "confidence": 0.499,
    "components": {
     "fundamental_momentum": 71.96074073042352,
-    "price_momentum": 48.41284979597749,
+    "price_momentum": 48.392688992442714,
     "quality": 79.98540025467545,
     "divergence": 44.0,
     "valuation": 78.004575004676,
     "catalyst": 50.0,
     "insider": 50.0,
-    "technical": 59.94901174619146,
-    "regime_fit": 47.52076152304609
+    "technical": 59.98184519129805,
+    "regime_fit": 47.52424849699399
    },
    "risk_components": {
-    "volatility": 84.0,
+    "volatility": 84.2,
     "illiquidity": 9.0,
     "leverage": 17.3,
     "event_proximity": 55.0,
     "valuation_extreme": 35.0,
-    "tail_behavior": 69.6,
+    "tail_behavior": 69.5,
     "market_sensitivity": 37.9
    },
    "predictions": [
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5756,
-     "p_beat_benchmark": 0.5346,
-     "exp_return_low": -0.0462,
-     "exp_return_high": 0.0491,
-     "downside_p5": -0.1148,
-     "expected_vol": 0.0706,
-     "basis": "cold_start_clamped"
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
+     "expected_vol": 0.0707,
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5903,
-     "p_beat_benchmark": 0.5346,
-     "exp_return_low": -0.0915,
-     "exp_return_high": 0.1037,
-     "downside_p5": -0.2321,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
      "expected_vol": 0.1448,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6115,
-     "p_beat_benchmark": 0.5346,
-     "exp_return_low": -0.1508,
-     "exp_return_high": 0.1872,
-     "downside_p5": -0.3943,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
      "expected_vol": 0.2508,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6481,
+     "p_positive": 0.648,
      "p_beat_benchmark": 0.5346,
-     "exp_return_low": -0.238,
-     "exp_return_high": 0.3474,
-     "downside_p5": -0.6598,
-     "expected_vol": 0.4343,
+     "exp_return_low": -0.2381,
+     "exp_return_high": 0.3475,
+     "downside_p5": -0.6599,
+     "expected_vol": 0.4344,
      "basis": "cold_start_clamped"
     }
    ],
@@ -1228,27 +1228,27 @@
     "Interest coverage falls below 3x or net debt/operating income rises above 4.4x",
     "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
    ],
-   "px_last": 201.31500244140625,
+   "px_last": 201.3699951171875,
    "px_last_date": "2026-08-13",
    "gate_fail": ""
   },
   {
    "ticker": "ADBE",
-   "opportunity": 60.7,
+   "opportunity": 60.6,
    "risk": 41.6,
    "divergence": 44.0,
    "data_confidence": 90.0,
    "confidence": 0.459,
    "components": {
     "fundamental_momentum": 67.5870822436733,
-    "price_momentum": 39.6531617451771,
+    "price_momentum": 39.5028611439747,
     "quality": 89.38873102693451,
     "divergence": 44.0,
     "valuation": 77.49186898860064,
     "catalyst": 50.0,
     "insider": 75.0,
     "technical": 53.85430530644369,
-    "regime_fit": 46.43787575150301
+    "regime_fit": 46.44288577154309
    },
    "risk_components": {
     "volatility": 85.8,
@@ -1263,44 +1263,44 @@
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5753,
-     "p_beat_benchmark": 0.5342,
-     "exp_return_low": -0.0478,
-     "exp_return_high": 0.0507,
-     "downside_p5": -0.1188,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
      "expected_vol": 0.0731,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5901,
-     "p_beat_benchmark": 0.5342,
-     "exp_return_low": -0.0949,
-     "exp_return_high": 0.1071,
-     "downside_p5": -0.2404,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
      "expected_vol": 0.1499,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6112,
-     "p_beat_benchmark": 0.5342,
-     "exp_return_low": -0.1568,
-     "exp_return_high": 0.1931,
-     "downside_p5": -0.4088,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
      "expected_vol": 0.2596,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6478,
-     "p_beat_benchmark": 0.5342,
-     "exp_return_low": -0.2485,
-     "exp_return_high": 0.3575,
-     "downside_p5": -0.685,
+     "p_positive": 0.6475,
+     "p_beat_benchmark": 0.5339,
+     "exp_return_low": -0.2486,
+     "exp_return_high": 0.3574,
+     "downside_p5": -0.6851,
      "expected_vol": 0.4496,
      "basis": "cold_start_clamped"
     }
@@ -1333,97 +1333,6 @@
    "gate_fail": ""
   },
   {
-   "ticker": "UAL",
-   "opportunity": 60.5,
-   "risk": 54.3,
-   "divergence": 30.0,
-   "data_confidence": 90.0,
-   "confidence": 0.499,
-   "components": {
-    "fundamental_momentum": 65.44033354278643,
-    "price_momentum": 83.95248327981264,
-    "quality": 74.90989813633506,
-    "divergence": 30.0,
-    "valuation": 60.785602626742275,
-    "catalyst": 50.0,
-    "insider": 25.0,
-    "technical": 59.31425949261761,
-    "regime_fit": 62.62416833667335
-   },
-   "risk_components": {
-    "volatility": 85.4,
-    "illiquidity": 52.7,
-    "leverage": 3.7,
-    "event_proximity": 25.0,
-    "valuation_extreme": 85.0,
-    "tail_behavior": 45.8,
-    "market_sensitivity": 94.4
-   },
-   "predictions": [
-    {
-     "horizon": "1w",
-     "horizon_days": 5,
-     "p_positive": 0.5748,
-     "p_beat_benchmark": 0.5336,
-     "exp_return_low": -0.0475,
-     "exp_return_high": 0.0504,
-     "downside_p5": -0.1181,
-     "expected_vol": 0.0726,
-     "basis": "cold_start_clamped"
-    },
-    {
-     "horizon": "1m",
-     "horizon_days": 21,
-     "p_positive": 0.5896,
-     "p_beat_benchmark": 0.5336,
-     "exp_return_low": -0.0943,
-     "exp_return_high": 0.1064,
-     "downside_p5": -0.2389,
-     "expected_vol": 0.1489,
-     "basis": "cold_start_clamped"
-    },
-    {
-     "horizon": "3m",
-     "horizon_days": 63,
-     "p_positive": 0.6108,
-     "p_beat_benchmark": 0.5336,
-     "exp_return_low": -0.1557,
-     "exp_return_high": 0.1919,
-     "downside_p5": -0.4061,
-     "expected_vol": 0.2579,
-     "basis": "cold_start_clamped"
-    },
-    {
-     "horizon": "6-12m",
-     "horizon_days": 189,
-     "p_positive": 0.6474,
-     "p_beat_benchmark": 0.5336,
-     "exp_return_low": -0.2468,
-     "exp_return_high": 0.3553,
-     "downside_p5": -0.6805,
-     "expected_vol": 0.4466,
-     "basis": "cold_start_clamped"
-    }
-   ],
-   "reasons": [
-    "Market confirmation: 12-1 momentum +35%, RS vs S&P +26.8% (63d) [FACT: prices]",
-    "Quality: FCF margin nan%, accruals -0.13 [FACT: SEC XBRL]",
-    "Business momentum: revenue +13% YoY, growth accelerating (+35.3% q/q) [FACT: SEC XBRL]",
-    "Valuation context: sits at the 95% pctile of its own 3y range despite improving economics [MODEL ESTIMATE]"
-   ],
-   "divergence_patterns": [],
-   "thesis_breakers": [
-    "Next 10-Q shows revenue growth decelerating (YoY accel +35.3% turning negative)",
-    "Closes below its 200-day average and stays there for 15+ sessions",
-    "Relative strength vs sector turns negative over a rolling 20-session window",
-    "Interest coverage falls below 3x or net debt/operating income rises above 3.3x",
-    "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
-   ],
-   "px_last": 126.3499984741211,
-   "px_last_date": "2026-08-13",
-   "gate_fail": ""
-  },
-  {
    "ticker": "DAL",
    "opportunity": 60.2,
    "risk": 46.5,
@@ -1431,58 +1340,58 @@
    "data_confidence": 90.0,
    "confidence": 0.499,
    "components": {
-    "fundamental_momentum": 67.97431781902507,
+    "fundamental_momentum": 67.93277232671099,
     "price_momentum": 88.19651350894561,
     "quality": 61.34669704248141,
     "divergence": 30.0,
     "valuation": 56.27846564064996,
     "catalyst": 50.0,
     "insider": 25.0,
-    "technical": 72.71253991377084,
-    "regime_fit": 61.02833667334669
+    "technical": 72.47740845952931,
+    "regime_fit": 61.012825651302606
    },
    "risk_components": {
     "volatility": 70.3,
-    "illiquidity": 43.5,
+    "illiquidity": 43.1,
     "leverage": 0.0,
     "event_proximity": 25.0,
     "valuation_extreme": 85.0,
-    "tail_behavior": 29.6,
+    "tail_behavior": 29.8,
     "market_sensitivity": 88.8
    },
    "predictions": [
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5741,
-     "p_beat_benchmark": 0.5326,
-     "exp_return_low": -0.0368,
-     "exp_return_high": 0.0397,
-     "downside_p5": -0.092,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
      "expected_vol": 0.0568,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5889,
-     "p_beat_benchmark": 0.5326,
-     "exp_return_low": -0.0724,
-     "exp_return_high": 0.0844,
-     "downside_p5": -0.1854,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
      "expected_vol": 0.1163,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.61,
-     "p_beat_benchmark": 0.5326,
-     "exp_return_low": -0.1179,
-     "exp_return_high": 0.1537,
-     "downside_p5": -0.3135,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
      "expected_vol": 0.2015,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
@@ -1508,7 +1417,98 @@
     "Relative strength vs sector turns negative over a rolling 20-session window",
     "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
    ],
-   "px_last": 91.33000183105469,
+   "px_last": 91.30999755859375,
+   "px_last_date": "2026-08-13",
+   "gate_fail": ""
+  },
+  {
+   "ticker": "UAL",
+   "opportunity": 60.2,
+   "risk": 54.1,
+   "divergence": 30.0,
+   "data_confidence": 90.0,
+   "confidence": 0.538,
+   "components": {
+    "fundamental_momentum": 65.44033354278643,
+    "price_momentum": 81.29174010671946,
+    "quality": 74.90989813633506,
+    "divergence": 30.0,
+    "valuation": 60.93342228675706,
+    "catalyst": 50.0,
+    "insider": 25.0,
+    "technical": 61.07814516480889,
+    "regime_fit": 62.435671342685374
+   },
+   "risk_components": {
+    "volatility": 85.4,
+    "illiquidity": 52.1,
+    "leverage": 3.7,
+    "event_proximity": 25.0,
+    "valuation_extreme": 85.0,
+    "tail_behavior": 45.8,
+    "market_sensitivity": 93.8
+   },
+   "predictions": [
+    {
+     "horizon": "1w",
+     "horizon_days": 5,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
+     "expected_vol": 0.0726,
+     "basis": "empirical:bt20260813(n=699)"
+    },
+    {
+     "horizon": "1m",
+     "horizon_days": 21,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
+     "expected_vol": 0.1487,
+     "basis": "empirical:bt20260813(n=687)"
+    },
+    {
+     "horizon": "3m",
+     "horizon_days": 63,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
+     "expected_vol": 0.2576,
+     "basis": "empirical:bt20260813(n=649)"
+    },
+    {
+     "horizon": "6-12m",
+     "horizon_days": 189,
+     "p_positive": 0.6466,
+     "p_beat_benchmark": 0.5326,
+     "exp_return_low": -0.247,
+     "exp_return_high": 0.3545,
+     "downside_p5": -0.6802,
+     "expected_vol": 0.4462,
+     "basis": "cold_start_clamped"
+    }
+   ],
+   "reasons": [
+    "Market confirmation: 12-1 momentum +23%, RS vs S&P +27.0% (63d) [FACT: prices]",
+    "Quality: FCF margin nan%, accruals -0.13 [FACT: SEC XBRL]",
+    "Business momentum: revenue +13% YoY, growth accelerating (+35.3% q/q) [FACT: SEC XBRL]",
+    "Valuation context: sits at the 95% pctile of its own 3y range despite improving economics [MODEL ESTIMATE]"
+   ],
+   "divergence_patterns": [],
+   "thesis_breakers": [
+    "Next 10-Q shows revenue growth decelerating (YoY accel +35.3% turning negative)",
+    "Closes below its 200-day average and stays there for 15+ sessions",
+    "Relative strength vs sector turns negative over a rolling 20-session window",
+    "Interest coverage falls below 3x or net debt/operating income rises above 3.3x",
+    "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
+   ],
+   "px_last": 126.3499984741211,
    "px_last_date": "2026-08-13",
    "gate_fail": ""
   },
@@ -1521,14 +1521,14 @@
    "confidence": 0.538,
    "components": {
     "fundamental_momentum": 77.05425778058749,
-    "price_momentum": 71.66863848178284,
+    "price_momentum": 71.56843808098124,
     "quality": 66.51722045544165,
     "divergence": 40.5,
     "valuation": 50.0,
     "catalyst": 50.0,
     "insider": 27.62511499485734,
-    "technical": 79.07634526635226,
-    "regime_fit": 35.95098196392786
+    "technical": 79.06632522635879,
+    "regime_fit": 35.970741482965934
    },
    "risk_components": {
     "volatility": 77.8,
@@ -1543,40 +1543,40 @@
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5739,
-     "p_beat_benchmark": 0.5323,
-     "exp_return_low": -0.0419,
-     "exp_return_high": 0.0448,
-     "downside_p5": -0.1044,
+     "p_positive": 0.5279,
+     "p_beat_benchmark": 0.5236,
+     "exp_return_low": -0.0198,
+     "exp_return_high": 0.0238,
+     "downside_p5": -0.0739,
      "expected_vol": 0.0643,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=699)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5887,
-     "p_beat_benchmark": 0.5323,
-     "exp_return_low": -0.0829,
-     "exp_return_high": 0.0948,
-     "downside_p5": -0.2108,
+     "p_positive": 0.508,
+     "p_beat_benchmark": 0.4949,
+     "exp_return_low": -0.06,
+     "exp_return_high": 0.0577,
+     "downside_p5": -0.1792,
      "expected_vol": 0.1318,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=687)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6098,
-     "p_beat_benchmark": 0.5323,
-     "exp_return_low": -0.136,
-     "exp_return_high": 0.1717,
-     "downside_p5": -0.3576,
+     "p_positive": 0.5146,
+     "p_beat_benchmark": 0.4946,
+     "exp_return_low": -0.0883,
+     "exp_return_high": 0.1212,
+     "downside_p5": -0.2471,
      "expected_vol": 0.2283,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=649)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6464,
+     "p_positive": 0.6463,
      "p_beat_benchmark": 0.5323,
      "exp_return_low": -0.2128,
      "exp_return_high": 0.3201,
@@ -1620,14 +1620,14 @@
    "confidence": 0.38,
    "components": {
     "fundamental_momentum": 96.64941731946755,
-    "price_momentum": 69.27855711422846,
+    "price_momentum": 69.37875751503006,
     "quality": 72.26212272967956,
     "divergence": 30.0,
-    "valuation": 33.11890761707295,
+    "valuation": 33.020361177063094,
     "catalyst": 50.0,
     "insider": 25.0,
-    "technical": 38.74769603744038,
-    "regime_fit": 64.22
+    "technical": 38.707615877119736,
+    "regime_fit": 64.2
    },
    "risk_components": {
     "volatility": 100.0,
@@ -1642,44 +1642,44 @@
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5732,
-     "p_beat_benchmark": 0.5314,
-     "exp_return_low": -0.1292,
-     "exp_return_high": 0.132,
-     "downside_p5": -0.3174,
+     "p_positive": 0.512,
+     "p_beat_benchmark": 0.5069,
+     "exp_return_low": -0.0189,
+     "exp_return_high": 0.0185,
+     "downside_p5": -0.0605,
      "expected_vol": 0.1938,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=7060)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5879,
-     "p_beat_benchmark": 0.5314,
-     "exp_return_low": -0.2618,
-     "exp_return_high": 0.2736,
-     "downside_p5": -0.6475,
+     "p_positive": 0.5411,
+     "p_beat_benchmark": 0.5009,
+     "exp_return_low": -0.0409,
+     "exp_return_high": 0.0491,
+     "downside_p5": -0.1318,
      "expected_vol": 0.3972,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6871)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6091,
-     "p_beat_benchmark": 0.5314,
-     "exp_return_low": -0.446,
-     "exp_return_high": 0.4815,
-     "downside_p5": -1.1141,
+     "p_positive": 0.5747,
+     "p_beat_benchmark": 0.4935,
+     "exp_return_low": -0.0632,
+     "exp_return_high": 0.1043,
+     "downside_p5": -0.2016,
      "expected_vol": 0.688,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6529)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6457,
+     "p_positive": 0.6456,
      "p_beat_benchmark": 0.5314,
      "exp_return_low": -0.75,
      "exp_return_high": 0.8564,
-     "downside_p5": -1.9071,
+     "downside_p5": -1.9072,
      "expected_vol": 1.1917,
      "basis": "cold_start_clamped"
     }
@@ -1708,67 +1708,67 @@
    "data_confidence": 90.0,
    "confidence": 0.459,
    "components": {
-    "fundamental_momentum": 75.64868363460698,
-    "price_momentum": 76.00767800661563,
+    "fundamental_momentum": 75.6071381422929,
+    "price_momentum": 75.81729724509259,
     "quality": 57.27347465779383,
     "divergence": 54.5,
     "valuation": 38.946937538562835,
     "catalyst": 50.0,
     "insider": 25.0,
-    "technical": 60.292089548556106,
-    "regime_fit": 46.779839679358716
+    "technical": 60.18793853371127,
+    "regime_fit": 46.78436873747495
    },
    "risk_components": {
-    "volatility": 50.1,
+    "volatility": 50.3,
     "illiquidity": 4.0,
     "leverage": 0.0,
     "event_proximity": 25.0,
     "valuation_extreme": 35.0,
-    "tail_behavior": 37.0,
+    "tail_behavior": 37.2,
     "market_sensitivity": 32.9
    },
    "predictions": [
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.572,
-     "p_beat_benchmark": 0.5298,
-     "exp_return_low": -0.0304,
-     "exp_return_high": 0.0332,
-     "downside_p5": -0.0762,
-     "expected_vol": 0.0471,
-     "basis": "cold_start_clamped"
+     "p_positive": 0.512,
+     "p_beat_benchmark": 0.5069,
+     "exp_return_low": -0.0189,
+     "exp_return_high": 0.0185,
+     "downside_p5": -0.0605,
+     "expected_vol": 0.0472,
+     "basis": "empirical:bt20260813(n=7060)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5867,
-     "p_beat_benchmark": 0.5298,
-     "exp_return_low": -0.0593,
-     "exp_return_high": 0.071,
-     "downside_p5": -0.1531,
+     "p_positive": 0.5411,
+     "p_beat_benchmark": 0.5009,
+     "exp_return_low": -0.0409,
+     "exp_return_high": 0.0491,
+     "downside_p5": -0.1318,
      "expected_vol": 0.0966,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6871)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6079,
-     "p_beat_benchmark": 0.5298,
-     "exp_return_low": -0.0953,
-     "exp_return_high": 0.1303,
-     "downside_p5": -0.2578,
+     "p_positive": 0.5747,
+     "p_beat_benchmark": 0.4935,
+     "exp_return_low": -0.0632,
+     "exp_return_high": 0.1043,
+     "downside_p5": -0.2016,
      "expected_vol": 0.1674,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6529)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6445,
+     "p_positive": 0.6444,
      "p_beat_benchmark": 0.5298,
-     "exp_return_low": -0.1429,
+     "exp_return_low": -0.143,
      "exp_return_high": 0.2478,
-     "downside_p5": -0.4244,
+     "downside_p5": -0.4245,
      "expected_vol": 0.2899,
      "basis": "cold_start_clamped"
     }
@@ -1806,7 +1806,7 @@
     "Price gives back the full post-earnings move (drift thesis invalidated)",
     "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
    ],
-   "px_last": 1209.280029296875,
+   "px_last": 1209.0,
    "px_last_date": "2026-08-13",
    "gate_fail": ""
   },
@@ -1825,8 +1825,8 @@
     "valuation": 47.756125283912574,
     "catalyst": 50.0,
     "insider": 25.0,
-    "technical": 69.21328113147906,
-    "regime_fit": 58.86256513026052
+    "technical": 69.23332121163895,
+    "regime_fit": 58.8501002004008
    },
    "risk_components": {
     "volatility": 92.0,
@@ -1834,42 +1834,42 @@
     "leverage": 0.0,
     "event_proximity": 25.0,
     "valuation_extreme": 85.0,
-    "tail_behavior": 50.8,
+    "tail_behavior": 50.7,
     "market_sensitivity": 81.2
    },
    "predictions": [
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5717,
-     "p_beat_benchmark": 0.5294,
-     "exp_return_low": -0.0597,
-     "exp_return_high": 0.0625,
-     "downside_p5": -0.1477,
+     "p_positive": 0.512,
+     "p_beat_benchmark": 0.5069,
+     "exp_return_low": -0.0189,
+     "exp_return_high": 0.0185,
+     "downside_p5": -0.0605,
      "expected_vol": 0.0906,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=7060)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5865,
-     "p_beat_benchmark": 0.5294,
-     "exp_return_low": -0.1194,
-     "exp_return_high": 0.131,
-     "downside_p5": -0.2997,
+     "p_positive": 0.5411,
+     "p_beat_benchmark": 0.5009,
+     "exp_return_low": -0.0409,
+     "exp_return_high": 0.0491,
+     "downside_p5": -0.1318,
      "expected_vol": 0.1857,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6871)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6076,
-     "p_beat_benchmark": 0.5294,
-     "exp_return_low": -0.1994,
-     "exp_return_high": 0.2342,
-     "downside_p5": -0.5117,
+     "p_positive": 0.5747,
+     "p_beat_benchmark": 0.4935,
+     "exp_return_low": -0.0632,
+     "exp_return_high": 0.1043,
+     "downside_p5": -0.2016,
      "expected_vol": 0.3216,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6529)"
     },
     {
      "horizon": "6-12m",
@@ -1878,7 +1878,7 @@
      "p_beat_benchmark": 0.5294,
      "exp_return_low": -0.3232,
      "exp_return_high": 0.4278,
-     "downside_p5": -0.8641,
+     "downside_p5": -0.8642,
      "expected_vol": 0.5571,
      "basis": "cold_start_clamped"
     }
@@ -1900,70 +1900,70 @@
   {
    "ticker": "LYV",
    "opportunity": 59.0,
-   "risk": 22.4,
+   "risk": 22.3,
    "divergence": 40.5,
    "data_confidence": 90.0,
    "confidence": 0.538,
    "components": {
-    "fundamental_momentum": 55.76393774883095,
-    "price_momentum": 66.083130115653,
+    "fundamental_momentum": 55.61160427701264,
+    "price_momentum": 65.94284955453074,
     "quality": 74.92876651553077,
     "divergence": 40.5,
-    "valuation": 77.08451703373456,
+    "valuation": 77.11408096573751,
     "catalyst": 50.0,
     "insider": 27.726601624927078,
-    "technical": 73.60843617038414,
-    "regime_fit": 50.940400801603204
+    "technical": 73.51815773260775,
+    "regime_fit": 50.939078156312625
    },
    "risk_components": {
     "volatility": 21.4,
-    "illiquidity": 38.1,
+    "illiquidity": 37.9,
     "leverage": 0.0,
     "event_proximity": 25.0,
     "valuation_extreme": 35.0,
-    "tail_behavior": 6.3,
+    "tail_behavior": 6.4,
     "market_sensitivity": 52.7
    },
    "predictions": [
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5712,
-     "p_beat_benchmark": 0.5288,
-     "exp_return_low": -0.0222,
-     "exp_return_high": 0.0249,
-     "downside_p5": -0.056,
+     "p_positive": 0.512,
+     "p_beat_benchmark": 0.5069,
+     "exp_return_low": -0.0189,
+     "exp_return_high": 0.0185,
+     "downside_p5": -0.0605,
      "expected_vol": 0.0349,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=7060)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.586,
-     "p_beat_benchmark": 0.5288,
-     "exp_return_low": -0.0424,
-     "exp_return_high": 0.054,
-     "downside_p5": -0.1119,
+     "p_positive": 0.5411,
+     "p_beat_benchmark": 0.5009,
+     "exp_return_low": -0.0409,
+     "exp_return_high": 0.0491,
+     "downside_p5": -0.1318,
      "expected_vol": 0.0715,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6871)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6071,
-     "p_beat_benchmark": 0.5288,
-     "exp_return_low": -0.0662,
-     "exp_return_high": 0.1008,
-     "downside_p5": -0.1865,
+     "p_positive": 0.5747,
+     "p_beat_benchmark": 0.4935,
+     "exp_return_low": -0.0632,
+     "exp_return_high": 0.1043,
+     "downside_p5": -0.2016,
      "expected_vol": 0.1239,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6529)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6438,
+     "p_positive": 0.6437,
      "p_beat_benchmark": 0.5288,
-     "exp_return_low": -0.0926,
+     "exp_return_low": -0.0927,
      "exp_return_high": 0.1966,
      "downside_p5": -0.301,
      "expected_vol": 0.2146,
@@ -1971,8 +1971,8 @@
     }
    ],
    "reasons": [
-    "Valuation context: sits at the 69% pctile of its own 3y range despite improving economics [MODEL ESTIMATE]",
-    "Divergence: rs strength weak sector (rs_sector_63=+13.84%, sector_ret_63=-3.34%) [MODEL ESTIMATE]",
+    "Valuation context: sits at the 68% pctile of its own 3y range despite improving economics [MODEL ESTIMATE]",
+    "Divergence: rs strength weak sector (rs_sector_63=+13.80%, sector_ret_63=-3.35%) [MODEL ESTIMATE]",
     "Quality: FCF margin 19%, accruals -0.19 [FACT: SEC XBRL]",
     "Market confirmation: 12-1 momentum +13%, RS vs S&P +5.4% (63d) [FACT: prices]"
    ],
@@ -1981,8 +1981,8 @@
      "pattern": "rs_strength_weak_sector",
      "points": 15,
      "inputs": {
-      "rs_sector_63": 0.13838746279624747,
-      "sector_ret_63": -0.03337745165061101
+      "rs_sector_63": 0.13802494142681443,
+      "sector_ret_63": -0.03354915997549046
      }
     }
    ],
@@ -1991,108 +1991,7 @@
     "Relative strength vs sector turns negative over a rolling 20-session window",
     "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
    ],
-   "px_last": 186.14999389648438,
-   "px_last_date": "2026-08-13",
-   "gate_fail": ""
-  },
-  {
-   "ticker": "PAYX",
-   "opportunity": 58.8,
-   "risk": 31.3,
-   "divergence": 44.0,
-   "data_confidence": 90.0,
-   "confidence": 0.499,
-   "components": {
-    "fundamental_momentum": 68.5571163939692,
-    "price_momentum": 70.351063572929,
-    "quality": 70.98453454535172,
-    "divergence": 44.0,
-    "valuation": 55.75521960796527,
-    "catalyst": 50.0,
-    "insider": 25.0,
-    "technical": 59.181545914942994,
-    "regime_fit": 41.42240480961924
-   },
-   "risk_components": {
-    "volatility": 48.1,
-    "illiquidity": 62.1,
-    "leverage": 0.0,
-    "event_proximity": 25.0,
-    "valuation_extreme": 35.0,
-    "tail_behavior": 39.3,
-    "market_sensitivity": 1.0
-   },
-   "predictions": [
-    {
-     "horizon": "1w",
-     "horizon_days": 5,
-     "p_positive": 0.5708,
-     "p_beat_benchmark": 0.5282,
-     "exp_return_low": -0.0299,
-     "exp_return_high": 0.0326,
-     "downside_p5": -0.0749,
-     "expected_vol": 0.0463,
-     "basis": "cold_start_clamped"
-    },
-    {
-     "horizon": "1m",
-     "horizon_days": 21,
-     "p_positive": 0.5855,
-     "p_beat_benchmark": 0.5282,
-     "exp_return_low": -0.0583,
-     "exp_return_high": 0.0698,
-     "downside_p5": -0.1505,
-     "expected_vol": 0.095,
-     "basis": "cold_start_clamped"
-    },
-    {
-     "horizon": "3m",
-     "horizon_days": 63,
-     "p_positive": 0.6067,
-     "p_beat_benchmark": 0.5282,
-     "exp_return_low": -0.0936,
-     "exp_return_high": 0.1281,
-     "downside_p5": -0.2534,
-     "expected_vol": 0.1645,
-     "basis": "cold_start_clamped"
-    },
-    {
-     "horizon": "6-12m",
-     "horizon_days": 189,
-     "p_positive": 0.6433,
-     "p_beat_benchmark": 0.5282,
-     "exp_return_low": -0.1403,
-     "exp_return_high": 0.2437,
-     "downside_p5": -0.417,
-     "expected_vol": 0.2849,
-     "basis": "cold_start_clamped"
-    }
-   ],
-   "reasons": [
-    "Divergence: margin expansion compressed valuation (om_delta=-1.43%, gm_delta=+2.53%, ev_sales_pctile_3y=+20.77%) [MODEL ESTIMATE]",
-    "Quality: FCF margin 35%, accruals -0.03 [FACT: SEC XBRL]",
-    "Market confirmation: 12-1 momentum -16%, RS vs S&P +35.9% (63d) [FACT: prices]",
-    "Business momentum: revenue +20% YoY, growth accelerating (+19.4% q/q), gross margin +2.5% vs last year [FACT: SEC XBRL]"
-   ],
-   "divergence_patterns": [
-    {
-     "pattern": "margin_expansion_compressed_valuation",
-     "points": 20,
-     "inputs": {
-      "om_delta": -0.014255897430484943,
-      "gm_delta": 0.02528822514028939,
-      "ev_sales_pctile_3y": 0.20767195767195767
-     }
-    }
-   ],
-   "thesis_breakers": [
-    "Next 10-Q shows revenue growth decelerating (YoY accel +19.4% turning negative)",
-    "TTM gross margin drops below 71% (currently 74%)",
-    "Closes below its 200-day average and stays there for 15+ sessions",
-    "Relative strength vs sector turns negative over a rolling 20-session window",
-    "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
-   ],
-   "px_last": 125.4000015258789,
+   "px_last": 186.05999755859375,
    "px_last_date": "2026-08-13",
    "gate_fail": ""
   },
@@ -2104,15 +2003,15 @@
    "data_confidence": 90.0,
    "confidence": 0.499,
    "components": {
-    "fundamental_momentum": 70.83254608236423,
+    "fundamental_momentum": 70.80484908748818,
     "price_momentum": 69.60414805514644,
     "quality": 67.61030898628375,
     "divergence": 44.0,
     "valuation": 56.34023538453664,
     "catalyst": 50.0,
     "insider": 25.999998262822942,
-    "technical": 53.27655310621242,
-    "regime_fit": 49.62953907815631
+    "technical": 53.23647294589178,
+    "regime_fit": 49.63006012024048
    },
    "risk_components": {
     "volatility": 78.2,
@@ -2127,42 +2026,42 @@
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5705,
-     "p_beat_benchmark": 0.5278,
-     "exp_return_low": -0.0425,
-     "exp_return_high": 0.0452,
-     "downside_p5": -0.1057,
+     "p_positive": 0.512,
+     "p_beat_benchmark": 0.5069,
+     "exp_return_low": -0.0189,
+     "exp_return_high": 0.0185,
+     "downside_p5": -0.0605,
      "expected_vol": 0.0651,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=7060)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5853,
-     "p_beat_benchmark": 0.5278,
-     "exp_return_low": -0.0842,
-     "exp_return_high": 0.0956,
-     "downside_p5": -0.2137,
+     "p_positive": 0.5411,
+     "p_beat_benchmark": 0.5009,
+     "exp_return_low": -0.0409,
+     "exp_return_high": 0.0491,
+     "downside_p5": -0.1318,
      "expected_vol": 0.1334,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6871)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6064,
-     "p_beat_benchmark": 0.5278,
-     "exp_return_low": -0.1385,
-     "exp_return_high": 0.1729,
-     "downside_p5": -0.3628,
+     "p_positive": 0.5747,
+     "p_beat_benchmark": 0.4935,
+     "exp_return_low": -0.0632,
+     "exp_return_high": 0.1043,
+     "downside_p5": -0.2016,
      "expected_vol": 0.231,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6529)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
      "p_positive": 0.643,
      "p_beat_benchmark": 0.5278,
-     "exp_return_low": -0.2181,
+     "exp_return_low": -0.2182,
      "exp_return_high": 0.3212,
      "downside_p5": -0.6067,
      "expected_vol": 0.4001,
@@ -2193,7 +2092,108 @@
     "Relative strength vs sector turns negative over a rolling 20-session window",
     "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
    ],
-   "px_last": 252.63250732421875,
+   "px_last": 252.63999938964844,
+   "px_last_date": "2026-08-13",
+   "gate_fail": ""
+  },
+  {
+   "ticker": "PAYX",
+   "opportunity": 58.7,
+   "risk": 31.3,
+   "divergence": 44.0,
+   "data_confidence": 90.0,
+   "confidence": 0.499,
+   "components": {
+    "fundamental_momentum": 68.5571163939692,
+    "price_momentum": 70.351063572929,
+    "quality": 70.98453454535172,
+    "divergence": 44.0,
+    "valuation": 55.69609174395936,
+    "catalyst": 50.0,
+    "insider": 25.0,
+    "technical": 59.14146568162906,
+    "regime_fit": 41.43446893787575
+   },
+   "risk_components": {
+    "volatility": 48.3,
+    "illiquidity": 61.7,
+    "leverage": 0.0,
+    "event_proximity": 25.0,
+    "valuation_extreme": 35.0,
+    "tail_behavior": 39.4,
+    "market_sensitivity": 1.0
+   },
+   "predictions": [
+    {
+     "horizon": "1w",
+     "horizon_days": 5,
+     "p_positive": 0.512,
+     "p_beat_benchmark": 0.5069,
+     "exp_return_low": -0.0189,
+     "exp_return_high": 0.0185,
+     "downside_p5": -0.0605,
+     "expected_vol": 0.0463,
+     "basis": "empirical:bt20260813(n=7060)"
+    },
+    {
+     "horizon": "1m",
+     "horizon_days": 21,
+     "p_positive": 0.5411,
+     "p_beat_benchmark": 0.5009,
+     "exp_return_low": -0.0409,
+     "exp_return_high": 0.0491,
+     "downside_p5": -0.1318,
+     "expected_vol": 0.095,
+     "basis": "empirical:bt20260813(n=6871)"
+    },
+    {
+     "horizon": "3m",
+     "horizon_days": 63,
+     "p_positive": 0.5747,
+     "p_beat_benchmark": 0.4935,
+     "exp_return_low": -0.0632,
+     "exp_return_high": 0.1043,
+     "downside_p5": -0.2016,
+     "expected_vol": 0.1645,
+     "basis": "empirical:bt20260813(n=6529)"
+    },
+    {
+     "horizon": "6-12m",
+     "horizon_days": 189,
+     "p_positive": 0.643,
+     "p_beat_benchmark": 0.5278,
+     "exp_return_low": -0.1405,
+     "exp_return_high": 0.2436,
+     "downside_p5": -0.4172,
+     "expected_vol": 0.2849,
+     "basis": "cold_start_clamped"
+    }
+   ],
+   "reasons": [
+    "Divergence: margin expansion compressed valuation (om_delta=-1.43%, gm_delta=+2.53%, ev_sales_pctile_3y=+20.77%) [MODEL ESTIMATE]",
+    "Quality: FCF margin 35%, accruals -0.03 [FACT: SEC XBRL]",
+    "Market confirmation: 12-1 momentum -16%, RS vs S&P +35.8% (63d) [FACT: prices]",
+    "Business momentum: revenue +20% YoY, growth accelerating (+19.4% q/q), gross margin +2.5% vs last year [FACT: SEC XBRL]"
+   ],
+   "divergence_patterns": [
+    {
+     "pattern": "margin_expansion_compressed_valuation",
+     "points": 20,
+     "inputs": {
+      "om_delta": -0.014255897430484943,
+      "gm_delta": 0.02528822514028939,
+      "ev_sales_pctile_3y": 0.20767195767195767
+     }
+    }
+   ],
+   "thesis_breakers": [
+    "Next 10-Q shows revenue growth decelerating (YoY accel +19.4% turning negative)",
+    "TTM gross margin drops below 71% (currently 74%)",
+    "Closes below its 200-day average and stays there for 15+ sessions",
+    "Relative strength vs sector turns negative over a rolling 20-session window",
+    "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
+   ],
+   "px_last": 125.4000015258789,
    "px_last_date": "2026-08-13",
    "gate_fail": ""
   },
@@ -2209,11 +2209,11 @@
     "price_momentum": 52.70939469300046,
     "quality": 77.80089028164237,
     "divergence": 30.0,
-    "valuation": 71.21713574336066,
+    "valuation": 71.34004626450125,
     "catalyst": 50.0,
     "insider": 50.0,
-    "technical": 64.78463035471842,
-    "regime_fit": 61.085330661322644
+    "technical": 64.72872048585356,
+    "regime_fit": 61.06973947895791
    },
    "risk_components": {
     "volatility": 75.6,
@@ -2221,52 +2221,52 @@
     "leverage": 0.0,
     "event_proximity": 25.0,
     "valuation_extreme": 35.0,
-    "tail_behavior": 62.3,
+    "tail_behavior": 62.4,
     "market_sensitivity": 89.0
    },
    "predictions": [
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5703,
-     "p_beat_benchmark": 0.5275,
-     "exp_return_low": -0.0405,
-     "exp_return_high": 0.0432,
-     "downside_p5": -0.1008,
+     "p_positive": 0.512,
+     "p_beat_benchmark": 0.5069,
+     "exp_return_low": -0.0189,
+     "exp_return_high": 0.0185,
+     "downside_p5": -0.0605,
      "expected_vol": 0.0621,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=7060)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5851,
-     "p_beat_benchmark": 0.5275,
-     "exp_return_low": -0.08,
-     "exp_return_high": 0.0915,
-     "downside_p5": -0.2036,
-     "expected_vol": 0.1272,
-     "basis": "cold_start_clamped"
+     "p_positive": 0.5411,
+     "p_beat_benchmark": 0.5009,
+     "exp_return_low": -0.0409,
+     "exp_return_high": 0.0491,
+     "downside_p5": -0.1318,
+     "expected_vol": 0.1273,
+     "basis": "empirical:bt20260813(n=6871)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6062,
-     "p_beat_benchmark": 0.5275,
-     "exp_return_low": -0.1314,
-     "exp_return_high": 0.1657,
-     "downside_p5": -0.3454,
+     "p_positive": 0.5747,
+     "p_beat_benchmark": 0.4935,
+     "exp_return_low": -0.0632,
+     "exp_return_high": 0.1043,
+     "downside_p5": -0.2016,
      "expected_vol": 0.2204,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6529)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6428,
+     "p_positive": 0.6427,
      "p_beat_benchmark": 0.5275,
-     "exp_return_low": -0.2059,
+     "exp_return_low": -0.206,
      "exp_return_high": 0.3087,
-     "downside_p5": -0.5765,
-     "expected_vol": 0.3817,
+     "downside_p5": -0.5767,
+     "expected_vol": 0.3818,
      "basis": "cold_start_clamped"
     }
    ],
@@ -2280,7 +2280,7 @@
     "Next 10-Q shows revenue growth decelerating (YoY accel +7.6% turning negative)",
     "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
    ],
-   "px_last": 149.41000366210938,
+   "px_last": 149.4499969482422,
    "px_last_date": "2026-08-13",
    "gate_fail": ""
   },
@@ -2299,51 +2299,51 @@
     "valuation": 75.16513509441191,
     "catalyst": 50.0,
     "insider": 25.0,
-    "technical": 65.55314146254767,
-    "regime_fit": 52.87819639278557
+    "technical": 65.54312142246751,
+    "regime_fit": 52.9310621242485
    },
    "risk_components": {
-    "volatility": 84.2,
+    "volatility": 84.4,
     "illiquidity": 68.5,
     "leverage": 0.0,
     "event_proximity": 55.0,
     "valuation_extreme": 35.0,
     "tail_behavior": 70.1,
-    "market_sensitivity": 59.9
+    "market_sensitivity": 60.1
    },
    "predictions": [
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5698,
-     "p_beat_benchmark": 0.5269,
-     "exp_return_low": -0.0463,
-     "exp_return_high": 0.0491,
-     "downside_p5": -0.1151,
+     "p_positive": 0.512,
+     "p_beat_benchmark": 0.5069,
+     "exp_return_low": -0.0189,
+     "exp_return_high": 0.0185,
+     "downside_p5": -0.0605,
      "expected_vol": 0.0708,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=7060)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5846,
-     "p_beat_benchmark": 0.5269,
-     "exp_return_low": -0.0921,
-     "exp_return_high": 0.1034,
-     "downside_p5": -0.2329,
+     "p_positive": 0.5411,
+     "p_beat_benchmark": 0.5009,
+     "exp_return_low": -0.0409,
+     "exp_return_high": 0.0491,
+     "downside_p5": -0.1318,
      "expected_vol": 0.145,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6871)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.6057,
-     "p_beat_benchmark": 0.5269,
-     "exp_return_low": -0.1523,
-     "exp_return_high": 0.1863,
-     "downside_p5": -0.3962,
+     "p_positive": 0.5747,
+     "p_beat_benchmark": 0.4935,
+     "exp_return_low": -0.0632,
+     "exp_return_high": 0.1043,
+     "downside_p5": -0.2016,
      "expected_vol": 0.2512,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6529)"
     },
     {
      "horizon": "6-12m",
@@ -2351,7 +2351,7 @@
      "p_positive": 0.6423,
      "p_beat_benchmark": 0.5269,
      "exp_return_low": -0.2422,
-     "exp_return_high": 0.3444,
+     "exp_return_high": 0.3443,
      "downside_p5": -0.6647,
      "expected_vol": 0.4351,
      "basis": "cold_start_clamped"
@@ -2381,14 +2381,14 @@
    "confidence": 0.499,
    "components": {
     "fundamental_momentum": 60.0057631096785,
-    "price_momentum": 82.25475046478499,
+    "price_momentum": 82.20465026438418,
     "quality": 67.20778700211021,
     "divergence": 30.0,
     "valuation": 48.96875074945439,
     "catalyst": 50.0,
     "insider": 50.0,
-    "technical": 64.2871441018653,
-    "regime_fit": 49.11659318637275
+    "technical": 64.24344448384127,
+    "regime_fit": 49.11783567134269
    },
    "risk_components": {
     "volatility": 22.0,
@@ -2403,45 +2403,45 @@
     {
      "horizon": "1w",
      "horizon_days": 5,
-     "p_positive": 0.5691,
-     "p_beat_benchmark": 0.5259,
-     "exp_return_low": -0.0225,
-     "exp_return_high": 0.0252,
-     "downside_p5": -0.0568,
+     "p_positive": 0.512,
+     "p_beat_benchmark": 0.5069,
+     "exp_return_low": -0.0189,
+     "exp_return_high": 0.0185,
+     "downside_p5": -0.0605,
      "expected_vol": 0.0353,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=7060)"
     },
     {
      "horizon": "1m",
      "horizon_days": 21,
-     "p_positive": 0.5839,
-     "p_beat_benchmark": 0.5259,
-     "exp_return_low": -0.0432,
-     "exp_return_high": 0.0544,
-     "downside_p5": -0.1135,
+     "p_positive": 0.5411,
+     "p_beat_benchmark": 0.5009,
+     "exp_return_low": -0.0409,
+     "exp_return_high": 0.0491,
+     "downside_p5": -0.1318,
      "expected_vol": 0.0724,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6871)"
     },
     {
      "horizon": "3m",
      "horizon_days": 63,
-     "p_positive": 0.605,
-     "p_beat_benchmark": 0.5259,
-     "exp_return_low": -0.0677,
-     "exp_return_high": 0.1014,
-     "downside_p5": -0.1895,
+     "p_positive": 0.5747,
+     "p_beat_benchmark": 0.4935,
+     "exp_return_low": -0.0632,
+     "exp_return_high": 0.1043,
+     "downside_p5": -0.2016,
      "expected_vol": 0.1254,
-     "basis": "cold_start_clamped"
+     "basis": "empirical:bt20260813(n=6529)"
     },
     {
      "horizon": "6-12m",
      "horizon_days": 189,
-     "p_positive": 0.6416,
+     "p_positive": 0.6415,
      "p_beat_benchmark": 0.5259,
      "exp_return_low": -0.0958,
-     "exp_return_high": 0.1971,
+     "exp_return_high": 0.197,
      "downside_p5": -0.3067,
-     "expected_vol": 0.2173,
+     "expected_vol": 0.2172,
      "basis": "cold_start_clamped"
     }
    ],
@@ -2458,45 +2458,12 @@
     "Relative strength vs sector turns negative over a rolling 20-session window",
     "An 8-K discloses a material adverse event (guidance cut, exec departure, investigation)"
    ],
-   "px_last": 187.0800018310547,
+   "px_last": 187.0500030517578,
    "px_last_date": "2026-08-13",
    "gate_fail": ""
   }
  ],
- "watchlist_changes": [
-  {
-   "ts": "2026-08-13T20:23:05+00:00",
-   "date": "2026-08-13",
-   "ticker": "DXCM",
-   "from": "WAIT_FOR_PULLBACK",
-   "to": "WATCH",
-   "reason": "opp 64"
-  },
-  {
-   "ts": "2026-08-13T20:23:05+00:00",
-   "date": "2026-08-13",
-   "ticker": "WDAY",
-   "from": "NONE",
-   "to": "WATCH",
-   "reason": "opp 61"
-  },
-  {
-   "ts": "2026-08-13T20:23:05+00:00",
-   "date": "2026-08-13",
-   "ticker": "CRM",
-   "from": "NONE",
-   "to": "WATCH",
-   "reason": "opp 61"
-  },
-  {
-   "ts": "2026-08-13T20:23:05+00:00",
-   "date": "2026-08-13",
-   "ticker": "ADBE",
-   "from": "NONE",
-   "to": "WATCH",
-   "reason": "opp 61"
-  }
- ],
+ "watchlist_changes": [],
  "calibration": {
   "n": 0,
   "note": "no matured predictions yet"
@@ -2508,109 +2475,109 @@
   "median_data_confidence": 90.0
  },
  "runlog": {
-  "run_id": "20260813T201212-48cbd0",
+  "run_id": "20260813T222333-8b62b7",
   "steps": [
    {
-    "ts": "2026-08-13T20:13:40Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:24:05Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "fetch_prices_primary",
     "status": "ok",
-    "detail": "519892 rows / 520 tickers"
+    "detail": "519948 rows / 520 tickers"
    },
    {
-    "ts": "2026-08-13T20:15:50Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:24:07Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "fetch_prices_fallback",
     "status": "warn",
     "detail": "0 rows"
    },
    {
-    "ts": "2026-08-13T20:19:39Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:24:27Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "fetch_fundamentals",
     "status": "ok",
     "detail": "502 tickers ok, 1 failed"
    },
    {
-    "ts": "2026-08-13T20:20:49Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:24:30Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "fetch_insiders",
     "status": "ok",
     "detail": "18621 transactions"
    },
    {
-    "ts": "2026-08-13T20:20:50Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:24:30Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "fetch_macro",
     "status": "ok",
     "detail": "6/6 series"
    },
    {
-    "ts": "2026-08-13T20:22:10Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:25:33Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "fetch_news",
     "status": "ok",
-    "detail": "5010 items"
+    "detail": "5030 items"
    },
    {
-    "ts": "2026-08-13T20:22:27Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:25:53Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "quality",
     "status": "ok",
     "detail": "520 names, 0 quarantined; []"
    },
    {
-    "ts": "2026-08-13T20:22:31Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:25:59Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "features_technical",
     "status": "ok",
     "detail": "518 tickers"
    },
    {
-    "ts": "2026-08-13T20:23:03Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:26:28Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "features_fundamental",
     "status": "ok",
     "detail": "502 tickers"
    },
    {
-    "ts": "2026-08-13T20:23:04Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:26:30Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "regime",
     "status": "ok",
-    "detail": "bullish_expansion (score 0.711)"
+    "detail": "bullish_expansion (score 0.71)"
    },
    {
-    "ts": "2026-08-13T20:23:05Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:26:31Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "scoring",
     "status": "ok",
-    "detail": "499 scored; calibrated=False"
+    "detail": "499 scored; calibrated=True"
    },
    {
-    "ts": "2026-08-13T20:23:05Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:26:31Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "selection",
     "status": "ok",
     "detail": "0 high-conviction, 0 avoid"
    },
    {
-    "ts": "2026-08-13T20:23:05Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:26:31Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "watchlist",
     "status": "ok",
-    "detail": "4 state changes"
+    "detail": "0 state changes"
    },
    {
-    "ts": "2026-08-13T20:23:05Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:26:31Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "ledger",
     "status": "ok",
     "detail": "50 tickers x horizons recorded"
    },
    {
-    "ts": "2026-08-13T20:23:05Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:26:32Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "evaluate",
     "status": "ok",
     "detail": "0 newly matured; ledger n=0"
@@ -2619,8 +2586,8 @@
   "failures": [],
   "warnings": [
    {
-    "ts": "2026-08-13T20:15:50Z",
-    "run_id": "20260813T201212-48cbd0",
+    "ts": "2026-08-13T22:24:07Z",
+    "run_id": "20260813T222333-8b62b7",
     "step": "fetch_prices_fallback",
     "status": "warn",
     "detail": "0 rows"
