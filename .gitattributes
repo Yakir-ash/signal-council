@@ -1,0 +1,3 @@
+# prevent line-ending churn on machine-generated data files
+data/** -text
+*.png binary

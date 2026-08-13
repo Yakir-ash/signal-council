@@ -1,0 +1,60 @@
+name: backtest
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "backtest start date"
+        default: "2016-01-01"
+      top_n:
+        description: "portfolio size"
+        default: "20"
+      years_history:
+        description: "years of price history to fetch"
+        default: "13"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11", cache: pip}
+      - uses: actions/cache@v4
+        with:
+          path: |
+            data/panels
+            data/cache
+          key: panels-${{ github.run_id }}
+          restore-keys: panels-
+      - name: Install
+        run: pip install -e .
+      - name: Fetch deep price history
+        run: sigc fetch --years ${{ github.event.inputs.years_history }}
+      - name: Run walk-forward backtest
+        run: |
+          sigc backtest --start "${{ github.event.inputs.start }}" \
+                        --top-n ${{ github.event.inputs.top_n }} \
+                        2>&1 | tee backtest_output.log
+      - name: Preserve log
+        if: always()
+        run: |
+          mkdir -p data/reports/ci_logs
+          cp backtest_output.log "data/reports/ci_logs/backtest-run${{ github.run_id }}.log" || true
+      - name: Commit results (backtest report + empirical probability tables)
+        if: always()
+        run: |
+          git config user.name "signal-council-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/reports data/calibration || true
+          git diff --cached --quiet || git commit -m "backtest: start=${{ github.event.inputs.start }} top_n=${{ github.event.inputs.top_n }}"
+          git pull --rebase origin main
+          git push
