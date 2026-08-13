@@ -18,3 +18,7 @@
 {"ts": "2026-08-12T22:30:44+00:00", "date": "2026-08-12", "ticker": "VLO", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
 {"ts": "2026-08-12T22:30:44+00:00", "date": "2026-08-12", "ticker": "APA", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 61"}
 {"ts": "2026-08-12T22:30:44+00:00", "date": "2026-08-12", "ticker": "NRG", "from": "AVOID", "to": "NONE", "reason": "opp 30 below watch threshold"}
+{"ts": "2026-08-13T20:23:05+00:00", "date": "2026-08-13", "ticker": "DXCM", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 64"}
+{"ts": "2026-08-13T20:23:05+00:00", "date": "2026-08-13", "ticker": "WDAY", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
+{"ts": "2026-08-13T20:23:05+00:00", "date": "2026-08-13", "ticker": "CRM", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
+{"ts": "2026-08-13T20:23:05+00:00", "date": "2026-08-13", "ticker": "ADBE", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
