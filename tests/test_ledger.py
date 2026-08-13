@@ -41,10 +41,17 @@ def test_record_and_load_roundtrip(tmp_ledger):
 
 
 def test_appends_never_overwrite(tmp_ledger):
-    tmp_ledger.record_predictions(ROW, REGIME, "run1")
-    tmp_ledger.record_predictions(ROW, REGIME, "run2")
+    tmp_ledger.record_predictions(ROW, REGIME, "run1", dedupe_daily=False)
+    tmp_ledger.record_predictions(ROW, REGIME, "run2", dedupe_daily=False)
     df = tmp_ledger.load_predictions()
     assert len(df) == 2, "second record must append, not replace"
+
+
+def test_same_day_rerun_deduped(tmp_ledger):
+    tmp_ledger.record_predictions(ROW, REGIME, "run1")
+    tmp_ledger.record_predictions(ROW, REGIME, "run2")   # same day rerun
+    df = tmp_ledger.load_predictions()
+    assert len(df) == 1, "same-day rerun must not double-record a horizon"
 
 
 def test_outcome_written_once(tmp_ledger):

@@ -135,6 +135,7 @@ def _row_public(row: pd.Series) -> dict:
                              "risk_components", "predictions", "reasons",
                              "divergence_patterns", "thesis_breakers",
                              "px_last", "px_last_date")}
+    d["gate_fail"] = row.get("gate_fail", "")
     return d
 
 

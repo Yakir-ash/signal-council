@@ -37,12 +37,35 @@ def prediction_id(ts: str, ticker: str, horizon: str) -> str:
     return hashlib.sha1(f"{ts}|{ticker}|{horizon}".encode()).hexdigest()[:16]
 
 
+def _already_recorded_today(ticker: str, ts: str) -> set[str]:
+    """Horizons already recorded for this ticker today (dedupe: if the pipeline
+    runs twice in a day, the ledger keeps the FIRST prediction — never both,
+    which would double-weight that day in calibration)."""
+    path = _pred_file(ts)
+    if not path.exists():
+        return set()
+    day = ts[:10]
+    seen = set()
+    with open(path) as f:
+        for line in f:
+            try:
+                e = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if e.get("ticker") == ticker and e.get("ts", "")[:10] == day:
+                seen.add(e.get("horizon"))
+    return seen
+
+
 def record_predictions(scored_row: dict, regime: dict, run_id: str,
-                       kind: str = "daily_scan") -> list[dict]:
+                       kind: str = "daily_scan", dedupe_daily: bool = True) -> list[dict]:
     """Write one ledger entry per horizon for a scored ticker. Returns entries."""
     ts = _now()
+    skip = _already_recorded_today(scored_row["ticker"], ts) if dedupe_daily else set()
     entries = []
     for p in scored_row["predictions"]:
+        if p["horizon"] in skip:
+            continue
         e = {
             "id": prediction_id(ts, scored_row["ticker"], p["horizon"]),
             "ts": ts,
