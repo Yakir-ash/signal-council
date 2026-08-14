@@ -1,0 +1,43 @@
+run: 31844577055 outcome: success 2026-08-14T22:05:22Z
+$BRK.B: possibly delisted; no timezone found
+$BF.B: possibly delisted; no price data found  (1d 2022-08-05 -> 2026-08-15)
+
+2 Failed downloads:
+['BRK.B']: possibly delisted; no timezone found
+['BF.B']: possibly delisted; no price data found  (1d 2022-08-05 -> 2026-08-15)
+2026-08-14 21:57:50,678 INFO sigcouncil.run: fetch_prices_primary: ok 519990 rows / 520 tickers
+2026-08-14 22:00:01,480 WARNING sigcouncil.run: fetch_prices_fallback: warn 0 rows
+2026-08-14 22:00:05,600 WARNING sigcouncil.edgar: no CIK for AEP
+2026-08-14 22:01:55,923 INFO sigcouncil.run: fetch_fundamentals: ok 502 tickers ok, 1 failed
+2026-08-14 22:03:14,066 INFO sigcouncil.run: fetch_insiders: ok 18759 transactions
+2026-08-14 22:03:15,663 INFO sigcouncil.run: fetch_macro: ok 6/6 series
+2026-08-14 22:04:38,167 INFO sigcouncil.run: fetch_news: ok 5021 items
+2026-08-14 22:04:53,563 INFO sigcouncil.run: quality: ok 520 names, 0 quarantined; []
+2026-08-14 22:04:57,801 INFO sigcouncil.run: features_technical: ok 518 tickers
+2026-08-14 22:05:19,203 INFO sigcouncil.run: features_fundamental: ok 502 tickers
+2026-08-14 22:05:20,835 INFO sigcouncil.run: regime: ok bullish_expansion (score 0.696)
+2026-08-14 22:05:21,332 INFO sigcouncil.run: scoring: ok 499 scored; calibrated=True
+2026-08-14 22:05:21,334 INFO sigcouncil.run: selection: ok 0 high-conviction, 0 avoid
+2026-08-14 22:05:21,345 INFO sigcouncil.run: watchlist: ok 2 state changes
+2026-08-14 22:05:21,610 INFO sigcouncil.run: ledger: ok 50 tickers x horizons recorded
+2026-08-14 22:05:21,992 INFO sigcouncil.run: evaluate: ok 0 newly matured; ledger n=0
+2026-08-14 22:05:21,998 INFO sigcouncil.run: report_pack: ok /home/runner/work/signal-council/signal-council/data/reports/2026-08-14/pack.json
+
+=== 2026-08-14 | regime: bullish_expansion ===
+NO HIGH-CONVICTION OPPORTUNITIES TODAY
+{"ts": "2026-08-14T21:57:50Z", "run_id": "20260814T215704-594bc0", "step": "fetch_prices_primary", "status": "ok", "detail": "519990 rows / 520 tickers"}
+{"ts": "2026-08-14T22:00:01Z", "run_id": "20260814T215704-594bc0", "step": "fetch_prices_fallback", "status": "warn", "detail": "0 rows"}
+{"ts": "2026-08-14T22:01:55Z", "run_id": "20260814T215704-594bc0", "step": "fetch_fundamentals", "status": "ok", "detail": "502 tickers ok, 1 failed"}
+{"ts": "2026-08-14T22:03:14Z", "run_id": "20260814T215704-594bc0", "step": "fetch_insiders", "status": "ok", "detail": "18759 transactions"}
+{"ts": "2026-08-14T22:03:15Z", "run_id": "20260814T215704-594bc0", "step": "fetch_macro", "status": "ok", "detail": "6/6 series"}
+{"ts": "2026-08-14T22:04:38Z", "run_id": "20260814T215704-594bc0", "step": "fetch_news", "status": "ok", "detail": "5021 items"}
+{"ts": "2026-08-14T22:04:53Z", "run_id": "20260814T215704-594bc0", "step": "quality", "status": "ok", "detail": "520 names, 0 quarantined; []"}
+{"ts": "2026-08-14T22:04:57Z", "run_id": "20260814T215704-594bc0", "step": "features_technical", "status": "ok", "detail": "518 tickers"}
+{"ts": "2026-08-14T22:05:19Z", "run_id": "20260814T215704-594bc0", "step": "features_fundamental", "status": "ok", "detail": "502 tickers"}
+{"ts": "2026-08-14T22:05:20Z", "run_id": "20260814T215704-594bc0", "step": "regime", "status": "ok", "detail": "bullish_expansion (score 0.696)"}
+{"ts": "2026-08-14T22:05:21Z", "run_id": "20260814T215704-594bc0", "step": "scoring", "status": "ok", "detail": "499 scored; calibrated=True"}
+{"ts": "2026-08-14T22:05:21Z", "run_id": "20260814T215704-594bc0", "step": "selection", "status": "ok", "detail": "0 high-conviction, 0 avoid"}
+{"ts": "2026-08-14T22:05:21Z", "run_id": "20260814T215704-594bc0", "step": "watchlist", "status": "ok", "detail": "2 state changes"}
+{"ts": "2026-08-14T22:05:21Z", "run_id": "20260814T215704-594bc0", "step": "ledger", "status": "ok", "detail": "50 tickers x horizons recorded"}
+{"ts": "2026-08-14T22:05:21Z", "run_id": "20260814T215704-594bc0", "step": "evaluate", "status": "ok", "detail": "0 newly matured; ledger n=0"}
+{"ts": "2026-08-14T22:05:21Z", "run_id": "20260814T215704-594bc0", "step": "report_pack", "status": "ok", "detail": "/home/runner/work/signal-council/signal-council/data/reports/2026-08-14/pack.json"}

@@ -22,3 +22,5 @@
 {"ts": "2026-08-13T20:23:05+00:00", "date": "2026-08-13", "ticker": "WDAY", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
 {"ts": "2026-08-13T20:23:05+00:00", "date": "2026-08-13", "ticker": "CRM", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
 {"ts": "2026-08-13T20:23:05+00:00", "date": "2026-08-13", "ticker": "ADBE", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
+{"ts": "2026-08-14T22:05:21+00:00", "date": "2026-08-14", "ticker": "DXCM", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
+{"ts": "2026-08-14T22:05:21+00:00", "date": "2026-08-14", "ticker": "SNDK", "from": "NONE", "to": "WATCH", "reason": "opp 64"}
