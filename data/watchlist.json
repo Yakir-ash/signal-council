@@ -2,134 +2,134 @@
  "ABNB": {
   "state": "WATCH",
   "since": "2026-08-12",
-  "opportunity": 67.2,
-  "risk": 42.2,
-  "updated": "2026-08-14"
+  "opportunity": 66.6,
+  "risk": 42.9,
+  "updated": "2026-08-17"
  },
  "EXPE": {
   "state": "WATCH",
   "since": "2026-08-12",
-  "opportunity": 65.7,
-  "risk": 40.8,
-  "updated": "2026-08-14"
+  "opportunity": 65.1,
+  "risk": 42.4,
+  "updated": "2026-08-17"
  },
  "DXCM": {
   "state": "WAIT_FOR_PULLBACK",
   "since": "2026-08-14",
-  "opportunity": 64.1,
-  "risk": 45.3,
-  "updated": "2026-08-14"
- },
- "SNDK": {
-  "state": "WATCH",
-  "since": "2026-08-14",
-  "opportunity": 64.0,
-  "risk": 59.3,
-  "updated": "2026-08-14"
+  "opportunity": 63.8,
+  "risk": 44.8,
+  "updated": "2026-08-17"
  },
  "HUM": {
   "state": "WATCH",
   "since": "2026-08-12",
-  "opportunity": 63.5,
-  "risk": 44.8,
-  "updated": "2026-08-14"
- },
- "BKNG": {
-  "state": "WATCH",
-  "since": "2026-08-12",
-  "opportunity": 62.9,
-  "risk": 36.5,
-  "updated": "2026-08-14"
+  "opportunity": 63.2,
+  "risk": 45.1,
+  "updated": "2026-08-17"
  },
  "VLO": {
   "state": "WATCH",
   "since": "2026-08-12",
+  "opportunity": 61.8,
+  "risk": 38.5,
+  "updated": "2026-08-17"
+ },
+ "BKNG": {
+  "state": "WATCH",
+  "since": "2026-08-12",
   "opportunity": 61.6,
-  "risk": 38.6,
-  "updated": "2026-08-14"
+  "risk": 37.5,
+  "updated": "2026-08-17"
  },
  "MPC": {
   "state": "WATCH",
   "since": "2026-08-12",
   "opportunity": 61.5,
-  "risk": 37.1,
-  "updated": "2026-08-14"
+  "risk": 36.6,
+  "updated": "2026-08-17"
  },
- "WDAY": {
+ "SNDK": {
   "state": "WATCH",
-  "since": "2026-08-13",
-  "opportunity": 61.0,
-  "risk": 56.7,
-  "updated": "2026-08-14"
+  "since": "2026-08-14",
+  "opportunity": 60.9,
+  "risk": 55.3,
+  "updated": "2026-08-17"
  },
  "DELL": {
   "state": "WAIT_FOR_PULLBACK",
   "since": "2026-08-12",
   "opportunity": 60.9,
-  "risk": 47.3,
-  "updated": "2026-08-14"
- },
- "FTNT": {
-  "state": "WATCH",
-  "since": "2026-08-12",
-  "opportunity": 60.8,
-  "risk": 45.8,
-  "updated": "2026-08-14"
+  "risk": 47.7,
+  "updated": "2026-08-17"
  },
  "APA": {
   "state": "WATCH",
   "since": "2026-08-12",
-  "opportunity": 60.6,
-  "risk": 48.8,
-  "updated": "2026-08-14"
+  "opportunity": 60.7,
+  "risk": 47.8,
+  "updated": "2026-08-17"
  },
- "ADSK": {
-  "state": "WATCH",
-  "since": "2026-08-12",
-  "opportunity": 60.2,
-  "risk": 47.0,
-  "updated": "2026-08-14"
- },
- "ADBE": {
+ "WDAY": {
   "state": "WATCH",
   "since": "2026-08-13",
-  "opportunity": 60.1,
-  "risk": 41.7,
-  "updated": "2026-08-14"
+  "opportunity": 60.7,
+  "risk": 57.0,
+  "updated": "2026-08-17"
+ },
+ "FTNT": {
+  "state": "WATCH",
+  "since": "2026-08-12",
+  "opportunity": 59.9,
+  "risk": 46.5,
+  "updated": "2026-08-17"
  },
  "UAL": {
   "state": "WATCH",
   "since": "2026-08-12",
-  "opportunity": 59.4,
-  "risk": 54.5,
-  "updated": "2026-08-14"
- },
- "CRM": {
-  "state": "WATCH",
-  "since": "2026-08-13",
-  "opportunity": 59.4,
-  "risk": 46.7,
-  "updated": "2026-08-14"
- },
- "DAL": {
-  "state": "WAIT_FOR_PULLBACK",
-  "since": "2026-08-12",
-  "opportunity": 58.7,
-  "risk": 47.4,
-  "updated": "2026-08-14"
- },
- "IBM": {
-  "state": "WATCH",
-  "since": "2026-08-12",
-  "opportunity": 57.5,
-  "risk": 46.7,
-  "updated": "2026-08-14"
+  "opportunity": 58.2,
+  "risk": 51.9,
+  "updated": "2026-08-17"
  },
  "LLY": {
   "state": "WATCH",
   "since": "2026-08-12",
+  "opportunity": 58.0,
+  "risk": 27.3,
+  "updated": "2026-08-17"
+ },
+ "DAL": {
+  "state": "WAIT_FOR_PULLBACK",
+  "since": "2026-08-12",
+  "opportunity": 57.5,
+  "risk": 47.7,
+  "updated": "2026-08-17"
+ },
+ "ADSK": {
+  "state": "WATCH",
+  "since": "2026-08-12",
+  "opportunity": 57.5,
+  "risk": 47.5,
+  "updated": "2026-08-17"
+ },
+ "ADBE": {
+  "state": "WATCH",
+  "since": "2026-08-13",
+  "opportunity": 56.9,
+  "risk": 42.0,
+  "updated": "2026-08-17"
+ },
+ "CRM": {
+  "state": "WATCH",
+  "since": "2026-08-13",
+  "opportunity": 56.8,
+  "risk": 46.8,
+  "updated": "2026-08-17"
+ },
+ "IBM": {
+  "state": "WATCH",
+  "since": "2026-08-12",
   "opportunity": 55.9,
-  "risk": 27.7,
-  "updated": "2026-08-14"
+  "risk": 46.8,
+  "updated": "2026-08-17"
  }
 }
