@@ -1,0 +1,66 @@
+run: 32190249029 outcome: success 2026-08-18T22:05:37Z
+$BRK.B: possibly delisted; no timezone found
+$BF.B: possibly delisted; no price data found  (1d 2022-08-09 -> 2026-08-19)
+
+2 Failed downloads:
+['BRK.B']: possibly delisted; no timezone found
+['BF.B']: possibly delisted; no price data found  (1d 2022-08-09 -> 2026-08-19)
+Failed to get ticker 'IEX' reason: Failed to perform, curl: (28) Connection timed out after 10000 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+Failed to get ticker 'GEV' reason: Failed to perform, curl: (28) Connection timed out after 10002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$GEV: possibly delisted; no timezone found
+Failed to get ticker 'GDDY' reason: Failed to perform, curl: (28) Connection timed out after 10002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$GDDY: possibly delisted; no timezone found
+
+2 Failed downloads:
+['GEV', 'GDDY']: possibly delisted; no timezone found
+Failed to get ticker 'PEP' reason: Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$PEP: possibly delisted; no timezone found
+Failed to get ticker 'MCK' reason: Failed to perform, curl: (28) Connection timed out after 10002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$MCK: possibly delisted; no timezone found
+
+2 Failed downloads:
+['PEP', 'MCK']: possibly delisted; no timezone found
+Failed to get ticker 'SLB' reason: Failed to perform, curl: (28) Connection timed out after 10002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$SLB: possibly delisted; no timezone found
+Failed to get ticker 'ULTA' reason: Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$ULTA: possibly delisted; no timezone found
+
+2 Failed downloads:
+['SLB', 'ULTA']: possibly delisted; no timezone found
+2026-08-18 21:57:32,679 INFO sigcouncil.run: fetch_prices_primary: ok 514549 rows / 514 tickers
+2026-08-18 21:59:43,347 WARNING sigcouncil.run: fetch_prices_fallback: warn 0 rows
+2026-08-18 21:59:48,402 WARNING sigcouncil.edgar: no CIK for AEP
+2026-08-18 22:01:50,162 INFO sigcouncil.run: fetch_fundamentals: ok 502 tickers ok, 1 failed
+2026-08-18 22:03:16,855 INFO sigcouncil.run: fetch_insiders: ok 18859 transactions
+2026-08-18 22:03:18,384 INFO sigcouncil.run: fetch_macro: ok 6/6 series
+2026-08-18 22:04:32,134 INFO sigcouncil.run: fetch_news: ok 5030 items
+2026-08-18 22:04:48,600 INFO sigcouncil.run: quality: ok 520 names, 0 quarantined; []
+2026-08-18 22:04:54,812 INFO sigcouncil.run: features_technical: ok 518 tickers
+2026-08-18 22:05:32,119 INFO sigcouncil.run: features_fundamental: ok 502 tickers
+2026-08-18 22:05:34,660 INFO sigcouncil.run: regime: ok bullish_expansion (score 0.622)
+2026-08-18 22:05:35,464 INFO sigcouncil.run: scoring: ok 499 scored; calibrated=True
+2026-08-18 22:05:35,467 INFO sigcouncil.run: selection: ok 0 high-conviction, 1 avoid
+2026-08-18 22:05:35,492 INFO sigcouncil.run: watchlist: ok 3 state changes
+2026-08-18 22:05:36,127 INFO sigcouncil.run: ledger: ok 50 tickers x horizons recorded
+2026-08-18 22:05:36,789 INFO sigcouncil.run: evaluate: ok 0 newly matured; ledger n=0
+2026-08-18 22:05:36,799 INFO sigcouncil.run: report_pack: ok /home/runner/work/signal-council/signal-council/data/reports/2026-08-18/pack.json
+
+=== 2026-08-18 | regime: bullish_expansion ===
+NO HIGH-CONVICTION OPPORTUNITIES TODAY
+AVOID: NRG
+{"ts": "2026-08-18T21:57:32Z", "run_id": "20260818T215624-ab332b", "step": "fetch_prices_primary", "status": "ok", "detail": "514549 rows / 514 tickers"}
+{"ts": "2026-08-18T21:59:43Z", "run_id": "20260818T215624-ab332b", "step": "fetch_prices_fallback", "status": "warn", "detail": "0 rows"}
+{"ts": "2026-08-18T22:01:50Z", "run_id": "20260818T215624-ab332b", "step": "fetch_fundamentals", "status": "ok", "detail": "502 tickers ok, 1 failed"}
+{"ts": "2026-08-18T22:03:16Z", "run_id": "20260818T215624-ab332b", "step": "fetch_insiders", "status": "ok", "detail": "18859 transactions"}
+{"ts": "2026-08-18T22:03:18Z", "run_id": "20260818T215624-ab332b", "step": "fetch_macro", "status": "ok", "detail": "6/6 series"}
+{"ts": "2026-08-18T22:04:32Z", "run_id": "20260818T215624-ab332b", "step": "fetch_news", "status": "ok", "detail": "5030 items"}
+{"ts": "2026-08-18T22:04:48Z", "run_id": "20260818T215624-ab332b", "step": "quality", "status": "ok", "detail": "520 names, 0 quarantined; []"}
+{"ts": "2026-08-18T22:04:54Z", "run_id": "20260818T215624-ab332b", "step": "features_technical", "status": "ok", "detail": "518 tickers"}
+{"ts": "2026-08-18T22:05:32Z", "run_id": "20260818T215624-ab332b", "step": "features_fundamental", "status": "ok", "detail": "502 tickers"}
+{"ts": "2026-08-18T22:05:34Z", "run_id": "20260818T215624-ab332b", "step": "regime", "status": "ok", "detail": "bullish_expansion (score 0.622)"}
+{"ts": "2026-08-18T22:05:35Z", "run_id": "20260818T215624-ab332b", "step": "scoring", "status": "ok", "detail": "499 scored; calibrated=True"}
+{"ts": "2026-08-18T22:05:35Z", "run_id": "20260818T215624-ab332b", "step": "selection", "status": "ok", "detail": "0 high-conviction, 1 avoid"}
+{"ts": "2026-08-18T22:05:35Z", "run_id": "20260818T215624-ab332b", "step": "watchlist", "status": "ok", "detail": "3 state changes"}
+{"ts": "2026-08-18T22:05:36Z", "run_id": "20260818T215624-ab332b", "step": "ledger", "status": "ok", "detail": "50 tickers x horizons recorded"}
+{"ts": "2026-08-18T22:05:36Z", "run_id": "20260818T215624-ab332b", "step": "evaluate", "status": "ok", "detail": "0 newly matured; ledger n=0"}
+{"ts": "2026-08-18T22:05:36Z", "run_id": "20260818T215624-ab332b", "step": "report_pack", "status": "ok", "detail": "/home/runner/work/signal-council/signal-council/data/reports/2026-08-18/pack.json"}
