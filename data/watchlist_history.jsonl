@@ -27,3 +27,5 @@
 {"ts": "2026-08-18T22:05:35+00:00", "date": "2026-08-18", "ticker": "DXCM", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 64"}
 {"ts": "2026-08-18T22:05:35+00:00", "date": "2026-08-18", "ticker": "DELL", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 60"}
 {"ts": "2026-08-18T22:05:35+00:00", "date": "2026-08-18", "ticker": "NRG", "from": "NONE", "to": "AVOID", "reason": "opp 29 with risk 70"}
+{"ts": "2026-08-19T22:07:15+00:00", "date": "2026-08-19", "ticker": "VLO", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
+{"ts": "2026-08-19T22:07:15+00:00", "date": "2026-08-19", "ticker": "NRG", "from": "AVOID", "to": "NONE", "reason": "opp 32 below watch threshold"}
