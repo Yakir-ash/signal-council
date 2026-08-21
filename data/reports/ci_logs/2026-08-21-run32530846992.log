@@ -1,0 +1,63 @@
+run: 32530846992 outcome: success 2026-08-21T22:06:09Z
+$BF.B: possibly delisted; no price data found  (1d 2022-08-12 -> 2026-08-22)
+$BRK.B: possibly delisted; no timezone found
+
+2 Failed downloads:
+['BF.B']: possibly delisted; no price data found  (1d 2022-08-12 -> 2026-08-22)
+['BRK.B']: possibly delisted; no timezone found
+2026-08-21 21:58:16,366 INFO sigcouncil.run: fetch_prices_primary: ok 520462 rows / 520 tickers
+2026-08-21 22:00:26,942 WARNING sigcouncil.run: fetch_prices_fallback: warn 0 rows
+2026-08-21 22:00:31,119 WARNING sigcouncil.edgar: no CIK for AEP
+2026-08-21 22:02:38,742 INFO sigcouncil.run: fetch_fundamentals: ok 502 tickers ok, 1 failed
+2026-08-21 22:03:53,899 INFO sigcouncil.run: fetch_insiders: ok 19317 transactions
+2026-08-21 22:03:55,427 INFO sigcouncil.run: fetch_macro: ok 6/6 series
+WFC: Failed to retrieve the news and received faulty response instead.
+WM: Failed to retrieve the news and received faulty response instead.
+WMB: Failed to retrieve the news and received faulty response instead.
+WMT: Failed to retrieve the news and received faulty response instead.
+WRB: Failed to retrieve the news and received faulty response instead.
+WSM: Failed to retrieve the news and received faulty response instead.
+WST: Failed to retrieve the news and received faulty response instead.
+WTW: Failed to retrieve the news and received faulty response instead.
+WY: Failed to retrieve the news and received faulty response instead.
+WYNN: Failed to retrieve the news and received faulty response instead.
+XEL: Failed to retrieve the news and received faulty response instead.
+XOM: Failed to retrieve the news and received faulty response instead.
+XYL: Failed to retrieve the news and received faulty response instead.
+XYZ: Failed to retrieve the news and received faulty response instead.
+YUM: Failed to retrieve the news and received faulty response instead.
+ZBH: Failed to retrieve the news and received faulty response instead.
+ZBRA: Failed to retrieve the news and received faulty response instead.
+ZTS: Failed to retrieve the news and received faulty response instead.
+2026-08-21 22:05:02,898 INFO sigcouncil.run: fetch_news: ok 4850 items
+2026-08-21 22:05:20,909 INFO sigcouncil.run: quality: ok 520 names, 1 quarantined; []
+2026-08-21 22:05:27,169 INFO sigcouncil.run: features_technical: ok 519 tickers
+2026-08-21 22:06:02,897 INFO sigcouncil.run: features_fundamental: ok 502 tickers
+2026-08-21 22:06:05,535 INFO sigcouncil.run: regime: ok bullish_expansion (score 0.567)
+2026-08-21 22:06:06,374 INFO sigcouncil.run: scoring: ok 500 scored; calibrated=True
+2026-08-21 22:06:06,377 INFO sigcouncil.run: selection: ok 0 high-conviction, 1 avoid
+2026-08-21 22:06:06,402 INFO sigcouncil.run: watchlist: ok 3 state changes
+2026-08-21 22:06:07,373 INFO sigcouncil.run: ledger: ok 50 tickers x horizons recorded
+2026-08-21 22:06:08,225 INFO sigcouncil.evaluate: evaluated 50 matured predictions
+2026-08-21 22:06:08,308 INFO sigcouncil.run: evaluate: ok 50 newly matured; ledger n=201
+2026-08-21 22:06:08,318 INFO sigcouncil.run: report_pack: ok /home/runner/work/signal-council/signal-council/data/reports/2026-08-21/pack.json
+
+=== 2026-08-21 | regime: bullish_expansion ===
+NO HIGH-CONVICTION OPPORTUNITIES TODAY
+AVOID: NRG
+{"ts": "2026-08-21T21:58:16Z", "run_id": "20260821T215743-268c48", "step": "fetch_prices_primary", "status": "ok", "detail": "520462 rows / 520 tickers"}
+{"ts": "2026-08-21T22:00:26Z", "run_id": "20260821T215743-268c48", "step": "fetch_prices_fallback", "status": "warn", "detail": "0 rows"}
+{"ts": "2026-08-21T22:02:38Z", "run_id": "20260821T215743-268c48", "step": "fetch_fundamentals", "status": "ok", "detail": "502 tickers ok, 1 failed"}
+{"ts": "2026-08-21T22:03:53Z", "run_id": "20260821T215743-268c48", "step": "fetch_insiders", "status": "ok", "detail": "19317 transactions"}
+{"ts": "2026-08-21T22:03:55Z", "run_id": "20260821T215743-268c48", "step": "fetch_macro", "status": "ok", "detail": "6/6 series"}
+{"ts": "2026-08-21T22:05:02Z", "run_id": "20260821T215743-268c48", "step": "fetch_news", "status": "ok", "detail": "4850 items"}
+{"ts": "2026-08-21T22:05:20Z", "run_id": "20260821T215743-268c48", "step": "quality", "status": "ok", "detail": "520 names, 1 quarantined; []"}
+{"ts": "2026-08-21T22:05:27Z", "run_id": "20260821T215743-268c48", "step": "features_technical", "status": "ok", "detail": "519 tickers"}
+{"ts": "2026-08-21T22:06:02Z", "run_id": "20260821T215743-268c48", "step": "features_fundamental", "status": "ok", "detail": "502 tickers"}
+{"ts": "2026-08-21T22:06:05Z", "run_id": "20260821T215743-268c48", "step": "regime", "status": "ok", "detail": "bullish_expansion (score 0.567)"}
+{"ts": "2026-08-21T22:06:06Z", "run_id": "20260821T215743-268c48", "step": "scoring", "status": "ok", "detail": "500 scored; calibrated=True"}
+{"ts": "2026-08-21T22:06:06Z", "run_id": "20260821T215743-268c48", "step": "selection", "status": "ok", "detail": "0 high-conviction, 1 avoid"}
+{"ts": "2026-08-21T22:06:06Z", "run_id": "20260821T215743-268c48", "step": "watchlist", "status": "ok", "detail": "3 state changes"}
+{"ts": "2026-08-21T22:06:07Z", "run_id": "20260821T215743-268c48", "step": "ledger", "status": "ok", "detail": "50 tickers x horizons recorded"}
+{"ts": "2026-08-21T22:06:08Z", "run_id": "20260821T215743-268c48", "step": "evaluate", "status": "ok", "detail": "50 newly matured; ledger n=201"}
+{"ts": "2026-08-21T22:06:08Z", "run_id": "20260821T215743-268c48", "step": "report_pack", "status": "ok", "detail": "/home/runner/work/signal-council/signal-council/data/reports/2026-08-21/pack.json"}

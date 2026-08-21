@@ -34,3 +34,6 @@
 {"ts": "2026-08-20T22:07:19+00:00", "date": "2026-08-20", "ticker": "MPC", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
 {"ts": "2026-08-20T22:07:19+00:00", "date": "2026-08-20", "ticker": "LLY", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
 {"ts": "2026-08-20T22:07:19+00:00", "date": "2026-08-20", "ticker": "NRG", "from": "NONE", "to": "AVOID", "reason": "opp 30 with risk 70"}
+{"ts": "2026-08-21T22:06:06+00:00", "date": "2026-08-21", "ticker": "ABNB", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 67"}
+{"ts": "2026-08-21T22:06:06+00:00", "date": "2026-08-21", "ticker": "MPC", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 62"}
+{"ts": "2026-08-21T22:06:06+00:00", "date": "2026-08-21", "ticker": "LLY", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 61"}
