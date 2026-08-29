@@ -1,0 +1,45 @@
+run: 33231213899 outcome: success 2026-08-29T03:36:25Z
+$BRK.B: possibly delisted; no timezone found
+$BF.B: possibly delisted; no price data found  (1d 2022-08-20 -> 2026-08-30)
+
+2 Failed downloads:
+['BRK.B']: possibly delisted; no timezone found
+['BF.B']: possibly delisted; no price data found  (1d 2022-08-20 -> 2026-08-30)
+2026-08-29 03:24:57,113 INFO sigcouncil.run: fetch_prices_primary: ok 518044 rows / 520 tickers
+2026-08-29 03:27:08,473 WARNING sigcouncil.run: fetch_prices_fallback: warn 0 rows
+2026-08-29 03:28:14,179 WARNING sigcouncil.edgar: no CIK for EQR
+2026-08-29 03:30:26,707 INFO sigcouncil.run: fetch_fundamentals: ok 502 tickers ok, 1 failed
+2026-08-29 03:32:00,549 INFO sigcouncil.run: fetch_insiders: ok 19627 transactions
+2026-08-29 03:32:02,269 INFO sigcouncil.run: fetch_macro: ok 6/6 series
+2026-08-29 03:35:21,258 INFO sigcouncil.run: fetch_news: ok 5030 items
+2026-08-29 03:35:36,995 INFO sigcouncil.run: quality: ok 520 names, 0 quarantined; []
+2026-08-29 03:35:43,163 INFO sigcouncil.run: features_technical: ok 519 tickers
+2026-08-29 03:36:18,561 INFO sigcouncil.run: features_fundamental: ok 502 tickers
+2026-08-29 03:36:21,020 INFO sigcouncil.run: regime: ok bullish_expansion (score 0.641)
+2026-08-29 03:36:21,787 INFO sigcouncil.run: scoring: ok 500 scored; calibrated=True
+2026-08-29 03:36:21,790 INFO sigcouncil.run: selection: ok 0 high-conviction, 1 avoid
+2026-08-29 03:36:21,814 INFO sigcouncil.run: watchlist: ok 2 state changes
+2026-08-29 03:36:23,321 INFO sigcouncil.run: ledger: ok 50 tickers x horizons recorded
+2026-08-29 03:36:24,348 INFO sigcouncil.evaluate: evaluated 50 matured predictions
+2026-08-29 03:36:24,445 INFO sigcouncil.run: evaluate: ok 50 newly matured; ledger n=451
+2026-08-29 03:36:24,455 INFO sigcouncil.run: report_pack: ok /home/runner/work/signal-council/signal-council/data/reports/2026-08-29/pack.json
+
+=== 2026-08-29 | regime: bullish_expansion ===
+NO HIGH-CONVICTION OPPORTUNITIES TODAY
+AVOID: NRG
+{"ts": "2026-08-29T03:24:57Z", "run_id": "20260829T032254-f952e2", "step": "fetch_prices_primary", "status": "ok", "detail": "518044 rows / 520 tickers"}
+{"ts": "2026-08-29T03:27:08Z", "run_id": "20260829T032254-f952e2", "step": "fetch_prices_fallback", "status": "warn", "detail": "0 rows"}
+{"ts": "2026-08-29T03:30:26Z", "run_id": "20260829T032254-f952e2", "step": "fetch_fundamentals", "status": "ok", "detail": "502 tickers ok, 1 failed"}
+{"ts": "2026-08-29T03:32:00Z", "run_id": "20260829T032254-f952e2", "step": "fetch_insiders", "status": "ok", "detail": "19627 transactions"}
+{"ts": "2026-08-29T03:32:02Z", "run_id": "20260829T032254-f952e2", "step": "fetch_macro", "status": "ok", "detail": "6/6 series"}
+{"ts": "2026-08-29T03:35:21Z", "run_id": "20260829T032254-f952e2", "step": "fetch_news", "status": "ok", "detail": "5030 items"}
+{"ts": "2026-08-29T03:35:36Z", "run_id": "20260829T032254-f952e2", "step": "quality", "status": "ok", "detail": "520 names, 0 quarantined; []"}
+{"ts": "2026-08-29T03:35:43Z", "run_id": "20260829T032254-f952e2", "step": "features_technical", "status": "ok", "detail": "519 tickers"}
+{"ts": "2026-08-29T03:36:18Z", "run_id": "20260829T032254-f952e2", "step": "features_fundamental", "status": "ok", "detail": "502 tickers"}
+{"ts": "2026-08-29T03:36:21Z", "run_id": "20260829T032254-f952e2", "step": "regime", "status": "ok", "detail": "bullish_expansion (score 0.641)"}
+{"ts": "2026-08-29T03:36:21Z", "run_id": "20260829T032254-f952e2", "step": "scoring", "status": "ok", "detail": "500 scored; calibrated=True"}
+{"ts": "2026-08-29T03:36:21Z", "run_id": "20260829T032254-f952e2", "step": "selection", "status": "ok", "detail": "0 high-conviction, 1 avoid"}
+{"ts": "2026-08-29T03:36:21Z", "run_id": "20260829T032254-f952e2", "step": "watchlist", "status": "ok", "detail": "2 state changes"}
+{"ts": "2026-08-29T03:36:23Z", "run_id": "20260829T032254-f952e2", "step": "ledger", "status": "ok", "detail": "50 tickers x horizons recorded"}
+{"ts": "2026-08-29T03:36:24Z", "run_id": "20260829T032254-f952e2", "step": "evaluate", "status": "ok", "detail": "50 newly matured; ledger n=451"}
+{"ts": "2026-08-29T03:36:24Z", "run_id": "20260829T032254-f952e2", "step": "report_pack", "status": "ok", "detail": "/home/runner/work/signal-council/signal-council/data/reports/2026-08-29/pack.json"}
