@@ -43,3 +43,11 @@
 {"ts": "2026-08-28T05:43:57+00:00", "date": "2026-08-28", "ticker": "WELL", "from": "NONE", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
 {"ts": "2026-08-29T03:36:21+00:00", "date": "2026-08-29", "ticker": "CF", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
 {"ts": "2026-08-29T03:36:21+00:00", "date": "2026-08-29", "ticker": "PAYX", "from": "NONE", "to": "WATCH", "reason": "opp 60"}
+{"ts": "2026-09-01T00:56:43+00:00", "date": "2026-09-01", "ticker": "FTNT", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
+{"ts": "2026-09-01T00:56:43+00:00", "date": "2026-09-01", "ticker": "CF", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
+{"ts": "2026-09-01T00:56:43+00:00", "date": "2026-09-01", "ticker": "WELL", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 61"}
+{"ts": "2026-09-01T00:56:43+00:00", "date": "2026-09-01", "ticker": "AAPL", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
+{"ts": "2026-09-01T00:56:43+00:00", "date": "2026-09-01", "ticker": "GEN", "from": "NONE", "to": "WATCH", "reason": "opp 60"}
+{"ts": "2026-09-01T00:56:43+00:00", "date": "2026-09-01", "ticker": "VEEV", "from": "NONE", "to": "WATCH", "reason": "opp 60"}
+{"ts": "2026-09-01T00:56:43+00:00", "date": "2026-09-01", "ticker": "MSFT", "from": "NONE", "to": "WATCH", "reason": "opp 60"}
+{"ts": "2026-09-01T00:56:43+00:00", "date": "2026-09-01", "ticker": "VRTX", "from": "NONE", "to": "WATCH", "reason": "opp 60"}
