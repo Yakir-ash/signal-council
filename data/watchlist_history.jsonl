@@ -55,3 +55,5 @@
 {"ts": "2026-09-01T23:42:02+00:00", "date": "2026-09-01", "ticker": "FTNT", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 63"}
 {"ts": "2026-09-01T23:42:02+00:00", "date": "2026-09-01", "ticker": "WELL", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
 {"ts": "2026-09-01T23:42:03+00:00", "date": "2026-09-01", "ticker": "GDDY", "from": "NONE", "to": "WATCH", "reason": "opp 60"}
+{"ts": "2026-09-02T23:41:58+00:00", "date": "2026-09-02", "ticker": "ADSK", "from": "WATCH", "to": "WAIT_FOR_CONFIRMATION", "reason": "thesis ok, technicals not confirming (37)"}
+{"ts": "2026-09-02T23:41:58+00:00", "date": "2026-09-02", "ticker": "DELL", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
