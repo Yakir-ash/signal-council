@@ -1,13 +1,13 @@
 {
- "Information Technology": -0.0632475537012489,
- "Financials": 0.13744805272744576,
- "Health Care": 0.17731442558918942,
- "Energy": 0.11683676394326903,
- "Industrials": -0.004854398795768766,
- "Consumer Discretionary": -0.014059169036952368,
- "Consumer Staples": 0.04824066567738883,
- "Utilities": -0.017559619769198176,
- "Materials": 0.02940119668554253,
- "Real Estate": 0.013863509629820303,
- "Communication Services": 0.005642954401218425
+ "Information Technology": -0.036124921230649365,
+ "Financials": 0.1259846215989291,
+ "Health Care": 0.14429325063751186,
+ "Energy": 0.10784727985080078,
+ "Industrials": -0.0066447340543401845,
+ "Consumer Discretionary": -0.00484342527494408,
+ "Consumer Staples": 0.046460129548988816,
+ "Utilities": -0.014456832986734947,
+ "Materials": 0.023183906436274215,
+ "Real Estate": 0.0053547866856276105,
+ "Communication Services": 0.004994764011974073
 }
