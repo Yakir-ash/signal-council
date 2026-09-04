@@ -59,3 +59,6 @@
 {"ts": "2026-09-02T23:41:58+00:00", "date": "2026-09-02", "ticker": "DELL", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
 {"ts": "2026-09-03T23:40:37+00:00", "date": "2026-09-03", "ticker": "EXPE", "from": "WATCH", "to": "WAIT_FOR_CONFIRMATION", "reason": "thesis ok, technicals not confirming (36)"}
 {"ts": "2026-09-03T23:40:37+00:00", "date": "2026-09-03", "ticker": "PLTR", "from": "NONE", "to": "WATCH", "reason": "opp 61"}
+{"ts": "2026-09-04T23:27:26+00:00", "date": "2026-09-04", "ticker": "APA", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 64"}
+{"ts": "2026-09-04T23:27:26+00:00", "date": "2026-09-04", "ticker": "WELL", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 60"}
+{"ts": "2026-09-04T23:27:26+00:00", "date": "2026-09-04", "ticker": "NRG", "from": "AVOID", "to": "NONE", "reason": "opp 33 below watch threshold"}
