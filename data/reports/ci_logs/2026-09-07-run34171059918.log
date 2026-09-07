@@ -1,0 +1,54 @@
+run: 34171059918 outcome: success 2026-09-07T23:54:38Z
+$BF.B: possibly delisted; no price data found  (1d 2022-08-29 -> 2026-09-08)
+$BRK.B: possibly delisted; no timezone found
+
+2 Failed downloads:
+['BF.B']: possibly delisted; no price data found  (1d 2022-08-29 -> 2026-09-08)
+['BRK.B']: possibly delisted; no timezone found
+2026-09-07 23:46:01,580 INFO sigcouncil.run: fetch_prices_primary: ok 518089 rows / 520 tickers
+2026-09-07 23:48:12,145 WARNING sigcouncil.run: fetch_prices_fallback: warn 0 rows
+2026-09-07 23:48:29,548 WARNING sigcouncil.edgar: no CIK for AVB
+2026-09-07 23:49:11,001 WARNING sigcouncil.edgar: no CIK for EQR
+2026-09-07 23:51:15,548 INFO sigcouncil.run: fetch_fundamentals: ok 501 tickers ok, 2 failed
+2026-09-07 23:52:23,708 INFO sigcouncil.run: fetch_insiders: ok 18571 transactions
+2026-09-07 23:52:25,239 INFO sigcouncil.run: fetch_macro: ok 6/6 series
+VZ: Failed to retrieve the news and received faulty response instead.
+WAB: Failed to retrieve the news and received faulty response instead.
+WEC: Failed to retrieve the news and received faulty response instead.
+WSM: Failed to retrieve the news and received faulty response instead.
+WST: Failed to retrieve the news and received faulty response instead.
+WTW: Failed to retrieve the news and received faulty response instead.
+WY: Failed to retrieve the news and received faulty response instead.
+WYNN: Failed to retrieve the news and received faulty response instead.
+XEL: Failed to retrieve the news and received faulty response instead.
+ZTS: Failed to retrieve the news and received faulty response instead.
+2026-09-07 23:53:38,440 INFO sigcouncil.run: fetch_news: ok 4930 items
+2026-09-07 23:53:55,275 INFO sigcouncil.run: quality: ok 520 names, 0 quarantined; []
+2026-09-07 23:54:00,957 INFO sigcouncil.run: features_technical: ok 519 tickers
+2026-09-07 23:54:32,646 INFO sigcouncil.run: features_fundamental: ok 501 tickers
+2026-09-07 23:54:34,784 INFO sigcouncil.run: regime: ok bullish_expansion (score 0.622)
+2026-09-07 23:54:35,527 INFO sigcouncil.run: scoring: ok 500 scored; calibrated=True
+2026-09-07 23:54:35,530 INFO sigcouncil.run: selection: ok 0 high-conviction, 0 avoid
+2026-09-07 23:54:35,547 INFO sigcouncil.run: watchlist: ok 0 state changes
+2026-09-07 23:54:36,066 INFO sigcouncil.run: ledger: ok 50 tickers x horizons recorded
+2026-09-07 23:54:37,232 INFO sigcouncil.run: evaluate: ok 0 newly matured; ledger n=651
+2026-09-07 23:54:37,241 INFO sigcouncil.run: report_pack: ok /home/runner/work/signal-council/signal-council/data/reports/2026-09-07/pack.json
+
+=== 2026-09-07 | regime: bullish_expansion ===
+NO HIGH-CONVICTION OPPORTUNITIES TODAY
+{"ts": "2026-09-07T23:46:01Z", "run_id": "20260907T234526-27aff7", "step": "fetch_prices_primary", "status": "ok", "detail": "518089 rows / 520 tickers"}
+{"ts": "2026-09-07T23:48:12Z", "run_id": "20260907T234526-27aff7", "step": "fetch_prices_fallback", "status": "warn", "detail": "0 rows"}
+{"ts": "2026-09-07T23:51:15Z", "run_id": "20260907T234526-27aff7", "step": "fetch_fundamentals", "status": "ok", "detail": "501 tickers ok, 2 failed"}
+{"ts": "2026-09-07T23:52:23Z", "run_id": "20260907T234526-27aff7", "step": "fetch_insiders", "status": "ok", "detail": "18571 transactions"}
+{"ts": "2026-09-07T23:52:25Z", "run_id": "20260907T234526-27aff7", "step": "fetch_macro", "status": "ok", "detail": "6/6 series"}
+{"ts": "2026-09-07T23:53:38Z", "run_id": "20260907T234526-27aff7", "step": "fetch_news", "status": "ok", "detail": "4930 items"}
+{"ts": "2026-09-07T23:53:55Z", "run_id": "20260907T234526-27aff7", "step": "quality", "status": "ok", "detail": "520 names, 0 quarantined; []"}
+{"ts": "2026-09-07T23:54:00Z", "run_id": "20260907T234526-27aff7", "step": "features_technical", "status": "ok", "detail": "519 tickers"}
+{"ts": "2026-09-07T23:54:32Z", "run_id": "20260907T234526-27aff7", "step": "features_fundamental", "status": "ok", "detail": "501 tickers"}
+{"ts": "2026-09-07T23:54:34Z", "run_id": "20260907T234526-27aff7", "step": "regime", "status": "ok", "detail": "bullish_expansion (score 0.622)"}
+{"ts": "2026-09-07T23:54:35Z", "run_id": "20260907T234526-27aff7", "step": "scoring", "status": "ok", "detail": "500 scored; calibrated=True"}
+{"ts": "2026-09-07T23:54:35Z", "run_id": "20260907T234526-27aff7", "step": "selection", "status": "ok", "detail": "0 high-conviction, 0 avoid"}
+{"ts": "2026-09-07T23:54:35Z", "run_id": "20260907T234526-27aff7", "step": "watchlist", "status": "ok", "detail": "0 state changes"}
+{"ts": "2026-09-07T23:54:36Z", "run_id": "20260907T234526-27aff7", "step": "ledger", "status": "ok", "detail": "50 tickers x horizons recorded"}
+{"ts": "2026-09-07T23:54:37Z", "run_id": "20260907T234526-27aff7", "step": "evaluate", "status": "ok", "detail": "0 newly matured; ledger n=651"}
+{"ts": "2026-09-07T23:54:37Z", "run_id": "20260907T234526-27aff7", "step": "report_pack", "status": "ok", "detail": "/home/runner/work/signal-council/signal-council/data/reports/2026-09-07/pack.json"}
