@@ -62,3 +62,5 @@
 {"ts": "2026-09-04T23:27:26+00:00", "date": "2026-09-04", "ticker": "APA", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 64"}
 {"ts": "2026-09-04T23:27:26+00:00", "date": "2026-09-04", "ticker": "WELL", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 60"}
 {"ts": "2026-09-04T23:27:26+00:00", "date": "2026-09-04", "ticker": "NRG", "from": "AVOID", "to": "NONE", "reason": "opp 33 below watch threshold"}
+{"ts": "2026-09-08T23:48:45+00:00", "date": "2026-09-08", "ticker": "APA", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
+{"ts": "2026-09-08T23:48:45+00:00", "date": "2026-09-08", "ticker": "NTAP", "from": "NONE", "to": "WATCH", "reason": "opp 60"}
