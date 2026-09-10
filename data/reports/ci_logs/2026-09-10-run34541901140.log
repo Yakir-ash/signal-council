@@ -1,0 +1,191 @@
+run: 34541901140 outcome: success 2026-09-10T23:33:26Z
+$BRK.B: possibly delisted; no timezone found
+$BF.B: possibly delisted; no price data found  (1d 2022-09-01 -> 2026-09-11)
+
+2 Failed downloads:
+['BRK.B']: possibly delisted; no timezone found
+['BF.B']: possibly delisted; no price data found  (1d 2022-09-01 -> 2026-09-11)
+2026-09-10 23:24:38,710 INFO sigcouncil.run: fetch_prices_primary: ok 518116 rows / 520 tickers
+2026-09-10 23:26:49,596 WARNING sigcouncil.run: fetch_prices_fallback: warn 0 rows
+2026-09-10 23:27:04,170 WARNING sigcouncil.edgar: no CIK for AVB
+2026-09-10 23:27:28,453 WARNING sigcouncil.edgar: no CIK for EQR
+2026-09-10 23:28:54,740 INFO sigcouncil.run: fetch_fundamentals: ok 501 tickers ok, 2 failed
+2026-09-10 23:30:15,022 INFO sigcouncil.run: fetch_insiders: ok 18162 transactions
+2026-09-10 23:30:16,562 INFO sigcouncil.run: fetch_macro: ok 6/6 series
+LRCX: Failed to retrieve the news and received faulty response instead.
+LULU: Failed to retrieve the news and received faulty response instead.
+LUV: Failed to retrieve the news and received faulty response instead.
+LVS: Failed to retrieve the news and received faulty response instead.
+MAA: Failed to retrieve the news and received faulty response instead.
+MDLZ: Failed to retrieve the news and received faulty response instead.
+MDT: Failed to retrieve the news and received faulty response instead.
+MET: Failed to retrieve the news and received faulty response instead.
+META: Failed to retrieve the news and received faulty response instead.
+MGM: Failed to retrieve the news and received faulty response instead.
+MKC: Failed to retrieve the news and received faulty response instead.
+MLM: Failed to retrieve the news and received faulty response instead.
+MMM: Failed to retrieve the news and received faulty response instead.
+MNST: Failed to retrieve the news and received faulty response instead.
+MO: Failed to retrieve the news and received faulty response instead.
+MOS: Failed to retrieve the news and received faulty response instead.
+MPC: Failed to retrieve the news and received faulty response instead.
+MPWR: Failed to retrieve the news and received faulty response instead.
+MRK: Failed to retrieve the news and received faulty response instead.
+MRNA: Failed to retrieve the news and received faulty response instead.
+MRSH: Failed to retrieve the news and received faulty response instead.
+MRVL: Failed to retrieve the news and received faulty response instead.
+MS: Failed to retrieve the news and received faulty response instead.
+MSCI: Failed to retrieve the news and received faulty response instead.
+MSFT: Failed to retrieve the news and received faulty response instead.
+MSI: Failed to retrieve the news and received faulty response instead.
+MTB: Failed to retrieve the news and received faulty response instead.
+MTD: Failed to retrieve the news and received faulty response instead.
+MU: Failed to retrieve the news and received faulty response instead.
+NCLH: Failed to retrieve the news and received faulty response instead.
+NDAQ: Failed to retrieve the news and received faulty response instead.
+NDSN: Failed to retrieve the news and received faulty response instead.
+NEE: Failed to retrieve the news and received faulty response instead.
+NEM: Failed to retrieve the news and received faulty response instead.
+NFLX: Failed to retrieve the news and received faulty response instead.
+NOW: Failed to retrieve the news and received faulty response instead.
+PKG: Failed to retrieve the news and received faulty response instead.
+PLD: Failed to retrieve the news and received faulty response instead.
+PLTR: Failed to retrieve the news and received faulty response instead.
+ROST: Failed to retrieve the news and received faulty response instead.
+RSG: Failed to retrieve the news and received faulty response instead.
+RTX: Failed to retrieve the news and received faulty response instead.
+RVTY: Failed to retrieve the news and received faulty response instead.
+SBAC: Failed to retrieve the news and received faulty response instead.
+SBUX: Failed to retrieve the news and received faulty response instead.
+SCHW: Failed to retrieve the news and received faulty response instead.
+SHW: Failed to retrieve the news and received faulty response instead.
+SJM: Failed to retrieve the news and received faulty response instead.
+SLB: Failed to retrieve the news and received faulty response instead.
+SMCI: Failed to retrieve the news and received faulty response instead.
+SNA: Failed to retrieve the news and received faulty response instead.
+SNDK: Failed to retrieve the news and received faulty response instead.
+SNPS: Failed to retrieve the news and received faulty response instead.
+SO: Failed to retrieve the news and received faulty response instead.
+SOLV: Failed to retrieve the news and received faulty response instead.
+SPG: Failed to retrieve the news and received faulty response instead.
+SPGI: Failed to retrieve the news and received faulty response instead.
+SRE: Failed to retrieve the news and received faulty response instead.
+STE: Failed to retrieve the news and received faulty response instead.
+STLD: Failed to retrieve the news and received faulty response instead.
+STT: Failed to retrieve the news and received faulty response instead.
+STX: Failed to retrieve the news and received faulty response instead.
+STZ: Failed to retrieve the news and received faulty response instead.
+SW: Failed to retrieve the news and received faulty response instead.
+SWK: Failed to retrieve the news and received faulty response instead.
+SWKS: Failed to retrieve the news and received faulty response instead.
+SYF: Failed to retrieve the news and received faulty response instead.
+SYK: Failed to retrieve the news and received faulty response instead.
+SYY: Failed to retrieve the news and received faulty response instead.
+T: Failed to retrieve the news and received faulty response instead.
+TAP: Failed to retrieve the news and received faulty response instead.
+TDG: Failed to retrieve the news and received faulty response instead.
+TDY: Failed to retrieve the news and received faulty response instead.
+TECH: Failed to retrieve the news and received faulty response instead.
+TEL: Failed to retrieve the news and received faulty response instead.
+TER: Failed to retrieve the news and received faulty response instead.
+TFC: Failed to retrieve the news and received faulty response instead.
+TGT: Failed to retrieve the news and received faulty response instead.
+TJX: Failed to retrieve the news and received faulty response instead.
+TKO: Failed to retrieve the news and received faulty response instead.
+TMO: Failed to retrieve the news and received faulty response instead.
+TMUS: Failed to retrieve the news and received faulty response instead.
+TPL: Failed to retrieve the news and received faulty response instead.
+TPR: Failed to retrieve the news and received faulty response instead.
+TRGP: Failed to retrieve the news and received faulty response instead.
+TRMB: Failed to retrieve the news and received faulty response instead.
+TROW: Failed to retrieve the news and received faulty response instead.
+TRV: Failed to retrieve the news and received faulty response instead.
+TSCO: Failed to retrieve the news and received faulty response instead.
+TSLA: Failed to retrieve the news and received faulty response instead.
+TSN: Failed to retrieve the news and received faulty response instead.
+TT: Failed to retrieve the news and received faulty response instead.
+TTD: Failed to retrieve the news and received faulty response instead.
+TTWO: Failed to retrieve the news and received faulty response instead.
+TXN: Failed to retrieve the news and received faulty response instead.
+TXT: Failed to retrieve the news and received faulty response instead.
+TYL: Failed to retrieve the news and received faulty response instead.
+UAL: Failed to retrieve the news and received faulty response instead.
+UBER: Failed to retrieve the news and received faulty response instead.
+UDR: Failed to retrieve the news and received faulty response instead.
+UHS: Failed to retrieve the news and received faulty response instead.
+ULTA: Failed to retrieve the news and received faulty response instead.
+UNH: Failed to retrieve the news and received faulty response instead.
+UNP: Failed to retrieve the news and received faulty response instead.
+UPS: Failed to retrieve the news and received faulty response instead.
+URI: Failed to retrieve the news and received faulty response instead.
+USB: Failed to retrieve the news and received faulty response instead.
+V: Failed to retrieve the news and received faulty response instead.
+VEEV: Failed to retrieve the news and received faulty response instead.
+VICI: Failed to retrieve the news and received faulty response instead.
+VLO: Failed to retrieve the news and received faulty response instead.
+VLTO: Failed to retrieve the news and received faulty response instead.
+VMC: Failed to retrieve the news and received faulty response instead.
+VRSK: Failed to retrieve the news and received faulty response instead.
+VRSN: Failed to retrieve the news and received faulty response instead.
+VRT: Failed to retrieve the news and received faulty response instead.
+VRTX: Failed to retrieve the news and received faulty response instead.
+VST: Failed to retrieve the news and received faulty response instead.
+VTR: Failed to retrieve the news and received faulty response instead.
+VTRS: Failed to retrieve the news and received faulty response instead.
+VZ: Failed to retrieve the news and received faulty response instead.
+WAB: Failed to retrieve the news and received faulty response instead.
+WAT: Failed to retrieve the news and received faulty response instead.
+WBD: Failed to retrieve the news and received faulty response instead.
+WDAY: Failed to retrieve the news and received faulty response instead.
+WDC: Failed to retrieve the news and received faulty response instead.
+WEC: Failed to retrieve the news and received faulty response instead.
+WELL: Failed to retrieve the news and received faulty response instead.
+WFC: Failed to retrieve the news and received faulty response instead.
+WM: Failed to retrieve the news and received faulty response instead.
+WMB: Failed to retrieve the news and received faulty response instead.
+WMT: Failed to retrieve the news and received faulty response instead.
+WRB: Failed to retrieve the news and received faulty response instead.
+WSM: Failed to retrieve the news and received faulty response instead.
+WST: Failed to retrieve the news and received faulty response instead.
+WTW: Failed to retrieve the news and received faulty response instead.
+WY: Failed to retrieve the news and received faulty response instead.
+WYNN: Failed to retrieve the news and received faulty response instead.
+XEL: Failed to retrieve the news and received faulty response instead.
+XOM: Failed to retrieve the news and received faulty response instead.
+XYL: Failed to retrieve the news and received faulty response instead.
+XYZ: Failed to retrieve the news and received faulty response instead.
+YUM: Failed to retrieve the news and received faulty response instead.
+ZBH: Failed to retrieve the news and received faulty response instead.
+ZBRA: Failed to retrieve the news and received faulty response instead.
+ZTS: Failed to retrieve the news and received faulty response instead.
+2026-09-10 23:32:20,645 INFO sigcouncil.run: fetch_news: ok 3560 items
+2026-09-10 23:32:36,954 INFO sigcouncil.run: quality: ok 520 names, 4 quarantined; []
+2026-09-10 23:32:43,306 INFO sigcouncil.run: features_technical: ok 520 tickers
+2026-09-10 23:33:20,192 INFO sigcouncil.run: features_fundamental: ok 501 tickers
+2026-09-10 23:33:22,737 INFO sigcouncil.run: regime: ok cautious_bullish (score 0.422)
+2026-09-10 23:33:23,556 INFO sigcouncil.run: scoring: ok 501 scored; calibrated=True
+2026-09-10 23:33:23,559 INFO sigcouncil.run: selection: ok 0 high-conviction, 0 avoid
+2026-09-10 23:33:23,584 INFO sigcouncil.run: watchlist: ok 6 state changes
+2026-09-10 23:33:24,450 INFO sigcouncil.run: ledger: ok 50 tickers x horizons recorded
+2026-09-10 23:33:25,948 INFO sigcouncil.evaluate: evaluated 50 matured predictions
+2026-09-10 23:33:26,086 INFO sigcouncil.run: evaluate: ok 50 newly matured; ledger n=808
+2026-09-10 23:33:26,096 INFO sigcouncil.run: report_pack: ok /home/runner/work/signal-council/signal-council/data/reports/2026-09-10/pack.json
+
+=== 2026-09-10 | regime: cautious_bullish ===
+NO HIGH-CONVICTION OPPORTUNITIES TODAY
+{"ts": "2026-09-10T23:24:38Z", "run_id": "20260910T232345-d0c15d", "step": "fetch_prices_primary", "status": "ok", "detail": "518116 rows / 520 tickers"}
+{"ts": "2026-09-10T23:26:49Z", "run_id": "20260910T232345-d0c15d", "step": "fetch_prices_fallback", "status": "warn", "detail": "0 rows"}
+{"ts": "2026-09-10T23:28:54Z", "run_id": "20260910T232345-d0c15d", "step": "fetch_fundamentals", "status": "ok", "detail": "501 tickers ok, 2 failed"}
+{"ts": "2026-09-10T23:30:15Z", "run_id": "20260910T232345-d0c15d", "step": "fetch_insiders", "status": "ok", "detail": "18162 transactions"}
+{"ts": "2026-09-10T23:30:16Z", "run_id": "20260910T232345-d0c15d", "step": "fetch_macro", "status": "ok", "detail": "6/6 series"}
+{"ts": "2026-09-10T23:32:20Z", "run_id": "20260910T232345-d0c15d", "step": "fetch_news", "status": "ok", "detail": "3560 items"}
+{"ts": "2026-09-10T23:32:36Z", "run_id": "20260910T232345-d0c15d", "step": "quality", "status": "ok", "detail": "520 names, 4 quarantined; []"}
+{"ts": "2026-09-10T23:32:43Z", "run_id": "20260910T232345-d0c15d", "step": "features_technical", "status": "ok", "detail": "520 tickers"}
+{"ts": "2026-09-10T23:33:20Z", "run_id": "20260910T232345-d0c15d", "step": "features_fundamental", "status": "ok", "detail": "501 tickers"}
+{"ts": "2026-09-10T23:33:22Z", "run_id": "20260910T232345-d0c15d", "step": "regime", "status": "ok", "detail": "cautious_bullish (score 0.422)"}
+{"ts": "2026-09-10T23:33:23Z", "run_id": "20260910T232345-d0c15d", "step": "scoring", "status": "ok", "detail": "501 scored; calibrated=True"}
+{"ts": "2026-09-10T23:33:23Z", "run_id": "20260910T232345-d0c15d", "step": "selection", "status": "ok", "detail": "0 high-conviction, 0 avoid"}
+{"ts": "2026-09-10T23:33:23Z", "run_id": "20260910T232345-d0c15d", "step": "watchlist", "status": "ok", "detail": "6 state changes"}
+{"ts": "2026-09-10T23:33:24Z", "run_id": "20260910T232345-d0c15d", "step": "ledger", "status": "ok", "detail": "50 tickers x horizons recorded"}
+{"ts": "2026-09-10T23:33:26Z", "run_id": "20260910T232345-d0c15d", "step": "evaluate", "status": "ok", "detail": "50 newly matured; ledger n=808"}
+{"ts": "2026-09-10T23:33:26Z", "run_id": "20260910T232345-d0c15d", "step": "report_pack", "status": "ok", "detail": "/home/runner/work/signal-council/signal-council/data/reports/2026-09-10/pack.json"}
