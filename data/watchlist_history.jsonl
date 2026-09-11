@@ -70,3 +70,5 @@
 {"ts": "2026-09-10T23:33:23+00:00", "date": "2026-09-10", "ticker": "EXPD", "from": "NONE", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
 {"ts": "2026-09-10T23:33:23+00:00", "date": "2026-09-10", "ticker": "PLTR", "from": "WATCH", "to": "NONE", "reason": "gates: data_quarantine;"}
 {"ts": "2026-09-10T23:33:23+00:00", "date": "2026-09-10", "ticker": "SNDK", "from": "WATCH", "to": "NONE", "reason": "gates: data_quarantine;"}
+{"ts": "2026-09-11T23:40:57+00:00", "date": "2026-09-11", "ticker": "ABNB", "from": "WAIT_FOR_CONFIRMATION", "to": "WATCH", "reason": "opp 64"}
+{"ts": "2026-09-11T23:40:57+00:00", "date": "2026-09-11", "ticker": "ADBE", "from": "WATCH", "to": "WAIT_FOR_CONFIRMATION", "reason": "thesis ok, technicals not confirming (27)"}
