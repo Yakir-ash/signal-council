@@ -77,3 +77,7 @@
 {"ts": "2026-09-15T00:07:19+00:00", "date": "2026-09-14", "ticker": "HUM", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 62"}
 {"ts": "2026-09-15T00:07:19+00:00", "date": "2026-09-14", "ticker": "VLO", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
 {"ts": "2026-09-15T00:07:19+00:00", "date": "2026-09-14", "ticker": "GEN", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
+{"ts": "2026-09-15T23:49:38+00:00", "date": "2026-09-15", "ticker": "ABNB", "from": "WATCH", "to": "WAIT_FOR_CONFIRMATION", "reason": "thesis ok, technicals not confirming (39)"}
+{"ts": "2026-09-15T23:49:38+00:00", "date": "2026-09-15", "ticker": "CF", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
+{"ts": "2026-09-15T23:49:38+00:00", "date": "2026-09-15", "ticker": "VLO", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 61"}
+{"ts": "2026-09-15T23:49:38+00:00", "date": "2026-09-15", "ticker": "NRG", "from": "NONE", "to": "AVOID", "reason": "opp 29 with risk 70"}
