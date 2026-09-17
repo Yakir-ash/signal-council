@@ -84,3 +84,5 @@
 {"ts": "2026-09-16T23:58:22+00:00", "date": "2026-09-16", "ticker": "ABNB", "from": "WAIT_FOR_CONFIRMATION", "to": "WATCH", "reason": "opp 65"}
 {"ts": "2026-09-16T23:58:22+00:00", "date": "2026-09-16", "ticker": "CF", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 64"}
 {"ts": "2026-09-16T23:58:22+00:00", "date": "2026-09-16", "ticker": "GEN", "from": "WAIT_FOR_PULLBACK", "to": "WATCH", "reason": "opp 61"}
+{"ts": "2026-09-17T23:49:54+00:00", "date": "2026-09-17", "ticker": "ABNB", "from": "WATCH", "to": "WAIT_FOR_CONFIRMATION", "reason": "thesis ok, technicals not confirming (37)"}
+{"ts": "2026-09-17T23:49:54+00:00", "date": "2026-09-17", "ticker": "NTAP", "from": "WATCH", "to": "WAIT_FOR_PULLBACK", "reason": "extended after strong run"}
