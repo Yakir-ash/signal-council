@@ -1,0 +1,46 @@
+run: 35406181625 outcome: success 2026-09-18T23:42:53Z
+$BRK.B: possibly delisted; no timezone found
+$BF.B: possibly delisted; no price data found  (1d 2022-09-09 -> 2026-09-19)
+
+2 Failed downloads:
+['BRK.B']: possibly delisted; no timezone found
+['BF.B']: possibly delisted; no price data found  (1d 2022-09-09 -> 2026-09-19)
+2026-09-18 23:34:54,404 INFO sigcouncil.run: fetch_prices_primary: ok 518679 rows / 520 tickers
+2026-09-18 23:37:05,102 WARNING sigcouncil.run: fetch_prices_fallback: warn 0 rows
+2026-09-18 23:37:25,396 WARNING sigcouncil.edgar: no CIK for AVB
+2026-09-18 23:37:56,433 WARNING sigcouncil.edgar: no CIK for EQR
+2026-09-18 23:39:25,695 INFO sigcouncil.run: fetch_fundamentals: ok 501 tickers ok, 2 failed
+2026-09-18 23:40:41,713 INFO sigcouncil.run: fetch_insiders: ok 17749 transactions
+2026-09-18 23:40:43,243 INFO sigcouncil.run: fetch_macro: ok 6/6 series
+2026-09-18 23:41:48,692 INFO sigcouncil.run: fetch_news: ok 5020 items
+2026-09-18 23:42:04,717 INFO sigcouncil.run: quality: ok 520 names, 0 quarantined; []
+2026-09-18 23:42:10,860 INFO sigcouncil.run: features_technical: ok 520 tickers
+2026-09-18 23:42:46,547 INFO sigcouncil.run: features_fundamental: ok 501 tickers
+2026-09-18 23:42:49,001 INFO sigcouncil.run: regime: ok cautious_bullish (score 0.444)
+2026-09-18 23:42:49,780 INFO sigcouncil.run: scoring: ok 501 scored; calibrated=True
+2026-09-18 23:42:49,783 INFO sigcouncil.run: selection: ok 0 high-conviction, 1 avoid
+2026-09-18 23:42:49,808 INFO sigcouncil.run: watchlist: ok 1 state changes
+2026-09-18 23:42:51,228 INFO sigcouncil.run: ledger: ok 50 tickers x horizons recorded
+2026-09-18 23:42:52,861 INFO sigcouncil.evaluate: evaluated 100 matured predictions
+2026-09-18 23:42:53,016 INFO sigcouncil.run: evaluate: ok 100 newly matured; ledger n=1509
+2026-09-18 23:42:53,027 INFO sigcouncil.run: report_pack: ok /home/runner/work/signal-council/signal-council/data/reports/2026-09-18/pack.json
+
+=== 2026-09-18 | regime: cautious_bullish ===
+NO HIGH-CONVICTION OPPORTUNITIES TODAY
+AVOID: NRG
+{"ts": "2026-09-18T23:34:54Z", "run_id": "20260918T233423-aa8522", "step": "fetch_prices_primary", "status": "ok", "detail": "518679 rows / 520 tickers"}
+{"ts": "2026-09-18T23:37:05Z", "run_id": "20260918T233423-aa8522", "step": "fetch_prices_fallback", "status": "warn", "detail": "0 rows"}
+{"ts": "2026-09-18T23:39:25Z", "run_id": "20260918T233423-aa8522", "step": "fetch_fundamentals", "status": "ok", "detail": "501 tickers ok, 2 failed"}
+{"ts": "2026-09-18T23:40:41Z", "run_id": "20260918T233423-aa8522", "step": "fetch_insiders", "status": "ok", "detail": "17749 transactions"}
+{"ts": "2026-09-18T23:40:43Z", "run_id": "20260918T233423-aa8522", "step": "fetch_macro", "status": "ok", "detail": "6/6 series"}
+{"ts": "2026-09-18T23:41:48Z", "run_id": "20260918T233423-aa8522", "step": "fetch_news", "status": "ok", "detail": "5020 items"}
+{"ts": "2026-09-18T23:42:04Z", "run_id": "20260918T233423-aa8522", "step": "quality", "status": "ok", "detail": "520 names, 0 quarantined; []"}
+{"ts": "2026-09-18T23:42:10Z", "run_id": "20260918T233423-aa8522", "step": "features_technical", "status": "ok", "detail": "520 tickers"}
+{"ts": "2026-09-18T23:42:46Z", "run_id": "20260918T233423-aa8522", "step": "features_fundamental", "status": "ok", "detail": "501 tickers"}
+{"ts": "2026-09-18T23:42:48Z", "run_id": "20260918T233423-aa8522", "step": "regime", "status": "ok", "detail": "cautious_bullish (score 0.444)"}
+{"ts": "2026-09-18T23:42:49Z", "run_id": "20260918T233423-aa8522", "step": "scoring", "status": "ok", "detail": "501 scored; calibrated=True"}
+{"ts": "2026-09-18T23:42:49Z", "run_id": "20260918T233423-aa8522", "step": "selection", "status": "ok", "detail": "0 high-conviction, 1 avoid"}
+{"ts": "2026-09-18T23:42:49Z", "run_id": "20260918T233423-aa8522", "step": "watchlist", "status": "ok", "detail": "1 state changes"}
+{"ts": "2026-09-18T23:42:51Z", "run_id": "20260918T233423-aa8522", "step": "ledger", "status": "ok", "detail": "50 tickers x horizons recorded"}
+{"ts": "2026-09-18T23:42:53Z", "run_id": "20260918T233423-aa8522", "step": "evaluate", "status": "ok", "detail": "100 newly matured; ledger n=1509"}
+{"ts": "2026-09-18T23:42:53Z", "run_id": "20260918T233423-aa8522", "step": "report_pack", "status": "ok", "detail": "/home/runner/work/signal-council/signal-council/data/reports/2026-09-18/pack.json"}
