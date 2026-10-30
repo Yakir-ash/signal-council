@@ -1,0 +1,302 @@
+run: 40985244907 outcome: cancelled 2026-10-30T02:50:37Z
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:604: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:606: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:604: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:606: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:604: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:606: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:604: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:606: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:604: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:606: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+2026-10-30 01:21:35,876 INFO sigcouncil.run: fetch_prices_primary: ok 514867 rows / 519 tickers
+2026-10-30 01:22:15,719 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ReadTimeout), retry in 1.0s
+2026-10-30 01:23:17,051 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 01:24:19,298 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 01:24:23,299 WARNING sigcouncil.stooq: APO failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 01:25:23,527 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 01:26:24,773 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 01:27:27,019 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 01:27:31,019 WARNING sigcouncil.stooq: APP failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 01:28:31,215 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 01:29:32,499 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 01:30:34,744 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 01:30:38,745 WARNING sigcouncil.stooq: APTV failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 01:31:39,044 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 01:32:40,196 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 01:33:42,449 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 01:33:46,449 WARNING sigcouncil.stooq: ARE failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 01:34:46,692 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 01:35:47,874 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 01:36:50,075 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 01:36:54,075 WARNING sigcouncil.stooq: ARES failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 01:37:54,308 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 01:38:55,495 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 01:39:57,562 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 01:40:01,562 WARNING sigcouncil.stooq: ATO failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 01:41:01,801 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 01:42:03,028 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 01:43:05,220 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 01:43:09,220 WARNING sigcouncil.stooq: AVB failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 01:44:09,422 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 01:45:10,596 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 01:46:12,804 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 01:46:16,804 WARNING sigcouncil.stooq: AVGO failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 01:47:16,988 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 01:48:18,185 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 01:49:20,388 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 01:49:24,389 WARNING sigcouncil.stooq: AVY failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 01:50:24,602 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 01:51:25,827 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 01:52:28,072 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 01:52:32,072 WARNING sigcouncil.stooq: AWK failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 01:53:32,276 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 01:54:33,518 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 01:55:35,735 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 01:55:39,736 WARNING sigcouncil.stooq: AXON failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 01:56:39,924 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 01:57:41,253 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 01:58:43,466 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 01:58:47,466 WARNING sigcouncil.stooq: AXP failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 01:59:47,645 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:00:48,874 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:01:51,129 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:01:55,129 WARNING sigcouncil.stooq: AZO failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:02:55,314 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:03:56,535 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:04:58,774 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:05:02,774 WARNING sigcouncil.stooq: BA failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:06:03,026 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:07:04,260 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:08:06,453 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:08:10,453 WARNING sigcouncil.stooq: BAC failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:09:10,654 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:10:11,845 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:11:14,026 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:11:18,027 WARNING sigcouncil.stooq: BALL failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:12:18,337 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:13:19,541 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:14:21,741 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:14:25,741 WARNING sigcouncil.stooq: BAX failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:15:25,949 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:16:27,229 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:17:29,439 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:17:33,439 WARNING sigcouncil.stooq: BBY failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:18:33,604 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:19:34,790 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:20:36,993 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:20:40,993 WARNING sigcouncil.stooq: BDX failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:21:41,170 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:22:42,373 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:23:44,610 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:23:48,610 WARNING sigcouncil.stooq: BEN failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:24:48,788 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:25:50,022 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:26:52,259 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:26:56,259 WARNING sigcouncil.stooq: BF.B failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:27:56,513 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:28:57,788 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:30:00,059 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:30:04,059 WARNING sigcouncil.stooq: BG failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:31:04,239 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:32:05,443 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:33:07,644 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:33:11,644 WARNING sigcouncil.stooq: BIIB failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:34:11,826 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:35:13,020 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:36:15,203 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:36:19,204 WARNING sigcouncil.stooq: BKNG failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:37:19,430 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:38:20,698 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:39:22,932 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:39:26,932 WARNING sigcouncil.stooq: BKR failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:40:27,106 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:41:28,352 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:42:30,631 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:42:34,631 WARNING sigcouncil.stooq: BLDR failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:43:34,910 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:44:36,100 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:45:38,308 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:45:42,308 WARNING sigcouncil.stooq: BLK failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:46:42,602 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-10-30 02:47:43,878 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-10-30 02:48:46,107 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-10-30 02:48:50,107 WARNING sigcouncil.stooq: BMY failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-10-30 02:49:50,338 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+{"ts": "2026-10-30T01:21:35Z", "run_id": "20261030T012053-9d4542", "step": "fetch_prices_primary", "status": "ok", "detail": "514867 rows / 519 tickers"}
