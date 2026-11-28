@@ -1,0 +1,122 @@
+run: 46103109364 outcome: cancelled 2026-11-28T04:59:59Z
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: BF.B"}}}
+$BF.B: possibly delisted; no timezone found
+$BRK.B: possibly delisted; no timezone found
+
+2 Failed downloads:
+['BF.B', 'BRK.B']: possibly delisted; no timezone found
+2026-11-28 03:30:47,148 INFO sigcouncil.run: fetch_prices_primary: ok 515150 rows / 520 tickers
+2026-11-28 03:31:28,394 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ReadTimeout), retry in 1.0s
+2026-11-28 03:32:29,561 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 03:33:31,748 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 03:33:35,749 WARNING sigcouncil.stooq: AVB failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 03:34:35,929 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 03:35:37,084 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 03:36:39,225 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 03:36:43,226 WARNING sigcouncil.stooq: AVGO failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 03:37:43,393 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 03:38:44,539 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 03:39:46,734 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 03:39:50,734 WARNING sigcouncil.stooq: AVY failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 03:40:50,911 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 03:41:52,102 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 03:42:54,326 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 03:42:58,326 WARNING sigcouncil.stooq: AWK failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 03:43:58,525 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 03:44:59,716 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 03:46:01,945 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 03:46:05,945 WARNING sigcouncil.stooq: AXON failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 03:47:06,179 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 03:48:07,340 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 03:49:09,532 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 03:49:13,532 WARNING sigcouncil.stooq: AXP failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 03:50:13,731 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 03:51:14,873 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 03:52:17,025 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 03:52:21,026 WARNING sigcouncil.stooq: AZO failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 03:53:21,273 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 03:54:22,449 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 03:55:24,640 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 03:55:28,640 WARNING sigcouncil.stooq: BA failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 03:56:28,824 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 03:57:29,977 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 03:58:32,163 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 03:58:36,164 WARNING sigcouncil.stooq: BAC failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 03:59:36,313 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:00:37,496 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:01:39,665 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:01:43,666 WARNING sigcouncil.stooq: BALL failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:02:43,844 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:03:45,008 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:04:47,191 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:04:51,191 WARNING sigcouncil.stooq: BAX failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:05:51,403 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:06:52,558 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:07:54,724 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:07:58,725 WARNING sigcouncil.stooq: BBY failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:08:58,928 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:10:00,133 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:11:02,272 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:11:06,272 WARNING sigcouncil.stooq: BDX failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:12:06,511 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:13:07,675 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:14:09,849 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:14:13,850 WARNING sigcouncil.stooq: BEN failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:15:14,009 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:16:15,181 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:17:17,404 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:17:21,404 WARNING sigcouncil.stooq: BF.B failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:18:21,554 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:19:22,720 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:20:24,975 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:20:28,975 WARNING sigcouncil.stooq: BG failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:21:29,164 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:22:30,351 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:23:32,540 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:23:36,541 WARNING sigcouncil.stooq: BIIB failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:24:36,758 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:25:37,959 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:26:40,219 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:26:44,219 WARNING sigcouncil.stooq: BKNG failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:27:44,408 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:28:45,571 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:29:47,733 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:29:51,733 WARNING sigcouncil.stooq: BKR failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:30:51,962 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:31:53,156 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:32:55,336 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:32:59,336 WARNING sigcouncil.stooq: BLDR failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:33:59,551 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:35:00,793 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:36:02,939 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:36:06,940 WARNING sigcouncil.stooq: BLK failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:37:07,144 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:38:08,354 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:39:10,578 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:39:14,578 WARNING sigcouncil.stooq: BMY failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:40:14,817 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:41:16,017 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:42:18,179 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:42:22,179 WARNING sigcouncil.stooq: BNY failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:43:22,366 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:44:23,592 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:45:25,807 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:45:29,808 WARNING sigcouncil.stooq: BR failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:46:30,009 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:47:31,171 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:48:33,358 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:48:37,358 WARNING sigcouncil.stooq: BRK.B failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:49:37,517 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:50:38,712 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:51:40,857 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:51:44,858 WARNING sigcouncil.stooq: BRO failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:52:45,039 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:53:46,250 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:54:48,434 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:54:52,434 WARNING sigcouncil.stooq: BSX failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:55:52,633 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+2026-11-28 04:56:53,808 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 2.0s
+2026-11-28 04:57:56,055 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 4.0s
+2026-11-28 04:58:00,055 WARNING sigcouncil.stooq: BX failed: GET https://stooq.com/q/d/l/ failed after 3 attempts
+2026-11-28 04:59:00,214 WARNING sigcouncil.http: GET https://stooq.com/q/d/l/ failed (ConnectTimeout), retry in 1.0s
+{"ts": "2026-11-28T03:30:47Z", "run_id": "20261128T033016-9ae5d8", "step": "fetch_prices_primary", "status": "ok", "detail": "515150 rows / 520 tickers"}
